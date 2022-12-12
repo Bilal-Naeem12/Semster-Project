@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-
 <AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label alignment="CENTER" layoutX="231.0" layoutY="21.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="139.0" styleClass="heading-label" text="LOGIN" AnchorPane.bottomAnchor="330.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="21.0" />
@@ -28,7 +27,7 @@
                <children>
                   <Label styleClass="label-text" text="PASSWORD" />
                   <Pane prefHeight="7.0" prefWidth="296.0" />
-                  <PasswordField prefHeight="29.0" prefWidth="296.0" text="defualt" />
+                  <PasswordField prefHeight="29.0" prefWidth="296.0" promptText="Enter Password" />
                </children>
             </VBox>
             <Button layoutX="77.0" layoutY="178.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="LOGIN" />

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label alignment="CENTER" layoutX="214.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="172.0" styleClass="heading-label" text="SIGN UP" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="14.0" />
+        <AnchorPane layoutX="98.0" layoutY="70.0" prefHeight="556.0" prefWidth="404.0" styleClass="glass" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="70.0">
+            <children>
+            <VBox layoutX="54.0" layoutY="14.0" prefHeight="524.0" prefWidth="296.0">
+               <children>
+                      <VBox prefHeight="49.0" prefWidth="296.0">
+                          <children>
+                              <Label styleClass="label-text" text="USERNAME" />
+                              <Pane prefHeight="7.0" prefWidth="296.0" />
+                              <TextField prefHeight="28.0" prefWidth="296.0" promptText="M Bilal Naeem" />
+                          </children>
+                      </VBox>
+                  <Pane prefHeight="25.0" prefWidth="296.0" />
+                  <VBox prefHeight="49.0" prefWidth="296.0">
+                     <children>
+                        <Label styleClass="label-text" text="EMAIL" />
+                        <Pane prefHeight="7.0" prefWidth="296.0" />
+                        <TextField prefHeight="28.0" prefWidth="296.0" promptText="bilalnaeem319@gmail.com" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="25.0" prefWidth="315.0" />
+                  <VBox prefHeight="49.0" prefWidth="296.0">
+                     <children>
+                        <Label styleClass="label-text" text="ADDRESS" />
+                        <Pane prefHeight="7.0" prefWidth="296.0" />
+                        <TextField prefHeight="28.0" prefWidth="296.0" promptText="185 H2 WAPDA Town Lahore" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="25.0" prefWidth="315.0" />
+                  <VBox prefHeight="49.0" prefWidth="296.0">
+                     <children>
+                        <Label styleClass="label-text" text="USERNAME" />
+                        <Pane prefHeight="7.0" prefWidth="296.0" />
+                        <ChoiceBox prefHeight="25.0" prefWidth="296.0" styleClass="glass" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="25.0" prefWidth="296.0" />
+                  <VBox prefHeight="49.0" prefWidth="296.0">
+                     <children>
+                        <Label styleClass="label-text" text="PASSWORD" />
+                        <Pane prefHeight="7.0" prefWidth="296.0" />
+                        <PasswordField prefHeight="29.0" prefWidth="296.0" promptText="Enter Password" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="25.0" prefWidth="315.0" />
+                  <VBox prefHeight="49.0" prefWidth="296.0">
+                     <children>
+                        <Label styleClass="label-text" text="Confirm Password" />
+                        <Pane prefHeight="7.0" prefWidth="296.0" />
+                        <PasswordField prefHeight="29.0" prefWidth="296.0" promptText="Enter Password" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="30.0" prefWidth="296.0" />
+                      <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="SIGNUP" />
+                  <Pane prefHeight="20.0" prefWidth="296.0" />
+                      <Line endX="87.0" fill="WHITE" startX="-208.0" strokeWidth="0.5" styleClass="line" />
+                  <Pane prefHeight="23.0" prefWidth="296.0" />
+                      <HBox prefHeight="25.0" prefWidth="242.0">
+                          <children>
+                              <Label alignment="CENTER" prefHeight="14.0" prefWidth="194.0" styleClass="label-text-end" text="Already Have an Account?">
+                                  <HBox.margin>
+                                      <Insets top="5.0" />
+                                  </HBox.margin>
+                              </Label>
+                              <Button id="Signup-button" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="73.0" text="Login">
+                                  <HBox.margin>
+                                      <Insets />
+                                  </HBox.margin>
+                              </Button>
+                          </children>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                      </HBox>
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

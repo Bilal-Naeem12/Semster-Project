@@ -29,7 +29,7 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 .text-field{
     -fx-background-color: rgba(217, 217, 217, 0.33);
 -fx-background-radius: 23px;
--fx-prompt-text-fill: white;
+-fx-prompt-text-fill: rgba(255, 255, 255, 0.66);
     -fx-text-fill: white;
 -fx-font-family: Marlett;
 }.
