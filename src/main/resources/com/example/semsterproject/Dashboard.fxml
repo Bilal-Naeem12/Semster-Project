@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
@@ -101,7 +102,7 @@
                         <Insets left="19.0" right="9.0" />
                      </VBox.margin>
                   </Line>
-                  <Pane prefHeight="28.0" prefWidth="198.0" />
+                  <Pane prefHeight="16.0" prefWidth="198.0" />
                   <Button id="dashboard-logout" mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="LOGOUT">
                      <VBox.margin>
                         <Insets left="29.0" right="27.0" />
@@ -115,6 +116,11 @@
          <children>
             <Label alignment="CENTER" layoutX="160.0" layoutY="26.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="438.0" styleClass="heading-label" text="SELECT YOUR CHOICE" />
             <Line endX="164.0" fill="WHITE" layoutX="450.0" layoutY="84.0" startX="-322.0" strokeWidth="0.5" styleClass="line" />
+            <StackPane layoutX="145.0" layoutY="118.0" prefHeight="161.0" prefWidth="469.0" styleClass="glass">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitHeight="150.0" fitWidth="468.0" pickOnBounds="true" preserveRatio="true" styleClass="button" />
+               </children>
+            </StackPane>
          </children>
       </AnchorPane>
     </children>

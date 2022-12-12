@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82a6a228-91ae-4cc1-b2b2-225baafda22d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Dashboard.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/panga.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/IMG-20200617-WA0011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/Trolley.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/Vector (1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/Vector.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Style/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Style/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/panga.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/panga.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

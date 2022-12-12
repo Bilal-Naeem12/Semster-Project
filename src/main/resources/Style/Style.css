@@ -52,7 +52,7 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 -fx-prompt-text-fill: rgba(255, 255, 255, 0.66);
     -fx-text-fill: white;
 -fx-font-family: Marlett;
-}.
+}
 
  label-text-end{
      -fx-font-family: Marlett;
@@ -179,5 +179,7 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 .choice-box > .label {    -fx-text-fill: rgb(255, 255, 255);
 
 }
+
+
 
 
