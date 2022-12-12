@@ -16,8 +16,8 @@ public class HomeTasker extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
-      //  stage.initStyle(StageStyle.UNDECORATED);
-        stage.setResizable(false);
+
+stage.setResizable(false);
     }
 
     public static void main(String[] args) {
