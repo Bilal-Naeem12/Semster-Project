@@ -1,3 +1,7 @@
+/*Panes*/
+
+
+
 #background{
 
 
@@ -7,6 +11,19 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
 
 }
+
+
+/*beauty*/
+#top-beauty{
+
+-fx-background-color: #820275;
+  -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.42), 17, 0.5,0,3);
+
+}
+
+
+
+
 /*Attribute*/
 .glass{
     -fx-background-color: rgba(217, 217, 217, 0.22);
@@ -83,6 +100,23 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
     -fx-font-size: 13px;
     -fx-text-fill: rgba(255, 255, 255, 0.75);
 }
+
+
+#Setting-Heading{
+
+    -fx-font-weight: light;
+    -fx-font-size: 22px;
+    -fx-text-fill: rgba(255, 255, 255, 0.91);
+}
+.setting-text-label{
+
+    -fx-font-weight: light;
+    -fx-font-size: 17px;
+
+
+
+
+}
 /*button*/
 .button{
 
@@ -155,6 +189,12 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
     -fx-background-color: none;
     -fx-text-fill: white;
     -fx-cursor: HAND;
+}
+
+
+#Setting-btn{
+
+    -fx-background-color: rgba(217, 217, 217, 0.22);
 }
 
 /*Shape*/
