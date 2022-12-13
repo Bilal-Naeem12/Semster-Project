@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="220.0" layoutY="106.0" prefHeight="445.0" prefWidth="495.0" styleClass="glass">
+            <children>
+                <VBox layoutY="2.0" prefHeight="453.0" prefWidth="495.0">
+                    <children>
+                        <Pane prefHeight="14.0" prefWidth="495.0" />
+                  <HBox prefHeight="41.0" prefWidth="495.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Icons/User.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="33.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="51.0" prefWidth="4.0" />
+                              <Label id="Setting-Heading" alignment="CENTER" prefHeight="23.0" prefWidth="88.0" styleClass="label-text-end" text="Account">
+                           <HBox.margin>
+                              <Insets top="9.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                        <Pane prefHeight="6.0" prefWidth="500.0" />
+                        <Line endX="127.29290771484375" endY="-3.0416250228881836E-4" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
+                            <VBox.margin>
+                                <Insets left="19.0" right="9.0" />
+                            </VBox.margin>
+                        </Line>
+                        <Pane prefHeight="17.0" prefWidth="495.0" />
+                  <AnchorPane prefHeight="38.0" prefWidth="480.0">
+                     <children>
+                        <Button id="Setting-btn" layoutX="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
+                           <graphic>
+                              <HBox prefHeight="25.0" prefWidth="450.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="23.0" prefWidth="113.0" text="Edit my profile">
+                                       <styleClass>
+                                          <String fx:value="label-text-end" />
+                                          <String fx:value="setting-text-label" />
+                                       </styleClass>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane prefHeight="28.0" prefWidth="311.0" />
+                                    <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/Icons/Forward.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="6.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <Pane prefHeight="20.0" prefWidth="495.0" />
+                  <AnchorPane prefHeight="38.0" prefWidth="480.0">
+                     <children>
+                        <Button id="Setting-btn" layoutX="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
+                           <graphic>
+                              <HBox prefHeight="25.0" prefWidth="450.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="23.0" prefWidth="138.0" text="Change Password">
+                                       <styleClass>
+                                          <String fx:value="label-text-end" />
+                                          <String fx:value="setting-text-label" />
+                                       </styleClass>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane prefHeight="28.0" prefWidth="284.0" />
+                                    <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/Icons/Forward.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="6.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                        <Pane prefHeight="38.0" prefWidth="495.0" />
+                  <HBox prefHeight="31.0" prefWidth="495.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Icons/alert.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="37.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="27.0" prefWidth="8.0" />
+                        <Label id="Setting-Heading" alignment="CENTER" prefHeight="23.0" prefWidth="100.0" styleClass="label-text-end" text="About Us">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                        <Pane prefHeight="13.0" prefWidth="495.0" />
+                  <Line endX="124.29290771484375" endY="-0.11717742681503296" fill="WHITE" startX="-322.0" startY="-0.1162649393081665" strokeWidth="0.5" styleClass="line">
+                     <VBox.margin>
+                        <Insets left="19.0" />
+                     </VBox.margin>
+                  </Line>
+                        <Pane prefHeight="22.0" prefWidth="495.0" />
+                  <AnchorPane prefHeight="38.0" prefWidth="480.0">
+                     <children>
+                        <Button id="Setting-btn" layoutX="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
+                           <graphic>
+                              <HBox prefHeight="25.0" prefWidth="450.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="23.0" prefWidth="149.0" text="Terms &amp; Conditions">
+                                       <styleClass>
+                                          <String fx:value="label-text-end" />
+                                          <String fx:value="setting-text-label" />
+                                       </styleClass>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane prefHeight="28.0" prefWidth="271.0" />
+                                    <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/Icons/Forward.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="6.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                        <Pane prefHeight="19.0" prefWidth="495.0" />
+                  <AnchorPane prefHeight="38.0" prefWidth="480.0">
+                     <children>
+                        <Button id="Setting-btn" layoutX="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
+                           <graphic>
+                              <HBox prefHeight="25.0" prefWidth="450.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="23.0" prefWidth="108.0" text="Privacy Policy">
+                                       <styleClass>
+                                          <String fx:value="label-text-end" />
+                                          <String fx:value="setting-text-label" />
+                                       </styleClass>
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="1.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Pane prefHeight="28.0" prefWidth="318.0" />
+                                    <ImageView fitHeight="17.0" fitWidth="11.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../Images/Icons/Forward.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets top="6.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                        <Pane prefHeight="26.0" prefWidth="495.0" />
+                        <Button id="dashboard-logout" mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="LOGOUT">
+                            <VBox.margin>
+                                <Insets left="109.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+      <Label alignment="CENTER" layoutX="369.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="198.0" styleClass="heading-label" text="SETTING" />
+      <Line endX="47.0" fill="WHITE" layoutX="554.0" layoutY="87.0" startX="-220.0" strokeWidth="0.5" styleClass="line" />
+      <Button id="image-btn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Icons/back%20icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+    </children>
+</AnchorPane>

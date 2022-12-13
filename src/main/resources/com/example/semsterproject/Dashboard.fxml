@@ -2,6 +2,7 @@
 
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -13,8 +14,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.HomeTaskerController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.controller.DashboardController">
     <children>
       <AnchorPane layoutY="-1.0" prefHeight="591.0" prefWidth="196.0">
          <styleClass>
@@ -24,7 +26,7 @@
          <children>
             <VBox layoutY="-1.0" prefHeight="591.0" prefWidth="170.0">
                <children>
-                  <Circle fx:id="Userpfp" fill="WHITE" radius="47.0" stroke="BLACK" strokeType="INSIDE" styleClass="pfp" VBox.vgrow="ALWAYS">
+                  <Circle fx:id="Userpfp" fill="WHITE" radius="47.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" VBox.vgrow="ALWAYS">
                      <VBox.margin>
                         <Insets left="59.0" top="20.0" />
                      </VBox.margin>
@@ -42,7 +44,7 @@
                      <children>
                         <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Images/Trolley.png" />
+                              <Image url="@../../../Images/Icons/Trolley.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="46.0" top="6.0" />
@@ -61,7 +63,7 @@
                      <children>
                         <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Images/Vector.png" />
+                              <Image url="@../../../Images/Icons/Vector.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="46.0" top="6.0" />
@@ -80,7 +82,7 @@
                      <children>
                         <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Images/Vector%20(1).png" />
+                              <Image url="@../../../Images/Icons/Vector (1).png" />
                            </image>
                            <HBox.margin>
                               <Insets left="42.0" top="6.0" />
@@ -116,11 +118,48 @@
          <children>
             <Label alignment="CENTER" layoutX="160.0" layoutY="26.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="438.0" styleClass="heading-label" text="SELECT YOUR CHOICE" />
             <Line endX="164.0" fill="WHITE" layoutX="450.0" layoutY="84.0" startX="-322.0" strokeWidth="0.5" styleClass="line" />
-            <StackPane layoutX="145.0" layoutY="118.0" prefHeight="161.0" prefWidth="469.0" styleClass="glass">
-               <children>
-                  <ImageView accessibleRole="BUTTON" fitHeight="150.0" fitWidth="468.0" pickOnBounds="true" preserveRatio="true" styleClass="button" />
-               </children>
-            </StackPane>
+            <Button id="image-btn" layoutX="87.0" layoutY="126.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="392.0">
+               <graphic>
+                  <StackPane>
+                     <children>
+                        <ImageView fitHeight="200.0" fitWidth="548.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Stock%20images/background.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="550.0" minY="144.0" width="2005.0" />
+                           </viewport>
+                        </ImageView>
+                        <Label text="BEAUTY AND SELFCARE" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </graphic>
+            </Button>
+            <Button id="image-btn" layoutX="83.0" layoutY="332.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0">
+               <graphic>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="177.0" fitWidth="556.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Stock%20images/tools.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="141.0" minX="15.0" minY="103.0" width="505.0" />
+                           </viewport>
+                        </ImageView>
+                        <Label text="BEAUTY AND SELFCARE" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </graphic>
+            </Button>
          </children>
       </AnchorPane>
     </children>
