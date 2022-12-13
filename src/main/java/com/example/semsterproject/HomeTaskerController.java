@@ -16,28 +16,28 @@ import java.util.ResourceBundle;
 public class HomeTaskerController implements Initializable{
     //Signup controller
 
-//    @FXML
-//    private ChoiceBox<String> choicebox_gender;
-//    String [] gender = {"MALE","FEMALE"};
-    //Dashboard
     @FXML
-    private Circle Userpfp;
+    private ChoiceBox<String> choicebox_gender;
+    String [] gender = {"MALE","FEMALE"};
+  // Dashboard
+//    @FXML
+//    private Circle Userpfp;
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
        //Signup
-//
-//        choicebox_gender.setValue("Select");
-//        choicebox_gender.getItems().addAll(gender);
+
+        choicebox_gender.setValue("Select");
+        choicebox_gender.getItems().addAll(gender);
 
         //dashboard
 
-
-        Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\IMG-20200617-WA0011.jpg");
-
-        Userpfp.setFill(new ImagePattern(img));
+//
+//        Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\IMG-20200617-WA0011.jpg");
+//
+//        Userpfp.setFill(new ImagePattern(img));
 
 
 

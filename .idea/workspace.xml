@@ -8,13 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/IMG-20200617-WA0011.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/Trolley.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/Vector (1).png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/New folder/Vector.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Style/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Style/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/panga.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/panga.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/panga.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,13 +30,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2IpBUSxQL7dyrnmwcTSYEj3cpxu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -54,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/comsat/semster 3/OOP/JAVAFX/Semster-Project/src/main/resources/Images",
+    "last_opened_file_path": "G:/comsat/semster 3/OOP/JAVAFX/Semster-Project",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
