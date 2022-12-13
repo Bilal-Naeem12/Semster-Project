@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.HomeTaskerController">
+    <children>
+      <AnchorPane layoutY="-1.0" prefHeight="591.0" prefWidth="196.0">
+         <styleClass>
+            <String fx:value="glass" />
+            <String fx:value="reset-radius" />
+         </styleClass>
+         <children>
+            <VBox layoutY="-1.0" prefHeight="591.0" prefWidth="170.0">
+               <children>
+                  <Circle fx:id="Userpfp" fill="WHITE" radius="47.0" stroke="BLACK" strokeType="INSIDE" styleClass="pfp" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets left="59.0" top="20.0" />
+                     </VBox.margin>
+                  </Circle>
+                  <Pane prefHeight="16.0" prefWidth="198.0" />
+                  <Label id="username-dashboard" alignment="CENTER" prefHeight="23.0" prefWidth="209.0" styleClass="label-text-end" text="M Bilal Naeem" />
+                  <Pane prefHeight="16.0" prefWidth="198.0" />
+                  <Line endX="-153.70709228515625" endY="-0.0014483928680419922" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
+                     <VBox.margin>
+                        <Insets left="19.0" right="9.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Pane prefHeight="19.0" prefWidth="203.0" />
+                  <HBox prefHeight="36.0" prefWidth="124.0">
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Trolley.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="46.0" top="6.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="36.0" prefWidth="8.0" />
+                        <Button mnemonicParsing="false" styleClass="dashboard-side-btn" text="Cart">
+                           <HBox.margin>
+                              <Insets top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="15.0" prefWidth="198.0" />
+                  <HBox prefHeight="36.0" prefWidth="124.0">
+                     <children>
+                        <ImageView fitHeight="27.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Vector.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="46.0" top="6.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="36.0" prefWidth="8.0" />
+                        <Button mnemonicParsing="false" styleClass="dashboard-side-btn" text="Setting">
+                           <HBox.margin>
+                              <Insets top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="15.0" prefWidth="198.0" />
+                  <HBox prefHeight="36.0" prefWidth="124.0">
+                     <children>
+                        <ImageView fitHeight="24.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Vector%20(1).png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="42.0" top="6.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="36.0" prefWidth="8.0" />
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="dashboard-side-btn" text="History">
+                           <HBox.margin>
+                              <Insets top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="161.0" prefWidth="203.0" />
+                  <Button id="terms-btn" mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" styleClass="dashboard-side-btn" text="Terms and Conditions" />
+                  <Pane prefHeight="5.0" prefWidth="203.0" />
+                  <Line endX="-155.70709228515625" endY="-1.4483928680419922E-5" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
+                     <VBox.margin>
+                        <Insets left="19.0" right="9.0" />
+                     </VBox.margin>
+                  </Line>
+                  <Pane prefHeight="16.0" prefWidth="198.0" />
+                  <Button id="dashboard-logout" mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="LOGOUT">
+                     <VBox.margin>
+                        <Insets left="29.0" right="27.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="196.0" layoutY="-1.0" prefHeight="591.0" prefWidth="757.0">
+         <children>
+            <Label alignment="CENTER" layoutX="160.0" layoutY="26.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="438.0" styleClass="heading-label" text="SELECT YOUR CHOICE" />
+            <Line endX="164.0" fill="WHITE" layoutX="450.0" layoutY="84.0" startX="-322.0" strokeWidth="0.5" styleClass="line" />
+            <StackPane layoutX="145.0" layoutY="118.0" prefHeight="161.0" prefWidth="469.0" styleClass="glass">
+               <children>
+                  <ImageView accessibleRole="BUTTON" fitHeight="150.0" fitWidth="468.0" pickOnBounds="true" preserveRatio="true" styleClass="button" />
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
