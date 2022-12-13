@@ -103,13 +103,17 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
 -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.29), 10, 0.3,5,5);
 }
+#image-btn{
 
+    -fx-background-color: none;
+}
 .button .text{
 
     -fx-stroke: white;
 -fx-stroke-width: 0.7px;
 
 }
+
 #Signup-button
 {
 
@@ -181,5 +185,12 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 }
 
 
+/*Image-view*/
+#image-view{
 
+    -fx-background-radius: 23px;
+    -fx-background-color: white
+;
+
+}
 
