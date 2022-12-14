@@ -12,6 +12,11 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
 }
 
+#scroll-pane{
+
+    -fx-background-color: none;
+}
+
 
 /*beauty*/
 #top-beauty{
@@ -25,6 +30,12 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
 
 /*Attribute*/
+.drop-shadow{
+
+
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.42), 17, 0.5,0,3);
+
+}
 .glass{
     -fx-background-color: rgba(217, 217, 217, 0.22);
     -fx-background-radius: 25px;
@@ -48,7 +59,7 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 /*label*/
 
 .heading-label{
--fx-font-family: Verdana;
+-fx-font-family: "Arial";
 -fx-font-size: 35px;
 -fx-text-fill: rgb(255, 255, 255);
     -fx-font-weight: bold;
@@ -114,8 +125,49 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
     -fx-font-size: 17px;
 
 
+}
 
 
+#Edit-text-field{
+
+    -fx-background-color: none;
+
+
+
+}
+#edit-profile-heading{
+
+    -fx-font-size: 30px;
+
+}
+#Starting-from{
+    -fx-font-size: 17px;
+}
+.rupee-text{
+    -fx-text-fill: #FF00C7;
+-fx-font-weight: bolder;
+-fx-font-size: 20px;
+    -fx-font-family: "Arial";
+}
+
+.History-Text{
+
+     -fx-font-size: 18px;
+
+
+}
+
+
+.receipt-h-text{
+-fx-font-size: 17px;
+-fx-font-weight: bold;
+-fx-font-family: Arial;
+
+}
+.receipt-subH-text{
+
+
+    -fx-font-size: 14px;
 }
 /*button*/
 .button{
@@ -196,7 +248,12 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
     -fx-background-color: rgba(217, 217, 217, 0.22);
 }
+#Change-password-field{
 
+    -fx-background-color: none;
+
+
+}
 /*Shape*/
 .line{
 

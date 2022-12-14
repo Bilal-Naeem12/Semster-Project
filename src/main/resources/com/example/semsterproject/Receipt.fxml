@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<!--suppress ALL -->
+
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label id="edit-profile-heading" alignment="CENTER" layoutX="417.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="138.0" styleClass="heading-label" text="RECEIPT" textFill="WHITE">
+            <font>
+                <Font name="Gabriola" size="37.0" />
+            </font>
+        </Label>
+        <Line endX="145.0" fill="WHITE" layoutX="555.0" layoutY="89.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
+        <Button id="image-btn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0">
+            <graphic>
+                <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Images/Icons/back%20icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+          <AnchorPane layoutX="188.0" layoutY="114.0" prefHeight="406.0" prefWidth="586.0" styleClass="glass">
+         <children>
+                    <VBox layoutX="68.0" layoutY="14.0" prefHeight="402.0" prefWidth="451.0">
+                        <children>
+                  <VBox prefHeight="70.0" prefWidth="451.0">
+                     <children>
+                                  <HBox prefHeight="28.0" prefWidth="482.0">
+                                      <children>
+                                          <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="124.0" styleClass="receipt-h-text" text="Hair Treatment" textFill="WHITE">
+                                              <font>
+                                                  <Font name="Gabriola" size="37.0" />
+                                              </font>
+                                          </Label>
+                                      </children>
+                                  </HBox>
+                                  <HBox prefHeight="22.0" prefWidth="482.0">
+                                      <children>
+                                          <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="80.0" text="Category:" textFill="WHITE">
+                                              <font>
+                                                  <Font name="Gabriola" size="37.0" />
+                                              </font>
+                                              <styleClass>
+                                                  <String fx:value="label-text" />
+                                                  <String fx:value="rupee-text" />
+                                    <String fx:value="receipt-subH-text" />
+                                              </styleClass>
+                                          </Label>
+                                          <Pane prefHeight="24.0" prefWidth="243.0" />
+                                          <Pane prefHeight="39.0" prefWidth="7.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="102.0" text="Price:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="label-text" />
+                                    <String fx:value="rupee-text" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                                      </children>
+                                  </HBox>
+                                  <HBox prefHeight="20.0" prefWidth="459.0">
+                                      <children>
+                                          <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                              <font>
+                                                  <Font name="Gabriola" size="37.0" />
+                                              </font>
+                                              <HBox.margin>
+                                                  <Insets />
+                                              </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                                          </Label>
+                                          <Pane prefHeight="20.0" prefWidth="297.0" />
+                                          <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                              <font>
+                                                  <Font name="Gabriola" size="37.0" />
+                                              </font>
+                                              <HBox.margin>
+                                                  <Insets />
+                                              </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                                          </Label>
+                                          <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                              <font>
+                                                  <Font name="Gabriola" size="37.0" />
+                                              </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                                          </Label>
+                                      </children>
+                                  </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="12.0" prefWidth="451.0" />
+                  <VBox prefHeight="70.0" prefWidth="451.0">
+                     <children>
+                        <HBox prefHeight="28.0" prefWidth="482.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="124.0" styleClass="receipt-h-text" text="Hair Treatment" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="22.0" prefWidth="482.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="80.0" text="Category:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="label-text" />
+                                    <String fx:value="rupee-text" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="24.0" prefWidth="243.0" />
+                              <Pane prefHeight="39.0" prefWidth="7.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="23.0" prefWidth="102.0" text="Price:" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="label-text" />
+                                    <String fx:value="rupee-text" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                        <HBox prefHeight="20.0" prefWidth="459.0">
+                           <children>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="69.0" text="Huzaifa" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Pane prefHeight="20.0" prefWidth="297.0" />
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="19.0" prefWidth="10.0" text="\$" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                              <Label alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="18.0" prefWidth="22.0" text="23" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gabriola" size="37.0" />
+                                 </font>
+                                 <styleClass>
+                                    <String fx:value="setting-text-label" />
+                                    <String fx:value="receipt-subH-text" />
+                                 </styleClass>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="28.0" prefWidth="451.0" />
+                     </children>
+                  </VBox>
+                  <Pane prefHeight="12.0" prefWidth="451.0" />
+                        </children>
+                    </VBox>
+         </children>
+          </AnchorPane>
+    </children>
+</AnchorPane>
