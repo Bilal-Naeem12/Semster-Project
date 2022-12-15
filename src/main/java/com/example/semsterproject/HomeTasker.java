@@ -11,7 +11,9 @@ import java.io.IOException;
 public class HomeTasker extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("History.fxml"));
+        stage.initStyle(StageStyle.UNDECORATED);
+
+        FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Signup.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hello!");
         stage.setScene(scene);

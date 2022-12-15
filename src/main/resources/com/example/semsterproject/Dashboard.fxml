@@ -124,10 +124,10 @@
                      <children>
                         <ImageView fitHeight="200.0" fitWidth="548.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Images/Stock%20images/background.jpg" />
+                              <Image url="@../../../Images/Stock%20images/beauty.jpg" />
                            </image>
                            <viewport>
-                              <Rectangle2D height="550.0" minY="144.0" width="2005.0" />
+                              <Rectangle2D height="200.0" minY="250.0" width="700.0" />
                            </viewport>
                         </ImageView>
                         <Label text="BEAUTY AND SELFCARE" textFill="WHITE">
@@ -151,7 +151,7 @@
                               <Rectangle2D height="141.0" minX="15.0" minY="103.0" width="505.0" />
                            </viewport>
                         </ImageView>
-                        <Label text="BEAUTY AND SELFCARE" textFill="WHITE">
+                        <Label text="HOME SERVICES" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="29.0" />
                            </font>

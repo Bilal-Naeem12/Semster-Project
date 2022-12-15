@@ -14,8 +14,6 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<!--suppress XmlPathReference -->
-
 <AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.controller.DashboardController">
     <children>
         <AnchorPane id="top-beauty" layoutY="-1.0" prefHeight="55.0" prefWidth="950.0">
@@ -54,19 +52,19 @@
                 <String fx:value="reset-radius" />
             </styleClass>
             <children>
-                <Button id="image-btn" layoutX="131.0" layoutY="53.0" mnemonicParsing="false" prefHeight="177.0" prefWidth="689.0">
+                <Button id="image-btn" layoutX="72.0" layoutY="38.0" mnemonicParsing="false" prefHeight="129.0" prefWidth="403.0">
                     <graphic>
-                        <StackPane prefHeight="211.0" prefWidth="711.0">
+                        <StackPane prefHeight="113.0" prefWidth="425.0">
                             <children>
-                                <ImageView fitHeight="200.0" fitWidth="669.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="125.0" fitWidth="385.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../../../Images/Stock%20images/cleaning.jpg" />
+                                        <Image url="@../../../Images/Stock%20images/Sofa-Cleaning.jpeg" />
                                     </image>
                                     <viewport>
-                                        <Rectangle2D height="200.0" minY="300.0" width="770.0" />
+                                        <Rectangle2D height="350.0" minY="365.0" width="1100.0" />
                                     </viewport>
                                 </ImageView>
-                                <Label prefHeight="43.0" prefWidth="150.0" text="CLEANING" textFill="WHITE">
+                                <Label prefHeight="43.0" prefWidth="283.0" text="SOFA SET CLEANING" textFill="WHITE">
                                     <font>
                                         <Font name="System Bold" size="29.0" />
                                     </font>
@@ -75,19 +73,61 @@
                         </StackPane>
                     </graphic>
                 </Button>
-                <Button id="image-btn" layoutX="139.0" layoutY="295.0" mnemonicParsing="false" prefHeight="177.0" prefWidth="528.0">
+                <Button id="image-btn" layoutX="475.0" layoutY="153.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="287.0">
                     <graphic>
                         <StackPane prefHeight="113.0" prefWidth="425.0">
                             <children>
-                                <ImageView fitHeight="190.0" fitWidth="653.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                <ImageView fitHeight="120.0" fitWidth="383.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../../../Images/Stock%20images/maintennance-min.jpg" />
+                                        <Image url="@../../../Images/Stock%20images/carwash-min.jpg" />
                                     </image>
                                     <viewport>
-                                        <Rectangle2D height="1450.0" minY="600.0" width="5000.0" />
+                                        <Rectangle2D height="1700.0" minY="1000.0" width="5500.0" />
                                     </viewport>
                                 </ImageView>
-                                <Label prefHeight="43.0" prefWidth="154.0" text="REPAIRING" textFill="WHITE">
+                                <Label prefHeight="43.0" prefWidth="155.0" text="CAR WASH" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="29.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </StackPane>
+                    </graphic>
+                </Button>
+                <Button id="image-btn" layoutX="66.0" layoutY="282.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="344.0">
+                    <graphic>
+                        <StackPane prefHeight="113.0" prefWidth="425.0">
+                            <children>
+                                <ImageView fitHeight="120.0" fitWidth="383.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../Images/Stock%20images/carpet-cleaner-1.jpg" />
+                                    </image>
+                                    <viewport>
+                                        <Rectangle2D height="250.0" minY="200.0" width="989.0" />
+                                    </viewport>
+                                </ImageView>
+                                <Label prefHeight="43.0" prefWidth="238.0" text="CARPET CLEAING" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="29.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </StackPane>
+                    </graphic>
+                </Button>
+                <Button id="image-btn" layoutX="469.0" layoutY="385.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="344.0">
+                    <graphic>
+                        <StackPane prefHeight="113.0" prefWidth="425.0">
+                            <children>
+                                <ImageView fitHeight="100.0" fitWidth="415.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                    <viewport>
+                                        <Rectangle2D height="190.0" minY="100.0" width="750.0" />
+                                    </viewport>
+                           <image>
+                              <Image url="@../../../Images/Stock%20images/Housecleaing.jpg" />
+                           </image>
+                                </ImageView>
+                                <Label prefHeight="43.0" prefWidth="326.0" text="FULL HOUSE CLEANING" textFill="WHITE">
                                     <font>
                                         <Font name="System Bold" size="29.0" />
                                     </font>

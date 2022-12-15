@@ -169,6 +169,11 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
     -fx-font-size: 14px;
 }
+.Hair-h-text {
+
+    -fx-font-size: 27px;
+}
+
 /*button*/
 .button{
 
