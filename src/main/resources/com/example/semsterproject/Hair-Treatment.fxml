@@ -15,7 +15,7 @@
 
 <!--suppress XmlPathReference -->
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.controller.DashboardController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.DashboardController">
     <children>
         <AnchorPane id="top-beauty" layoutY="-1.0" prefHeight="55.0" prefWidth="950.0">
             <styleClass>
@@ -25,7 +25,7 @@
             <children>
                 <HBox layoutX="-4.0" prefHeight="66.0" prefWidth="950.0">
                     <children>
-                        <Button id="image-btn" mnemonicParsing="false" prefHeight="66.0" prefWidth="70.0">
+                        <Button id="image-btn" fx:id="backtoBeauty" mnemonicParsing="false" onAction="#toBeautyscreen" prefHeight="66.0" prefWidth="70.0">
                             <graphic>
                                 <ImageView fitHeight="23.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -68,7 +68,7 @@
                                     <Rectangle2D height="1200.0" minX="550.0" width="1400.0" />
                                  </viewport>
                                  <HBox.margin>
-                                    <Insets top="6.0" />
+                                    <Insets top="7.0" />
                                  </HBox.margin>
                               </ImageView>
                               <VBox prefHeight="98.0" prefWidth="237.0">
@@ -76,10 +76,14 @@
                                     <Insets left="25.0" />
                                  </HBox.margin>
                                  <children>
-                                    <Label styleClass="heading-label" text="KERITAN">
+                                    <Label text="KERITAN">
                                        <VBox.margin>
                                           <Insets bottom="5.0" top="3.0" />
                                        </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="heading-label" />
+                                          <String fx:value="Hair-h-text" />
+                                       </styleClass>
                                     </Label>
                                     <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
                                        <VBox.margin>
@@ -109,7 +113,7 @@
                               </VBox>
                               <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                  <HBox.margin>
-                                    <Insets left="5.0" top="61.0" />
+                                    <Insets left="-3.0" top="61.0" />
                                  </HBox.margin>
                               </Button>
                            </children>
@@ -119,89 +123,33 @@
                   <Pane prefHeight="19.0" prefWidth="524.0" />
                   <AnchorPane prefHeight="108.0" prefWidth="524.0" styleClass="glass">
                      <children>
-                        <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
+                        <HBox layoutX="31.0" layoutY="4.0" prefHeight="100.0" prefWidth="462.0">
                            <children>
-                              <ImageView fitHeight="81.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="111.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
                                  <image>
-                                    <Image url="@../../../Images/Stock%20images/hair-treatments.jpg" />
+                                    <Image url="@../../../Images/Stock%20images/hairdye-min.jpg" />
                                  </image>
                                  <viewport>
-                                    <Rectangle2D height="1200.0" minX="550.0" width="1400.0" />
+                                    <Rectangle2D height="5100.0" width="3500.0" />
                                  </viewport>
                                  <HBox.margin>
-                                    <Insets top="6.0" />
+                                    <Insets left="7.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <VBox prefHeight="98.0" prefWidth="237.0">
+                              <Pane prefHeight="160.0" prefWidth="41.0" />
+                              <VBox prefHeight="98.0" prefWidth="228.0">
                                  <HBox.margin>
-                                    <Insets left="25.0" />
+                                    <Insets />
                                  </HBox.margin>
                                  <children>
-                                    <Label styleClass="heading-label" text="KERITAN">
+                                    <Label text="Hair Dye">
                                        <VBox.margin>
                                           <Insets bottom="5.0" top="3.0" />
                                        </VBox.margin>
-                                    </Label>
-                                    <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
-                                       <VBox.margin>
-                                          <Insets bottom="5.0" />
-                                       </VBox.margin>
-                                    </Label>
-                                    <HBox prefHeight="26.0" prefWidth="177.0">
-                                       <children>
-                                          <Label prefHeight="23.0" prefWidth="28.0" text="Rs">
-                                             <styleClass>
-                                                <String fx:value="label-dashboard-side" />
-                                                <String fx:value="rupee-text" />
-                                             </styleClass>
-                                             <HBox.margin>
-                                                <Insets />
-                                             </HBox.margin>
-                                          </Label>
-                                          <Label prefHeight="23.0" prefWidth="57.0" text="10000">
-                                             <styleClass>
-                                                <String fx:value="label-dashboard-side" />
-                                                <String fx:value="rupee-text" />
-                                             </styleClass>
-                                          </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </VBox>
-                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
-                                 <HBox.margin>
-                                    <Insets left="5.0" top="61.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                     </children>
-                  </AnchorPane>
-                  <Pane prefHeight="19.0" prefWidth="524.0" />
-                  <AnchorPane prefHeight="108.0" prefWidth="524.0" styleClass="glass">
-                     <children>
-                        <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
-                           <children>
-                              <ImageView fitHeight="81.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../Images/Stock%20images/hair-treatments.jpg" />
-                                 </image>
-                                 <viewport>
-                                    <Rectangle2D height="1200.0" minX="550.0" width="1400.0" />
-                                 </viewport>
-                                 <HBox.margin>
-                                    <Insets top="6.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <VBox prefHeight="98.0" prefWidth="237.0">
-                                 <HBox.margin>
-                                    <Insets left="25.0" />
-                                 </HBox.margin>
-                                 <children>
-                                    <Label styleClass="heading-label" text="KERITAN">
-                                       <VBox.margin>
-                                          <Insets bottom="5.0" top="3.0" />
-                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="heading-label" />
+                                          <String fx:value="Hair-h-text" />
+                                       </styleClass>
                                     </Label>
                                     <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
                                        <VBox.margin>
@@ -243,26 +191,30 @@
                      <children>
                         <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                            <children>
-                              <ImageView fitHeight="81.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="89.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../Images/Stock%20images/hair-treatments.jpg" />
+                                    <Image url="@../../../Images/Stock%20images/haircut-min.jpg" />
                                  </image>
                                  <viewport>
-                                    <Rectangle2D height="1200.0" minX="550.0" width="1400.0" />
+                                    <Rectangle2D height="3000.0" minX="550.0" width="4000.0" />
                                  </viewport>
                                  <HBox.margin>
-                                    <Insets top="6.0" />
+                                    <Insets top="9.0" />
                                  </HBox.margin>
                               </ImageView>
-                              <VBox prefHeight="98.0" prefWidth="237.0">
+                              <VBox prefHeight="98.0" prefWidth="228.0">
                                  <HBox.margin>
-                                    <Insets left="25.0" />
+                                    <Insets left="15.0" />
                                  </HBox.margin>
                                  <children>
-                                    <Label styleClass="heading-label" text="KERITAN">
+                                    <Label text="Hair Cut">
                                        <VBox.margin>
                                           <Insets bottom="5.0" top="3.0" />
                                        </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="heading-label" />
+                                          <String fx:value="Hair-h-text" />
+                                       </styleClass>
                                     </Label>
                                     <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
                                        <VBox.margin>
@@ -299,6 +251,71 @@
                         </HBox>
                      </children>
                   </AnchorPane>
+                  <Pane prefHeight="19.0" prefWidth="524.0" />
+                  <AnchorPane prefHeight="108.0" prefWidth="524.0" styleClass="glass">
+                     <children>
+                        <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
+                           <children>
+                              <ImageView fitHeight="108.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/Stock%20images/blowdry-min.jpg" />
+                                 </image>
+                                 <viewport>
+                                    <Rectangle2D height="4000.0" minX="550.0" width="5500.0" />
+                                 </viewport>
+                                 <HBox.margin>
+                                    <Insets top="9.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <VBox prefHeight="98.0" prefWidth="224.0">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                                 <children>
+                                    <Label text="Blow Dry">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" top="3.0" />
+                                       </VBox.margin>
+                                       <styleClass>
+                                          <String fx:value="heading-label" />
+                                          <String fx:value="Hair-h-text" />
+                                       </styleClass>
+                                    </Label>
+                                    <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <HBox prefHeight="26.0" prefWidth="177.0">
+                                       <children>
+                                          <Label prefHeight="23.0" prefWidth="28.0" text="Rs">
+                                             <styleClass>
+                                                <String fx:value="label-dashboard-side" />
+                                                <String fx:value="rupee-text" />
+                                             </styleClass>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </Label>
+                                          <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                             <styleClass>
+                                                <String fx:value="label-dashboard-side" />
+                                                <String fx:value="rupee-text" />
+                                             </styleClass>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                                 <HBox.margin>
+                                    <Insets left="5.0" top="61.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                   </AnchorPane>
                   <Pane prefHeight="20.0" prefWidth="524.0" />
                </children>
             </VBox>

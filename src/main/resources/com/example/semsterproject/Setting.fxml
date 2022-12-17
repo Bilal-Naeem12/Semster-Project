@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.HomeTaskerController">
     <children>
         <AnchorPane layoutX="220.0" layoutY="106.0" prefHeight="445.0" prefWidth="495.0" styleClass="glass">
             <children>
@@ -46,7 +46,7 @@
                         <Pane prefHeight="17.0" prefWidth="495.0" />
                   <AnchorPane prefHeight="38.0" prefWidth="480.0">
                      <children>
-                        <Button id="Setting-btn" layoutX="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
+                        <Button id="Setting-btn" fx:id="editMyProfilebtn" layoutX="20.0" mnemonicParsing="false" onAction="#toEditProfile" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
                            <graphic>
                               <HBox prefHeight="25.0" prefWidth="450.0">
                                  <children>
@@ -77,7 +77,7 @@
                   <Pane prefHeight="20.0" prefWidth="495.0" />
                   <AnchorPane prefHeight="38.0" prefWidth="480.0">
                      <children>
-                        <Button id="Setting-btn" layoutX="20.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
+                        <Button id="Setting-btn" fx:id="changePasswordbtn" layoutX="20.0" mnemonicParsing="false" onAction="#toChangePassword" prefHeight="38.0" prefWidth="458.0" styleClass="glass" AnchorPane.leftAnchor="20.0">
                            <graphic>
                               <HBox prefHeight="25.0" prefWidth="450.0">
                                  <children>
@@ -193,7 +193,7 @@
                      </children>
                   </AnchorPane>
                         <Pane prefHeight="26.0" prefWidth="495.0" />
-                        <Button id="dashboard-logout" mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="LOGOUT">
+                        <Button id="dashboard-logout" fx:id="LogoutBtn" mnemonicParsing="false" onAction="#toLogin" prefHeight="30.0" prefWidth="296.0" text="LOGOUT">
                             <VBox.margin>
                                 <Insets left="109.0" />
                             </VBox.margin>
@@ -204,7 +204,7 @@
         </AnchorPane>
       <Label alignment="CENTER" layoutX="369.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="198.0" styleClass="heading-label" text="SETTING" />
       <Line endX="47.0" fill="WHITE" layoutX="554.0" layoutY="87.0" startX="-220.0" strokeWidth="0.5" styleClass="line" />
-      <Button id="image-btn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0">
+      <Button id="image-btn" fx:id="backtodashboardbtn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" onAction="#toDashboard" prefHeight="27.0" prefWidth="27.0">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                <image>

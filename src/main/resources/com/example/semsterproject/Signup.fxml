@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.controller.SignupController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.SignupController">
     <children>
         <Label alignment="CENTER" layoutX="214.0" layoutY="14.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="172.0" styleClass="heading-label" text="SIGN UP" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="214.0" AnchorPane.rightAnchor="214.0" AnchorPane.topAnchor="14.0" />
         <AnchorPane layoutX="98.0" layoutY="70.0" prefHeight="556.0" prefWidth="404.0" styleClass="glass" AnchorPane.bottomAnchor="24.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="70.0">
@@ -82,7 +82,7 @@
                      </children>
                   </VBox>
                   <Pane prefHeight="30.0" prefWidth="296.0" />
-                      <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="SIGNUP" />
+                      <Button fx:id="SIGNUPbtn" mnemonicParsing="false" onAction="#toLogin" prefHeight="30.0" prefWidth="296.0" text="SIGNUP" />
                   <Pane prefHeight="20.0" prefWidth="296.0" />
                       <Line endX="87.0" fill="WHITE" startX="-208.0" strokeWidth="0.5" styleClass="line" />
                   <Pane prefHeight="23.0" prefWidth="296.0" />
@@ -93,7 +93,7 @@
                                       <Insets top="5.0" />
                                   </HBox.margin>
                               </Label>
-                              <Button id="Signup-button" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="73.0" text="Login">
+                              <Button id="Signup-button" fx:id="Loginbtn_signup" contentDisplay="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#toLogin" prefHeight="25.0" prefWidth="73.0" text="Login">
                                   <HBox.margin>
                                       <Insets />
                                   </HBox.margin>

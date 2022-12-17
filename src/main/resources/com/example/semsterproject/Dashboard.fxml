@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.controller.DashboardController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.DashboardController">
     <children>
       <AnchorPane layoutY="-1.0" prefHeight="591.0" prefWidth="196.0">
          <styleClass>
@@ -70,7 +70,7 @@
                            </HBox.margin>
                         </ImageView>
                         <Pane prefHeight="36.0" prefWidth="8.0" />
-                        <Button mnemonicParsing="false" styleClass="dashboard-side-btn" text="Setting">
+                        <Button fx:id="settingBtn" mnemonicParsing="false" onAction="#toSetting" styleClass="dashboard-side-btn" text="Setting">
                            <HBox.margin>
                               <Insets top="7.0" />
                            </HBox.margin>
@@ -89,7 +89,7 @@
                            </HBox.margin>
                         </ImageView>
                         <Pane prefHeight="36.0" prefWidth="8.0" />
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" styleClass="dashboard-side-btn" text="History">
+                        <Button fx:id="historyBtn" mnemonicParsing="false" onAction="#toHistory" prefHeight="25.0" prefWidth="70.0" styleClass="dashboard-side-btn" text="History">
                            <HBox.margin>
                               <Insets top="7.0" />
                            </HBox.margin>
@@ -97,7 +97,7 @@
                      </children>
                   </HBox>
                   <Pane prefHeight="161.0" prefWidth="203.0" />
-                  <Button id="terms-btn" mnemonicParsing="false" prefHeight="25.0" prefWidth="202.0" styleClass="dashboard-side-btn" text="Terms and Conditions" />
+                  <Button id="terms-btn" fx:id="termsBtn" mnemonicParsing="false" onAction="#toTerms" prefHeight="25.0" prefWidth="202.0" styleClass="dashboard-side-btn" text="Terms and Conditions" />
                   <Pane prefHeight="5.0" prefWidth="203.0" />
                   <Line endX="-155.70709228515625" endY="-1.4483928680419922E-5" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
                      <VBox.margin>
@@ -105,7 +105,7 @@
                      </VBox.margin>
                   </Line>
                   <Pane prefHeight="16.0" prefWidth="198.0" />
-                  <Button id="dashboard-logout" mnemonicParsing="false" prefHeight="30.0" prefWidth="296.0" text="LOGOUT">
+                  <Button id="dashboard-logout" fx:id="dashboard_Logout_Btn" mnemonicParsing="false" onAction="#toLoginScreen" prefHeight="30.0" prefWidth="296.0" text="LOGOUT">
                      <VBox.margin>
                         <Insets left="29.0" right="27.0" />
                      </VBox.margin>
@@ -118,16 +118,16 @@
          <children>
             <Label alignment="CENTER" layoutX="160.0" layoutY="26.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="438.0" styleClass="heading-label" text="SELECT YOUR CHOICE" />
             <Line endX="164.0" fill="WHITE" layoutX="450.0" layoutY="84.0" startX="-322.0" strokeWidth="0.5" styleClass="line" />
-            <Button id="image-btn" layoutX="87.0" layoutY="126.0" mnemonicParsing="false" prefHeight="123.0" prefWidth="392.0">
+            <Button id="image-btn" fx:id="backtoBeauty" layoutX="87.0" layoutY="126.0" mnemonicParsing="false" onAction="#toBeautyscreen" prefHeight="123.0" prefWidth="392.0">
                <graphic>
                   <StackPane>
                      <children>
                         <ImageView fitHeight="200.0" fitWidth="548.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../../../Images/Stock%20images/background.jpg" />
+                              <Image url="@../../../Images/Stock%20images/beauty.jpg" />
                            </image>
                            <viewport>
-                              <Rectangle2D height="550.0" minY="144.0" width="2005.0" />
+                              <Rectangle2D height="200.0" minY="250.0" width="700.0" />
                            </viewport>
                         </ImageView>
                         <Label text="BEAUTY AND SELFCARE" textFill="WHITE">
@@ -139,7 +139,7 @@
                   </StackPane>
                </graphic>
             </Button>
-            <Button id="image-btn" layoutX="83.0" layoutY="332.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="200.0">
+            <Button id="image-btn" fx:id="homeServicesbtn" layoutX="83.0" layoutY="332.0" mnemonicParsing="false" onAction="#toHomeServicesScreen" prefHeight="55.0" prefWidth="200.0">
                <graphic>
                   <StackPane prefHeight="150.0" prefWidth="200.0">
                      <children>
@@ -151,7 +151,7 @@
                               <Rectangle2D height="141.0" minX="15.0" minY="103.0" width="505.0" />
                            </viewport>
                         </ImageView>
-                        <Label text="BEAUTY AND SELFCARE" textFill="WHITE">
+                        <Label text="HOME SERVICES" textFill="WHITE">
                            <font>
                               <Font name="System Bold" size="29.0" />
                            </font>

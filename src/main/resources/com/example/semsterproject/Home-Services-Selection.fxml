@@ -16,7 +16,7 @@
 
 <!--suppress XmlPathReference -->
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.controller.DashboardController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.DashboardController">
     <children>
         <AnchorPane id="top-beauty" layoutY="-1.0" prefHeight="55.0" prefWidth="950.0">
             <styleClass>
@@ -26,7 +26,7 @@
             <children>
                 <HBox layoutX="-4.0" prefHeight="66.0" prefWidth="950.0">
                     <children>
-                        <Button id="image-btn" mnemonicParsing="false" prefHeight="66.0" prefWidth="70.0">
+                        <Button id="image-btn" fx:id="homeServicesBack" mnemonicParsing="false" onAction="#toDashboard" prefHeight="66.0" prefWidth="70.0">
                             <graphic>
                                 <ImageView fitHeight="23.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -54,16 +54,16 @@
                 <String fx:value="reset-radius" />
             </styleClass>
             <children>
-                <Button id="image-btn" layoutX="131.0" layoutY="53.0" mnemonicParsing="false" prefHeight="177.0" prefWidth="689.0">
+                <Button id="image-btn" fx:id="cleaningBtn" layoutX="131.0" layoutY="53.0" mnemonicParsing="false" onAction="#toCleaning" prefHeight="177.0" prefWidth="689.0">
                     <graphic>
                         <StackPane prefHeight="211.0" prefWidth="711.0">
                             <children>
                                 <ImageView fitHeight="200.0" fitWidth="669.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../../../Images/Stock%20images/hair-treatments.jpg" />
+                                        <Image url="@../../../Images/Stock%20images/cleaning.jpg" />
                                     </image>
                                     <viewport>
-                                        <Rectangle2D height="550.0" minY="158.0" width="2005.0" />
+                                        <Rectangle2D height="200.0" minY="300.0" width="770.0" />
                                     </viewport>
                                 </ImageView>
                                 <Label prefHeight="43.0" prefWidth="150.0" text="CLEANING" textFill="WHITE">
@@ -75,16 +75,16 @@
                         </StackPane>
                     </graphic>
                 </Button>
-                <Button id="image-btn" layoutX="139.0" layoutY="295.0" mnemonicParsing="false" prefHeight="177.0" prefWidth="528.0">
+                <Button id="image-btn" fx:id="repairingBtn" layoutX="139.0" layoutY="295.0" mnemonicParsing="false" onAction="#toRepairing" prefHeight="177.0" prefWidth="528.0">
                     <graphic>
                         <StackPane prefHeight="113.0" prefWidth="425.0">
                             <children>
                                 <ImageView fitHeight="190.0" fitWidth="653.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                                     <image>
-                                        <Image url="@../../../Images/Stock%20images/pedicure.jpg" />
+                                        <Image url="@../../../Images/Stock%20images/maintennance-min.jpg" />
                                     </image>
                                     <viewport>
-                                        <Rectangle2D height="250.0" minY="300.0" width="989.0" />
+                                        <Rectangle2D height="1450.0" minY="600.0" width="5000.0" />
                                     </viewport>
                                 </ImageView>
                                 <Label prefHeight="43.0" prefWidth="154.0" text="REPAIRING" textFill="WHITE">
