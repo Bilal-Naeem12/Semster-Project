@@ -13,9 +13,9 @@ public class HomeTasker extends Application {
     public void start(Stage stage) throws IOException {
         stage.initStyle(StageStyle.UNDECORATED);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Home-Services-Selection.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Repairing.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("Hello!");
+
         stage.setScene(scene);
         stage.show();
 

@@ -18,7 +18,7 @@ public class DashboardController extends attributeController implements Initiali
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+        Image img =  new Image("D:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
         Userpfp.setFill(new ImagePattern(img));
 
@@ -31,10 +31,7 @@ public class DashboardController extends attributeController implements Initiali
     @FXML
     private Button homeServicesbtn;
 
-    @FXML
-    void toBeautyscreen(ActionEvent event) {
-sceneSwitcher("Beauty-Selfcare",Beauty_btn);
-    }
+
 
     @FXML
     void toHomeServicesScreen(ActionEvent event) {
@@ -73,10 +70,7 @@ sceneSwitcher("History",historyBtn);
 
 
 
-    @FXML
-    void toSetting(ActionEvent event) {
-        sceneSwitcher("Setting",settingBtn);
-    }
+
 
     @FXML
     void toTerms(ActionEvent event) {
@@ -98,11 +92,7 @@ sceneSwitcher("History",historyBtn);
 
 
 
-    @FXML
-    void toDashboard(ActionEvent event) {
-        sceneSwitcher("Dashboard",homeServicesBack);
 
-    }
 
     @FXML
     void toRepairing(ActionEvent event) {
@@ -128,6 +118,83 @@ sceneSwitcher("History",historyBtn);
             sceneSwitcher("Home-Services-Selection",backtocleaning);
         }
     }
+//Change password
+
+
+
+
+    @FXML
+    private Button change_backtoSettingbtn;
+
+    @FXML
+    private Button confirmbtn;
+
+    @FXML
+    void toSetting(ActionEvent event) {
+        Button b= (Button) event.getSource();
+        if ( b== change_backtoSettingbtn) {
+            sceneSwitcher("Setting",change_backtoSettingbtn);
+        }else if (b == settingBtn) {
+            sceneSwitcher("Setting",settingBtn);
+        } {
+            sceneSwitcher("Setting",confirmbtn);
+        }
+    }
+//beauty & Selfcare
+
+
+
+    @FXML
+    private Button backtoDashboardbtn;
+
+    @FXML
+    private Button hairTreatment;
+
+    @FXML
+    void toDashboard(ActionEvent event) {
+        Button b= (Button) event.getSource();
+        if ( b== backtoDashboardbtn) {
+            sceneSwitcher("Dashboard",backtoDashboardbtn);
+        }else if (b == homeServicesBack) {
+            sceneSwitcher("Dashboard",homeServicesBack);
+        }
+
+    }
+
+    @FXML
+    void toHairtreatment(ActionEvent event) {
+sceneSwitcher("Hair-Treatment",hairTreatment);
+    }
+
+
+    //Hair treatment
+
+
+    @FXML
+    private Button backtoBeauty;
+
+    @FXML
+    void toBeautyscreen(ActionEvent event) {
+        Button b= (Button) event.getSource();
+        if ( b==  Beauty_btn) {
+            sceneSwitcher("Beauty-Selfcare",Beauty_btn);
+        }else if (b == backtoBeauty) {
+            sceneSwitcher("Beauty-Selfcare",backtoBeauty);
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

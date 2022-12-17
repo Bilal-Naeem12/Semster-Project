@@ -14,14 +14,14 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.controller.DashboardController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.DashboardController">
     <children>
         <Label id="edit-profile-heading" alignment="CENTER" layoutX="369.0" layoutY="137.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="214.0" styleClass="heading-label" text="EDIT PROFILE" textFill="WHITE">
          <font>
             <Font name="Gabriola" size="37.0" />
          </font></Label>
         <Line endX="145.0" fill="WHITE" layoutX="556.0" layoutY="185.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
-        <Button id="image-btn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0">
+        <Button id="image-btn" fx:id="change_backtoSettingbtn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" onAction="#toSetting" prefHeight="27.0" prefWidth="27.0">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -144,7 +144,7 @@
                      </children>
                   </VBox>
                   <Pane prefHeight="31.0" prefWidth="274.0" />
-                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="276.0" text="CONFIRM">
+                  <Button fx:id="confirmbtn" mnemonicParsing="false" onAction="#toSetting" prefHeight="30.0" prefWidth="276.0" text="CONFIRM">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>

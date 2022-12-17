@@ -15,8 +15,7 @@
 
 <!--suppress ALL -->
 
-
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.HomeTaskerController">
     <children>
         <Label id="edit-profile-heading" alignment="CENTER" layoutX="417.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="138.0" styleClass="heading-label" text="RECEIPT" textFill="WHITE">
             <font>
@@ -24,7 +23,7 @@
             </font>
         </Label>
         <Line endX="145.0" fill="WHITE" layoutX="555.0" layoutY="89.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
-        <Button id="image-btn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0">
+        <Button id="image-btn" fx:id="Receiptbtn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" onAction="#toHistory" prefHeight="27.0" prefWidth="27.0">
             <graphic>
                 <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                     <image>
