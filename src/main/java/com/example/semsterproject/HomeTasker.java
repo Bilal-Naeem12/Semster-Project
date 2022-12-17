@@ -13,7 +13,7 @@ public class HomeTasker extends Application {
     public void start(Stage stage) throws IOException {
         stage.initStyle(StageStyle.UNDECORATED);
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Repairing.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Beauty-Selfcare.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
 
         stage.setScene(scene);

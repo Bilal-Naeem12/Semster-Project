@@ -25,7 +25,7 @@
             <children>
                 <HBox layoutX="-4.0" prefHeight="66.0" prefWidth="950.0">
                     <children>
-                        <Button id="image-btn" fx:id="backtoBeauty" mnemonicParsing="false" onAction="#toBeautyscreen" prefHeight="66.0" prefWidth="70.0">
+                        <Button id="image-btn" fx:id="cleaningBtn" mnemonicParsing="false" onAction="#toCleaning" prefHeight="66.0" prefWidth="70.0">
                             <graphic>
                                 <ImageView fitHeight="23.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -60,23 +60,24 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="85.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@../../../Images/Stock%20images/goldfacial-min.jpg" />
-                                            </image>
+                                        <ImageView fitHeight="87.0" fitWidth="117.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                             <viewport>
-                                                <Rectangle2D height="700.0" minX="200.0" width="850.0" />
+                                                <Rectangle2D height="150.0" minX="12.0" width="200.0" />
                                             </viewport>
                                             <HBox.margin>
-                                                <Insets top="7.0" />
+                                                <Insets top="5.0" />
                                             </HBox.margin>
+                                 <image>
+                                    <Image url="@../../../Images/Stock%20images/10seatersofa.jpg" />
+                                 </image>
                                         </ImageView>
+                              <Pane prefHeight="98.0" prefWidth="24.0" />
                                         <VBox prefHeight="98.0" prefWidth="237.0">
                                             <HBox.margin>
-                                                <Insets left="25.0" />
+                                                <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="Golden Facial">
+                                                <Label prefHeight="32.0" prefWidth="157.0" text="10 SETTER ">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -125,24 +126,24 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="4.0" prefHeight="100.0" prefWidth="484.0">
                                     <children>
-                                        <ImageView fitHeight="92.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="92.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/hydrafacial.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/7seatersofa.jpg" />
                                             </image>
                                             <viewport>
-                                                <Rectangle2D height="1000.0" minX="200.0" width="1200.0" />
+                                                <Rectangle2D height="200.0" minY="20.0" width="210.0" />
                                             </viewport>
                                             <HBox.margin>
-                                                <Insets top="5.0" />
+                                                <Insets top="3.0" />
                                             </HBox.margin>
                                         </ImageView>
-                                        <Pane prefHeight="100.0" prefWidth="23.0" />
+                                        <Pane prefHeight="100.0" prefWidth="44.0" />
                                         <VBox prefHeight="98.0" prefWidth="228.0">
                                             <HBox.margin>
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="Hydra Facial">
+                                                <Label text="7 SETTER">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -191,23 +192,24 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="89.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="86.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/hydrafacial-min.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/5seatersofa.jpg" />
                                             </image>
                                             <viewport>
-                                                <Rectangle2D height="3000.0" minX="550.0" minY="330.0" width="4000.0" />
+                                                <Rectangle2D height="180.0" minX="20.0" width="250.0" />
                                             </viewport>
                                             <HBox.margin>
-                                                <Insets top="9.0" />
+                                                <Insets top="6.0" />
                                             </HBox.margin>
                                         </ImageView>
+                              <Pane prefHeight="98.0" prefWidth="17.0" />
                                         <VBox prefHeight="98.0" prefWidth="228.0">
                                             <HBox.margin>
-                                                <Insets left="15.0" />
+                                                <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="Skin Polisher">
+                                                <Label text="5 SETTER">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -258,21 +260,22 @@
                                     <children>
                                         <ImageView fitHeight="108.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/facial-min.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/3seatersofa.jpg" />
                                             </image>
                                             <viewport>
-                                                <Rectangle2D height="4000.0" minX="550.0" width="5500.0" />
+                                                <Rectangle2D />
                                             </viewport>
                                             <HBox.margin>
                                                 <Insets top="9.0" />
                                             </HBox.margin>
                                         </ImageView>
+                              <Pane prefHeight="98.0" prefWidth="22.0" />
                                         <VBox prefHeight="98.0" prefWidth="224.0">
                                             <HBox.margin>
-                                                <Insets left="10.0" />
+                                                <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="Derma Facial">
+                                                <Label text="3 SETTER">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>

@@ -118,7 +118,7 @@
          <children>
             <Label alignment="CENTER" layoutX="160.0" layoutY="26.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="438.0" styleClass="heading-label" text="SELECT YOUR CHOICE" />
             <Line endX="164.0" fill="WHITE" layoutX="450.0" layoutY="84.0" startX="-322.0" strokeWidth="0.5" styleClass="line" />
-            <Button id="image-btn" fx:id="Beauty_btn" layoutX="87.0" layoutY="126.0" mnemonicParsing="false" onAction="#toBeautyscreen" prefHeight="123.0" prefWidth="392.0">
+            <Button id="image-btn" fx:id="backtoBeauty" layoutX="87.0" layoutY="126.0" mnemonicParsing="false" onAction="#toBeautyscreen" prefHeight="123.0" prefWidth="392.0">
                <graphic>
                   <StackPane>
                      <children>

@@ -52,7 +52,7 @@
                 <String fx:value="reset-radius" />
             </styleClass>
             <children>
-                <Button id="image-btn" fx:id="sofaBtn" layoutX="72.0" layoutY="38.0" mnemonicParsing="false" prefHeight="129.0" prefWidth="403.0">
+                <Button id="image-btn" fx:id="sofaBtn" layoutX="72.0" layoutY="38.0" mnemonicParsing="false" onAction="#toSofaSet" prefHeight="129.0" prefWidth="403.0">
                     <graphic>
                         <StackPane prefHeight="113.0" prefWidth="425.0">
                             <children>
@@ -73,7 +73,7 @@
                         </StackPane>
                     </graphic>
                 </Button>
-                <Button id="image-btn" layoutX="475.0" layoutY="153.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="287.0">
+                <Button id="image-btn" fx:id="carWashbtn" layoutX="475.0" layoutY="153.0" mnemonicParsing="false" onAction="#toCarWash" prefHeight="125.0" prefWidth="287.0">
                     <graphic>
                         <StackPane prefHeight="113.0" prefWidth="425.0">
                             <children>
@@ -94,7 +94,7 @@
                         </StackPane>
                     </graphic>
                 </Button>
-                <Button id="image-btn" layoutX="66.0" layoutY="282.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="344.0">
+                <Button id="image-btn" fx:id="carpetBtn" layoutX="66.0" layoutY="282.0" mnemonicParsing="false" onAction="#toCarpet" prefHeight="92.0" prefWidth="344.0">
                     <graphic>
                         <StackPane prefHeight="113.0" prefWidth="425.0">
                             <children>
@@ -115,7 +115,7 @@
                         </StackPane>
                     </graphic>
                 </Button>
-                <Button id="image-btn" layoutX="469.0" layoutY="385.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="344.0">
+                <Button id="image-btn" fx:id="fullHouseBtn" layoutX="469.0" layoutY="385.0" mnemonicParsing="false" onAction="#toHouseCleaning" prefHeight="92.0" prefWidth="344.0">
                     <graphic>
                         <StackPane prefHeight="113.0" prefWidth="425.0">
                             <children>

@@ -52,6 +52,27 @@
             <String fx:value="reset-radius" />
          </styleClass>
          <children>
+            <Button id="image-btn" fx:id="facialBtn" layoutX="475.0" layoutY="153.0" mnemonicParsing="false" onAction="#toFacial" prefHeight="125.0" prefWidth="287.0">
+               <graphic>
+                  <StackPane prefHeight="113.0" prefWidth="425.0">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="383.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Stock%20images/pedicure.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D height="250.0" minY="300.0" width="989.0" />
+                           </viewport>
+                        </ImageView>
+                        <Label prefHeight="43.0" prefWidth="101.0" text="FACIAL" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="29.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </StackPane>
+               </graphic>
+            </Button>
             <Button id="image-btn" fx:id="hairTreatment" layoutX="72.0" layoutY="38.0" mnemonicParsing="false" onAction="#toHairtreatment" prefHeight="92.0" prefWidth="344.0">
                <graphic>
                   <StackPane prefHeight="113.0" prefWidth="425.0">
@@ -73,28 +94,7 @@
                   </StackPane>
                </graphic>
             </Button>
-            <Button id="image-btn" layoutX="475.0" layoutY="153.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="287.0">
-               <graphic>
-                  <StackPane prefHeight="113.0" prefWidth="425.0">
-                     <children>
-                        <ImageView fitHeight="120.0" fitWidth="383.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../Images/Stock%20images/pedicure.jpg" />
-                           </image>
-                           <viewport>
-                              <Rectangle2D height="250.0" minY="300.0" width="989.0" />
-                           </viewport>
-                        </ImageView>
-                        <Label prefHeight="43.0" prefWidth="140.0" text="PEDICURE" textFill="WHITE">
-                           <font>
-                              <Font name="System Bold" size="29.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </StackPane>
-               </graphic>
-            </Button>
-            <Button id="image-btn" layoutX="72.0" layoutY="278.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="344.0">
+            <Button id="image-btn" fx:id="waxingBtn" layoutX="72.0" layoutY="278.0" mnemonicParsing="false" onAction="#toWaxing" prefHeight="92.0" prefWidth="344.0">
                <graphic>
                   <StackPane prefHeight="113.0" prefWidth="425.0">
                      <children>
@@ -115,7 +115,7 @@
                   </StackPane>
                </graphic>
             </Button>
-            <Button id="image-btn" layoutX="475.0" layoutY="390.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="344.0">
+            <Button id="image-btn" fx:id="makeupBtn" layoutX="475.0" layoutY="390.0" mnemonicParsing="false" onAction="#toMakeup" prefHeight="92.0" prefWidth="344.0">
                <graphic>
                   <StackPane prefHeight="113.0" prefWidth="425.0">
                      <children>

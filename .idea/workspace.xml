@@ -5,20 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82a6a228-91ae-4cc1-b2b2-225baafda22d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Car-wash.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Carpet-Cleaning.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Full-House-Cleaning.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Sofa-Set-cleaning.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/DashboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Style/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Style/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Beauty-Selfcare.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Beauty-Selfcare.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Change-Password.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Change-Password.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Hair-Treatment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Hair-Treatment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/History.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/History.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Receipt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Receipt.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Repairing.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Repairing.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Setting.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Setting.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Cleaning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Cleaning.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Facial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Facial.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Makeup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Makeup.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Wax.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Wax.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,20 +59,23 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Semster-Project",
+    "last_opened_file_path": "G:/comsat/semster 3/OOP/JAVAFX/Semster-Project/src/main/resources/com/example/semsterproject",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.37011495",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\comsat\semster 3\OOP\JAVAFX\Semster-Project\src\main\java\com\example\semsterproject\controller" />
       <recent name="G:\comsat\semster 3\OOP\JAVAFX\Semster-Project\src\main\resources\com\example\semsterproject" />
+      <recent name="G:\comsat\semster 3\OOP\JAVAFX\Semster-Project\src\main\java\com\example\semsterproject\controller" />
       <recent name="G:\comsat\semster 3\OOP\JAVAFX\Semster-Project\src\main\resources\Images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">

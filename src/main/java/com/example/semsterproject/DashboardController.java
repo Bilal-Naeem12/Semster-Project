@@ -18,7 +18,7 @@ public class DashboardController extends attributeController implements Initiali
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-        Image img =  new Image("D:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+        Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
         Userpfp.setFill(new ImagePattern(img));
 
@@ -118,6 +118,44 @@ sceneSwitcher("History",historyBtn);
             sceneSwitcher("Home-Services-Selection",backtocleaning);
         }
     }
+
+
+
+
+    @FXML
+    private Button carWashbtn;
+
+    @FXML
+    private Button carpetBtn;
+
+    @FXML
+    private Button fullHouseBtn;
+
+    @FXML
+    private Button sofaBtn;
+
+    @FXML
+    void toCarWash(ActionEvent event) {
+sceneSwitcher("Car-wash",carWashbtn);
+    }
+
+    @FXML
+    void toCarpet(ActionEvent event) {
+sceneSwitcher("Carpet-Cleaning",carpetBtn);
+    }
+
+
+
+    @FXML
+    void toHouseCleaning(ActionEvent event) {
+sceneSwitcher("Full-House-Cleaning",fullHouseBtn);
+    }
+
+    @FXML
+    void toSofaSet(ActionEvent event) {
+        sceneSwitcher("Sofa-Set-cleaning",sofaBtn);
+    }
+
 //Change password
 
 
@@ -161,10 +199,42 @@ sceneSwitcher("History",historyBtn);
 
     }
 
+
+
+    @FXML
+    private Button makeupBtn;
+
+    @FXML
+    private Button facialBtn;
+
+    @FXML
+    private Button waxingBtn;
+
+
+
+    @FXML
+    void toMakeup(ActionEvent event) {
+sceneSwitcher("Makeup",makeupBtn);
+    }
+
+    @FXML
+    void toFacial(ActionEvent event) {
+sceneSwitcher("Facial",facialBtn);
+    }
+
+    @FXML
+    void toWaxing(ActionEvent event) {
+sceneSwitcher("Wax",waxingBtn);
+    }
+
     @FXML
     void toHairtreatment(ActionEvent event) {
 sceneSwitcher("Hair-Treatment",hairTreatment);
     }
+
+
+
+
 
 
     //Hair treatment
@@ -175,10 +245,6 @@ sceneSwitcher("Hair-Treatment",hairTreatment);
 
     @FXML
     void toBeautyscreen(ActionEvent event) {
-        Button b= (Button) event.getSource();
-        if ( b==  Beauty_btn) {
-            sceneSwitcher("Beauty-Selfcare",Beauty_btn);
-        }else if (b == backtoBeauty) {
             sceneSwitcher("Beauty-Selfcare",backtoBeauty);
         }
 
@@ -197,4 +263,4 @@ sceneSwitcher("Hair-Treatment",hairTreatment);
 
 
 
-}
+
