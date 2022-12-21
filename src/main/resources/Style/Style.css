@@ -52,7 +52,21 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
 
 }
+.margin{
 
+    -fx-padding: 10px;
+    -fx-border-insets: 10px;
+    -fx-background-insets: 10px;
+
+}
+.margin-item{
+
+
+    -fx-border-insets: 10px;
+    -fx-background-insets: 10px;
+
+
+}
 
 
 
@@ -299,11 +313,17 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
 
 /*Scroll-pane*/
+.scroll-pane {
 
-.scroll-pane .view-port{
+
+    -fx-background-color: rgba(255, 255, 255, 0);
 
 
-    -fx-background-color: none  ;
+}
+.scroll-pane .viewport{
+
+
+    -fx-background-color: rgba(255, 255, 255, 0);
 
 
 }

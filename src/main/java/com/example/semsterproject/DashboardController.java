@@ -43,7 +43,13 @@ public class DashboardController extends attributeController implements Initiali
 sceneSwitcher("Login",dashboard_Logout_Btn);
     }
 
+    @FXML
+    private Button cartBtn;
 
+    @FXML
+    void toCart(ActionEvent event) {
+sceneSwitcher("Cart",cartBtn);
+    }
 
 
 
