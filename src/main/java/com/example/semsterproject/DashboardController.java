@@ -254,10 +254,43 @@ sceneSwitcher("Hair-Treatment",hairTreatment);
             sceneSwitcher("Beauty-Selfcare",backtoBeauty);
         }
 
+
+
+//Repairing
+
+
+
+    @FXML
+    private Button electricianBtn;
+
+
+    @FXML
+    private Button painterBtn;
+
+    @FXML
+    private Button plumberBtn;
+
+    @FXML
+    void toElectrician(ActionEvent event) {
+sceneSwitcher("Electritions",electricianBtn);
+    }
+
+
+    @FXML
+    void toPainter(ActionEvent event) {
+sceneSwitcher("Painter",painterBtn);
+    }
+
+    @FXML
+    void toPlumber(ActionEvent event) {
+sceneSwitcher("Plumber",plumberBtn);
     }
 
 
 
+
+
+}
 
 
 

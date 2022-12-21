@@ -11,6 +11,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
@@ -52,13 +53,13 @@
                 <String fx:value="reset-radius" />
             </styleClass>
             <children>
-            <AnchorPane layoutX="67.0" layoutY="38.0" prefHeight="397.0" prefWidth="816.0">
+            <VBox layoutX="197.0" layoutY="24.0" prefHeight="478.0" prefWidth="557.0">
                <children>
-                      <Button id="image-btn" layoutX="5.0" mnemonicParsing="false" prefHeight="98.0" prefWidth="194.0">
+                      <Button id="image-btn" fx:id="plumberBtn" mnemonicParsing="false" onAction="#toPlumber" prefHeight="107.0" prefWidth="419.0">
                           <graphic>
-                              <StackPane prefHeight="113.0" prefWidth="425.0">
+                              <StackPane prefHeight="142.0" prefWidth="520.0">
                                   <children>
-                                      <ImageView fitHeight="101.0" fitWidth="415.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                      <ImageView fitHeight="151.0" fitWidth="537.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                                           <image>
                                               <Image url="@../../../Images/Stock%20images/plumber.jpg" />
                                           </image>
@@ -75,32 +76,12 @@
                               </StackPane>
                           </graphic>
                       </Button>
-                      <Button id="image-btn" layoutX="417.0" layoutY="111.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="399.0">
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                      <Button id="image-btn" fx:id="painterBtn" mnemonicParsing="false" onAction="#toPainter" prefHeight="140.0" prefWidth="557.0">
                           <graphic>
-                              <StackPane prefHeight="104.0" prefWidth="283.0">
+                              <StackPane prefHeight="133.0" prefWidth="547.0">
                                   <children>
-                                      <ImageView fitHeight="108.0" fitWidth="380.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
-                                          <image>
-                                              <Image url="@../../../Images/Stock%20images/carpenter-min.jpg" />
-                                          </image>
-                                          <viewport>
-                                              <Rectangle2D height="130.0" minY="120.0" width="500.0" />
-                                          </viewport>
-                                      </ImageView>
-                                      <Label prefHeight="43.0" prefWidth="165.0" text="CARPENTER" textFill="WHITE">
-                                          <font>
-                                              <Font name="System Bold" size="29.0" />
-                                          </font>
-                                      </Label>
-                                  </children>
-                              </StackPane>
-                          </graphic>
-                      </Button>
-                      <Button id="image-btn" layoutX="-2.0" layoutY="228.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="344.0">
-                          <graphic>
-                              <StackPane prefHeight="113.0" prefWidth="425.0">
-                                  <children>
-                                      <ImageView fitHeight="120.0" fitWidth="383.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                      <ImageView fitHeight="151.0" fitWidth="537.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                                           <image>
                                               <Image url="@../../../Images/Stock%20images/Painter.jpeg" />
                                           </image>
@@ -117,11 +98,12 @@
                               </StackPane>
                           </graphic>
                       </Button>
-                      <Button id="image-btn" layoutX="414.0" layoutY="351.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="338.0">
+                  <Pane prefHeight="200.0" prefWidth="200.0" />
+                      <Button id="image-btn" fx:id="electricianBtn" mnemonicParsing="false" onAction="#toElectrician" prefHeight="125.0" prefWidth="557.0">
                           <graphic>
                               <StackPane prefHeight="113.0" prefWidth="425.0">
                                   <children>
-                                      <ImageView fitHeight="104.0" fitWidth="386.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+                                      <ImageView fitHeight="151.0" fitWidth="537.0" nodeOrientation="INHERIT" opacity="0.6" pickOnBounds="true" preserveRatio="true">
                                           <image>
                                               <Image url="@../../../Images/Stock%20images/electrician.jpg" />
                                           </image>
@@ -139,7 +121,7 @@
                           </graphic>
                       </Button>
                </children>
-            </AnchorPane>
+            </VBox>
             </children>
         </AnchorPane>
     </children>

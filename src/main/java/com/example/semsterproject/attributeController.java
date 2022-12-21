@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class attributeController {
-    private Parent root =null;
+
     Stage   stage;
     public  void sceneSwitcher(String filename, Button button){
 

@@ -328,6 +328,14 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
 
 }
 
+.date-picker{
 
+    -fx-text-fill: red;
+    -fx-background-color: none;
+}
+.date-picker .text{
 
+    -fx-text-fill: red;
+    -fx-background-color: none;
+}
 

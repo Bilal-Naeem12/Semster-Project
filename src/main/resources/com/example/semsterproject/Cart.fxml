@@ -914,7 +914,7 @@
          <children>
             <Button mnemonicParsing="false" prefHeight="47.0" prefWidth="200.0" text="ADD MORE" />
             <Pane prefHeight="33.0" prefWidth="115.0" />
-            <Button mnemonicParsing="false" prefHeight="63.0" prefWidth="200.0" text="PROCEED" />
+            <Button fx:id="proceedBtn" mnemonicParsing="false" onAction="#toCheckout" prefHeight="63.0" prefWidth="200.0" text="PROCEED" />
          </children>
       </HBox>
    </children>
