@@ -43,7 +43,13 @@ public class DashboardController extends attributeController implements Initiali
 sceneSwitcher("Login",dashboard_Logout_Btn);
     }
 
+    @FXML
+    private Button cartBtn;
 
+    @FXML
+    void toCart(ActionEvent event) {
+sceneSwitcher("Cart",cartBtn);
+    }
 
 
 
@@ -248,10 +254,43 @@ sceneSwitcher("Hair-Treatment",hairTreatment);
             sceneSwitcher("Beauty-Selfcare",backtoBeauty);
         }
 
+
+
+//Repairing
+
+
+
+    @FXML
+    private Button electricianBtn;
+
+
+    @FXML
+    private Button painterBtn;
+
+    @FXML
+    private Button plumberBtn;
+
+    @FXML
+    void toElectrician(ActionEvent event) {
+sceneSwitcher("Electritions",electricianBtn);
+    }
+
+
+    @FXML
+    void toPainter(ActionEvent event) {
+sceneSwitcher("Painter",painterBtn);
+    }
+
+    @FXML
+    void toPlumber(ActionEvent event) {
+sceneSwitcher("Plumber",plumberBtn);
     }
 
 
 
+
+
+}
 
 
 

@@ -6,8 +6,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import javafx.stage.Window;
@@ -44,8 +47,30 @@ public class HomeTaskerController extends attributeController implements Initial
 
 
 
+    }
+
+
+    @FXML
+    private Button close;
+
+    @FXML
+    void exit(ActionEvent event) throws IOException {
+
+
+    /*   FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Exit.fxml"));
+     Scene scene = new Scene(fxmlLoader.load());
+        Stage stage1 = new Stage();
+        stage1.initStyle(StageStyle.UNDECORATED);
+        stage1.setScene(scene);
+   stage1.show();
+*/
+
+                Stage stage = (Stage) close.getScene().getWindow();
+                stage.close();
 
     }
+
+
 
 
     //Setting
@@ -113,4 +138,50 @@ sceneSwitcher("Login",LogoutBtn);
     void toHistory(ActionEvent event) {
 sceneSwitcher("History",Receiptbtn);
     }
+//Check-out
+
+
+
+    @FXML
+    private Button cartBtn;
+
+    @FXML
+    void toCart(ActionEvent event) {
+        sceneSwitcher("Cart", cartBtn);
+    }
+
+    //cart
+    @FXML
+    private Button proceedBtn;
+    @FXML
+    void toCheckout(ActionEvent event) {
+sceneSwitcher("Check-out",proceedBtn);
+    }
+
+
+
+    //Exit
+    @FXML
+    private Button noBtn;
+
+    @FXML
+    public Button yesBtn;
+
+    @FXML
+    boolean NO(ActionEvent event) {
+        return false;
+    }
+
+    @FXML
+    public  void YES(ActionEvent event) {
+
+
+        Stage stage1  = (Stage)  yesBtn.getScene().getWindow();
+        stage1.close();
+    //    stage.close();
+
+    }
 }
+
+
+

@@ -25,7 +25,7 @@
             <children>
                 <HBox layoutX="-4.0" prefHeight="66.0" prefWidth="950.0">
                     <children>
-                        <Button id="image-btn" fx:id="cleaningBtn" mnemonicParsing="false" onAction="#toCleaning" prefHeight="66.0" prefWidth="70.0">
+                        <Button id="image-btn" fx:id="repairingBtn" mnemonicParsing="false" onAction="#toRepairing" prefHeight="66.0" prefWidth="70.0">
                             <graphic>
                                 <ImageView fitHeight="23.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
                                     <image>
@@ -53,22 +53,22 @@
                 <String fx:value="reset-radius" />
             </styleClass>
             <children>
-                <VBox layoutX="213.0" layoutY="33.0" prefHeight="460.0" prefWidth="524.0">
+                <VBox layoutX="213.0" prefHeight="526.0" prefWidth="524.0">
                     <children>
-                        <Pane prefHeight="24.0" prefWidth="524.0" />
+                        <Pane prefHeight="20.0" prefWidth="524.0" />
                         <AnchorPane prefHeight="108.0" prefWidth="524.0" styleClass="glass">
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
                                         <ImageView fitHeight="87.0" fitWidth="117.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                             <viewport>
-                                                <Rectangle2D height="150.0" minX="40.0" minY="20.0" width="200.0" />
+                                                <Rectangle2D height="150.0" width="200.0" />
                                             </viewport>
                                             <HBox.margin>
                                                 <Insets top="5.0" />
                                             </HBox.margin>
                                  <image>
-                                    <Image url="@../../../Images/Stock%20images/roomcleaning.jpg" />
+                                    <Image url="@../../../Images/Stock%20images/lcd.jpg" />
                                  </image>
                                         </ImageView>
                               <Pane prefHeight="98.0" prefWidth="24.0" />
@@ -77,7 +77,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label prefHeight="32.0" prefWidth="92.0" text="ROOM">
+                                                <Label prefHeight="12.0" prefWidth="237.0" style="-fx-font-size: 20;" text="LCD INSTALLATION">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -86,7 +86,7 @@
                                                         <String fx:value="Hair-h-text" />
                                                     </styleClass>
                                                 </Label>
-                                                <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
+                                                <Label id="Starting-from" prefHeight="18.0" prefWidth="117.0" styleClass="label-dashboard-side" text="Starting From">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" />
                                                     </VBox.margin>
@@ -111,6 +111,9 @@
                                                     </children>
                                                 </HBox>
                                             </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
                                         </VBox>
                                         <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
@@ -121,29 +124,29 @@
                                 </HBox>
                             </children>
                         </AnchorPane>
-                        <Pane prefHeight="42.0" prefWidth="524.0" />
+                        <Pane prefHeight="19.0" prefWidth="524.0" />
                         <AnchorPane prefHeight="108.0" prefWidth="524.0" styleClass="glass">
                             <children>
                                 <HBox layoutX="22.0" layoutY="4.0" prefHeight="100.0" prefWidth="484.0">
                                     <children>
-                                        <ImageView fitHeight="96.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="127.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/washroomcleaning.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/ceilingfan.jpg" />
                                             </image>
                                             <viewport>
-                                                <Rectangle2D height="190.0" width="230.0" />
+                                                <Rectangle2D height="150.0" width="220.0" />
                                             </viewport>
                                             <HBox.margin>
-                                                <Insets top="4.0" />
+                                                <Insets top="13.0" />
                                             </HBox.margin>
                                         </ImageView>
-                                        <Pane prefHeight="100.0" prefWidth="44.0" />
+                                        <Pane prefHeight="100.0" prefWidth="29.0" />
                                         <VBox prefHeight="98.0" prefWidth="228.0">
                                             <HBox.margin>
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="WASHROOM">
+                                                <Label style="-fx-font-size: 20;" text="CEILING FAN">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -152,7 +155,7 @@
                                                         <String fx:value="Hair-h-text" />
                                                     </styleClass>
                                                 </Label>
-                                                <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
+                                                <Label id="Starting-from" prefHeight="28.0" prefWidth="103.0" styleClass="label-dashboard-side" text="Starting From">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" />
                                                     </VBox.margin>
@@ -177,6 +180,9 @@
                                                     </children>
                                                 </HBox>
                                             </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
                                         </VBox>
                                         <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
@@ -187,14 +193,14 @@
                                 </HBox>
                             </children>
                         </AnchorPane>
-                        <Pane prefHeight="42.0" prefWidth="524.0" />
+                        <Pane prefHeight="19.0" prefWidth="524.0" />
                         <AnchorPane prefHeight="108.0" prefWidth="524.0" styleClass="glass">
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="86.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="90.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/kitchencleaning.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/ewiring.jpg" />
                                             </image>
                                             <viewport>
                                                 <Rectangle2D height="180.0" minX="20.0" width="250.0" />
@@ -203,13 +209,13 @@
                                                 <Insets top="6.0" />
                                             </HBox.margin>
                                         </ImageView>
-                              <Pane prefHeight="98.0" prefWidth="17.0" />
+                              <Pane prefHeight="98.0" prefWidth="25.0" />
                                         <VBox prefHeight="98.0" prefWidth="228.0">
                                             <HBox.margin>
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="KITCHEN">
+                                                <Label style="-fx-font-size: 20;" text="ELECTRIC WIRING">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -218,7 +224,7 @@
                                                         <String fx:value="Hair-h-text" />
                                                     </styleClass>
                                                 </Label>
-                                                <Label id="Starting-from" styleClass="label-dashboard-side" text="Starting From">
+                                                <Label id="Starting-from" prefHeight="28.0" prefWidth="103.0" styleClass="label-dashboard-side" text="Starting From">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" />
                                                     </VBox.margin>
@@ -243,6 +249,9 @@
                                                     </children>
                                                 </HBox>
                                             </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
                                         </VBox>
                                         <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
@@ -253,7 +262,76 @@
                                 </HBox>
                             </children>
                         </AnchorPane>
-                        <Pane prefHeight="29.0" prefWidth="524.0" />
+                        <Pane prefHeight="19.0" prefWidth="524.0" />
+                        <AnchorPane prefHeight="108.0" prefWidth="524.0" styleClass="glass">
+                            <children>
+                                <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
+                                    <children>
+                                        <ImageView fitHeight="86.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../../Images/Stock%20images/ups.jpg" />
+                                            </image>
+                                            <viewport>
+                                                <Rectangle2D />
+                                            </viewport>
+                                            <HBox.margin>
+                                                <Insets top="19.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                              <Pane prefHeight="98.0" prefWidth="22.0" />
+                                        <VBox prefHeight="98.0" prefWidth="224.0">
+                                            <HBox.margin>
+                                                <Insets />
+                                            </HBox.margin>
+                                            <children>
+                                                <Label style="-fx-font-size: 20;" text="UPS REPAIRING">
+                                                    <VBox.margin>
+                                                        <Insets bottom="5.0" top="3.0" />
+                                                    </VBox.margin>
+                                                    <styleClass>
+                                                        <String fx:value="heading-label" />
+                                                        <String fx:value="Hair-h-text" />
+                                                    </styleClass>
+                                                </Label>
+                                                <Label id="Starting-from" prefHeight="28.0" prefWidth="103.0" styleClass="label-dashboard-side" text="Starting From">
+                                                    <VBox.margin>
+                                                        <Insets bottom="5.0" />
+                                                    </VBox.margin>
+                                                </Label>
+                                                <HBox prefHeight="26.0" prefWidth="177.0">
+                                                    <children>
+                                                        <Label prefHeight="23.0" prefWidth="28.0" text="Rs">
+                                                            <styleClass>
+                                                                <String fx:value="label-dashboard-side" />
+                                                                <String fx:value="rupee-text" />
+                                                            </styleClass>
+                                                            <HBox.margin>
+                                                                <Insets />
+                                                            </HBox.margin>
+                                                        </Label>
+                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                            <styleClass>
+                                                                <String fx:value="label-dashboard-side" />
+                                                                <String fx:value="rupee-text" />
+                                                            </styleClass>
+                                                        </Label>
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                                        </VBox>
+                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                                            <HBox.margin>
+                                                <Insets left="5.0" top="61.0" />
+                                            </HBox.margin>
+                                        </Button>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                        <Pane prefHeight="20.0" prefWidth="524.0" />
                     </children>
                 </VBox>
                 <Button id="image-btn" fx:id="cartBtn" layoutX="868.0" layoutY="461.0" mnemonicParsing="false" onAction="#toCart" prefHeight="50.0" prefWidth="48.0">

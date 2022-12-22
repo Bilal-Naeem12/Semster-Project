@@ -5,6 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
@@ -54,5 +56,14 @@
             </HBox>
          </children>
       </AnchorPane>
+      <Button fx:id="close" layoutX="556.0" layoutY="4.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="36.0" style="-fx-background-color: none;">
+         <graphic>
+            <ImageView fitHeight="26.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" style="-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.29), 10, 0.3,5,5);">
+               <image>
+                  <Image url="@../../../Images/Icons/Cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
    </children>
 </AnchorPane>

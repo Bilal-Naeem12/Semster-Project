@@ -9,15 +9,16 @@
 <?import javafx.scene.text.Font?>
 
 <!--suppress ALL -->
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.HomeTaskerController">
    <children>
-      <Label id="edit-profile-heading" alignment="CENTER" layoutX="307.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="336.0" styleClass="heading-label" text="TERMS &amp; CONDITIONS" textFill="WHITE">
+      <Label id="edit-profile-heading" alignment="CENTER" layoutX="305.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="341.0" styleClass="heading-label" text="TERMS &amp; CONDITIONS" textFill="WHITE">
          <font>
             <Font name="Gabriola" size="37.0" />
          </font>
       </Label>
-      <Line endX="145.0" fill="WHITE" layoutX="555.0" layoutY="89.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
-      <Button id="image-btn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="27.0">
+      <Line endX="145.0" fill="WHITE" layoutX="555.0" layoutY="80.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
+      <Button id="image-btn" fx:id="backtodashboardbtn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" onAction="#toDashboard" prefHeight="27.0" prefWidth="27.0">
          <graphic>
             <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -26,6 +27,6 @@
             </ImageView>
          </graphic>
       </Button>
-      <AnchorPane layoutX="197.0" layoutY="124.0" prefHeight="400.0" prefWidth="557.0" styleClass="glass" />
+      <AnchorPane layoutX="152.0" layoutY="125.0" prefHeight="421.0" prefWidth="647.0" styleClass="glass" />
    </children>
 </AnchorPane>
