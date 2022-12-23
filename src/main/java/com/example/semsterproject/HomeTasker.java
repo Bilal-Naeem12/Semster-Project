@@ -17,6 +17,7 @@ public class HomeTasker extends Application {
         Scene scene = new Scene(fxmlLoader.load());
 
         stage.setScene(scene);
+stage.centerOnScreen();
         stage.show();
 
 stage.setResizable(false);

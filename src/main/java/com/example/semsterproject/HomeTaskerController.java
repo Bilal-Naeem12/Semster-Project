@@ -1,15 +1,14 @@
 package com.example.semsterproject;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.*;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -57,20 +56,25 @@ public class HomeTaskerController extends attributeController implements Initial
     void exit(ActionEvent event) throws IOException {
 
 
-    /*   FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Exit.fxml"));
+      FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Exit.fxml"));
      Scene scene = new Scene(fxmlLoader.load());
         Stage stage1 = new Stage();
         stage1.initStyle(StageStyle.UNDECORATED);
         stage1.setScene(scene);
+        stage1.centerOnScreen();
    stage1.show();
-*/
 
-                Stage stage = (Stage) close.getScene().getWindow();
-                stage.close();
+
+     //  sceneSwitcher("Exit",close);
+
 
     }
+    @FXML
+    private PasswordField Pass_passwordField;
 
 
+    @FXML
+    private TextField UsernameTextfield;
 
 
     //Setting
@@ -111,7 +115,7 @@ sceneSwitcher("Login",LogoutBtn);
         }else if (b == backtodashboardbtn) {
             sceneSwitcher("Dashboard",backtodashboardbtn);
         }
-
+        System.out.println("Username: "+UsernameTextfield.getText()+"\n Password: "+Pass_passwordField.getText());
 
 
 
@@ -166,20 +170,19 @@ sceneSwitcher("Check-out",proceedBtn);
 
     @FXML
     public Button yesBtn;
+    Stage stage;
 
     @FXML
-    boolean NO(ActionEvent event) {
-        return false;
+    void NO(ActionEvent event) {
+
+        stage = (Stage) noBtn.getScene().getWindow();
+        stage.close();
     }
 
     @FXML
-    public  void YES(ActionEvent event) {
+    public  void YES(ActionEvent event) throws IOException {
 
-
-        Stage stage1  = (Stage)  yesBtn.getScene().getWindow();
-        stage1.close();
-    //    stage.close();
-
+        Platform.exit();
     }
 }
 

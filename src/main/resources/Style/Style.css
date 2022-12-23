@@ -339,3 +339,12 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);;
     -fx-background-color: none;
 }
 
+
+#yesBtn{
+
+    -fx-background-color: white;
+    -fx-text-fill:  #c20c9a;
+
+}
+
+

@@ -20,6 +20,7 @@ public class attributeController {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        stage.centerOnScreen();
         stage.show();
 
 
