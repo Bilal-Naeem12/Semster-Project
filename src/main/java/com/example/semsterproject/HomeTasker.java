@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
 import java.io.IOException;
 
 public class HomeTasker extends Application {
@@ -15,7 +16,6 @@ public class HomeTasker extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-
         stage.setScene(scene);
 stage.centerOnScreen();
         stage.show();

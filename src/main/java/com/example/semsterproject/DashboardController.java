@@ -18,8 +18,8 @@ public class DashboardController extends attributeController implements Initiali
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
-      //  Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
-        Image img =  new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+     Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+     //   Image img =  new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
         Userpfp.setFill(new ImagePattern(img));
 
@@ -289,9 +289,10 @@ sceneSwitcher("Plumber",plumberBtn);
     }
 
 
-
-
-
+    @Override
+    public int checker() {
+        return 0;
+    }
 }
 
 

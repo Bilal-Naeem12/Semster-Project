@@ -5,18 +5,14 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.stage.Window;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class HomeTaskerController extends attributeController implements Initializable {
@@ -70,11 +66,11 @@ public class HomeTaskerController extends attributeController implements Initial
 
     }
     @FXML
-    private PasswordField Pass_passwordField;
+    protected PasswordField Pass_passwordField;
 
 
     @FXML
-    private TextField UsernameTextfield;
+    protected TextField UsernameTextfield;
 
 
     //Setting
@@ -109,14 +105,22 @@ sceneSwitcher("Login",LogoutBtn);
 
     @FXML
     void toDashboard(ActionEvent event) throws IOException {
-        Button b= (Button) event.getSource();
-        if ( b==  Loginbtn) {
-            sceneSwitcher("Dashboard",Loginbtn);
-        }else if (b == backtodashboardbtn) {
-            sceneSwitcher("Dashboard",backtodashboardbtn);
-        }
-        System.out.println("Username: "+UsernameTextfield.getText()+"\n Password: "+Pass_passwordField.getText());
+        Button b = (Button) event.getSource();
+        if (b == Loginbtn) {
+ArrayList<User> users = read_user();
 
+       if (checker()==0) {
+for (int i = 0 ; i< users.size();i++){
+          if (UsernameTextfield.getText().equals(users.get(i).getUserName()) && Pass_passwordField.getText().equals(users.get(i).getPassword())) {
+
+             sceneSwitcher("Dashboard", Loginbtn);
+           }
+}
+       }
+
+        }else if (b == backtodashboardbtn) {
+            sceneSwitcher("Dashboard", backtodashboardbtn);
+        }
 
 
     }
@@ -184,7 +188,41 @@ sceneSwitcher("Check-out",proceedBtn);
 
         Platform.exit();
     }
+
+    @Override
+    public int checker() {
+
+
+        if (UsernameTextfield.getLength() == 0 || Pass_passwordField.getLength() == 0) {
+   if (UsernameTextfield.getLength() == 0){
+
+
+       UsernameTextfield.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
+   }else {
+       UsernameTextfield.setStyle(null);
+   }
+
+            if (Pass_passwordField.getLength() == 0) {
+
+                Pass_passwordField.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
+            }else {
+
+                Pass_passwordField.setStyle(null);
+
+            }
+            return -1;
+
+        }else {
+            UsernameTextfield.setStyle(null);
+Pass_passwordField.setStyle(null);
+            return 0;
+        }
+
+    }
+
 }
+
+
 
 
 
