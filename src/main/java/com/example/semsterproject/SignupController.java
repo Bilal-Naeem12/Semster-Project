@@ -12,7 +12,7 @@ import javafx.scene.image.Image;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class SignupController extends attributeController implements Initializable {
+public class SignupController extends attributeController implements Initializable ,validator{
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -45,10 +45,10 @@ public class SignupController extends attributeController implements Initializab
 
 if (checker() == 0) {
     if (password_signup.getText().equals(confirm_signup.getText()) ) {
-        Image image = new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
-        User user = new User(username_signup.getText(), email_signup.getText(), address_signup.getText(), choicebox_gender.getValue(), password_signup.getText(),image.getUrl());
-        write_user(user);
-        sceneSwitcher("Login", SIGNUPbtn);
+
+        User user = new User(username_signup.getText(), email_signup.getText(), address_signup.getText(), choicebox_gender.getValue(), password_signup.getText());
+ UploadImgController.setUser(user);
+        sceneSwitcher("Upload-Image", SIGNUPbtn);
     }
     else {
         System.out.println("call me again");
@@ -64,7 +64,7 @@ if (checker() == 0) {
 
 
 
-
+@Override
      public int checker() {
 
 

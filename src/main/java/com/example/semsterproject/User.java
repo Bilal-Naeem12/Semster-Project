@@ -17,7 +17,7 @@ private String img;
         this.img = img;
     }
 
-    public User(String userName, String email, String address, String gender, String password, String img) {
+    public User(String userName, String email, String address, String gender, String password) {
         this.userName = userName;
         this.email = email;
         this.address = address;
