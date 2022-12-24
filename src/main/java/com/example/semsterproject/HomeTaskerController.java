@@ -112,8 +112,8 @@ ArrayList<User> users = read_user();
        if (checker()==0) {
 for (int i = 0 ; i< users.size();i++){
           if (UsernameTextfield.getText().equals(users.get(i).getUserName()) && Pass_passwordField.getText().equals(users.get(i).getPassword())) {
-
-             sceneSwitcher("Dashboard", Loginbtn);
+setUser(users.get(i));
+          sceneSwitcher("Dashboard",Loginbtn);
            }
 }
        }

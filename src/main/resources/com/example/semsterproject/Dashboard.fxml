@@ -32,7 +32,7 @@
                      </VBox.margin>
                   </Circle>
                   <Pane prefHeight="16.0" prefWidth="198.0" />
-                  <Label id="username-dashboard" alignment="CENTER" prefHeight="23.0" prefWidth="209.0" styleClass="label-text-end" text="M Bilal Naeem" />
+                  <Label id="username-dashboard" fx:id="nameLabel" alignment="CENTER" prefHeight="23.0" prefWidth="209.0" styleClass="label-text-end" text="M Bilal Naeem" />
                   <Pane prefHeight="16.0" prefWidth="198.0" />
                   <Line endX="-153.70709228515625" endY="-0.0014483928680419922" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
                      <VBox.margin>

@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 public abstract class attributeController {
 static ArrayList<User> userArrayList ;
-    Stage   stage;
-
+    Stage   stage=null;
+static   User user;
 attributeController(){
 
     userArrayList = read_user();
@@ -83,6 +83,14 @@ ArrayList<User>  readList = (ArrayList) out.readObject();
         }
 
 
+    }
+
+    public static void setUser(User user) {
+        attributeController.user = user;
+    }
+
+    public static User getUser() {
+        return user;
     }
 
     public abstract int checker();
