@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class HomeTaskerController extends attributeController implements Initializable {
+public class HomeTaskerController extends attributeController implements Initializable ,validator{
 
 
 
@@ -189,7 +189,7 @@ sceneSwitcher("Check-out",proceedBtn);
         Platform.exit();
     }
 
-    @Override
+  @Override
     public int checker() {
 
 

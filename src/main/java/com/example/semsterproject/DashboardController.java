@@ -308,10 +308,6 @@ sceneSwitcher("Plumber",plumberBtn);
     }
 
 
-    @Override
-    public int checker() {
-        return 0;
-    }
 
 
 

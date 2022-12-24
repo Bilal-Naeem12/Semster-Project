@@ -7,8 +7,13 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.ArrayList;
+interface  validator{
 
-public abstract class attributeController {
+    public int checker();
+
+}
+public class attributeController {
+
 static ArrayList<User> userArrayList ;
     Stage   stage=null;
 static   User user;
@@ -93,5 +98,5 @@ ArrayList<User>  readList = (ArrayList) out.readObject();
         return user;
     }
 
-    public abstract int checker();
+
 }
