@@ -4,7 +4,9 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 
@@ -12,16 +14,20 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class DashboardController extends attributeController implements Initializable {
+
+
+
     //Dashboard
     @FXML
     private Circle Userpfp;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-        Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+      Image img = new Image(getUser().getImg());
+   // Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+     //   Image img =  new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
         Userpfp.setFill(new ImagePattern(img));
-
+setNameLabel();
     }
     @FXML
     private Button Beauty_btn;
@@ -35,6 +41,7 @@ public class DashboardController extends attributeController implements Initiali
 
     @FXML
     void toHomeServicesScreen(ActionEvent event) {
+
         sceneSwitcher("Home-Services-Selection",homeServicesbtn);
     }
 
@@ -50,9 +57,20 @@ sceneSwitcher("Login",dashboard_Logout_Btn);
     void toCart(ActionEvent event) {
 sceneSwitcher("Cart",cartBtn);
     }
+    @FXML
+    private Button menuBtn;
 
+    @FXML
+    private AnchorPane miniDashboard;
 
-
+    @FXML
+    void popUP(ActionEvent event) {
+        if (miniDashboard.isVisible()){
+miniDashboard.setVisible(false);
+        }else {
+            miniDashboard.setVisible(true);
+        }
+    }
 
 
     @FXML
@@ -187,7 +205,8 @@ sceneSwitcher("Full-House-Cleaning",fullHouseBtn);
 //beauty & Selfcare
 
 
-
+    @FXML
+    private Button backtoDashboardbtn2;
     @FXML
     private Button backtoDashboardbtn;
 
@@ -201,6 +220,8 @@ sceneSwitcher("Full-House-Cleaning",fullHouseBtn);
             sceneSwitcher("Dashboard",backtoDashboardbtn);
         }else if (b == homeServicesBack) {
             sceneSwitcher("Dashboard",homeServicesBack);
+        } else if (b == backtoDashboardbtn2) {
+            sceneSwitcher("Dashboard",backtoDashboardbtn2);
         }
 
     }
@@ -285,6 +306,46 @@ sceneSwitcher("Painter",painterBtn);
     void toPlumber(ActionEvent event) {
 sceneSwitcher("Plumber",plumberBtn);
     }
+
+
+    @Override
+    public int checker() {
+        return 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //methods
+    @FXML
+    private Label nameLabel;
+    public void setNameLabel(){
+
+nameLabel.setText(attributeController.getUser().getUserName());
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

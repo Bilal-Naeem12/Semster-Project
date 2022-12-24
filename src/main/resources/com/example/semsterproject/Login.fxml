@@ -22,7 +22,7 @@
                <children>
                   <Label styleClass="label-text" text="USERNAME" />
                   <Pane prefHeight="7.0" prefWidth="296.0" />
-                  <TextField prefHeight="28.0" prefWidth="296.0" promptText="M Bilal Naeem">
+                  <TextField fx:id="UsernameTextfield" prefHeight="28.0" prefWidth="296.0" promptText="M Bilal Naeem">
                      <padding>
                         <Insets left="15.0" />
                      </padding></TextField>
@@ -32,7 +32,7 @@
                <children>
                   <Label styleClass="label-text" text="PASSWORD" />
                   <Pane prefHeight="7.0" prefWidth="296.0" />
-                  <PasswordField prefHeight="29.0" prefWidth="296.0" promptText="Enter Password">
+                  <PasswordField fx:id="Pass_passwordField" prefHeight="29.0" prefWidth="296.0" promptText="Enter Password">
                      <padding>
                         <Insets left="15.0" />
                      </padding></PasswordField>

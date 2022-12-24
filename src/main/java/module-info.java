@@ -5,5 +5,6 @@ module com.example.semsterproject {
 
     opens com.example.semsterproject to javafx.fxml;
     exports com.example.semsterproject;
-    opens com.example.semsterproject.controller to javafx.fxml;
+
+
 }

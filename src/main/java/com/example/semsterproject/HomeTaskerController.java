@@ -1,23 +1,18 @@
 package com.example.semsterproject;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.layout.Pane;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import javafx.stage.Window;
 
 import java.io.IOException;
 import java.net.URL;
-import java.util.Objects;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class HomeTaskerController extends attributeController implements Initializable {
@@ -57,20 +52,25 @@ public class HomeTaskerController extends attributeController implements Initial
     void exit(ActionEvent event) throws IOException {
 
 
-    /*   FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Exit.fxml"));
+      FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Exit.fxml"));
      Scene scene = new Scene(fxmlLoader.load());
         Stage stage1 = new Stage();
         stage1.initStyle(StageStyle.UNDECORATED);
         stage1.setScene(scene);
+        stage1.centerOnScreen();
    stage1.show();
-*/
 
-                Stage stage = (Stage) close.getScene().getWindow();
-                stage.close();
+
+     //  sceneSwitcher("Exit",close);
+
 
     }
+    @FXML
+    protected PasswordField Pass_passwordField;
 
 
+    @FXML
+    protected TextField UsernameTextfield;
 
 
     //Setting
@@ -105,14 +105,22 @@ sceneSwitcher("Login",LogoutBtn);
 
     @FXML
     void toDashboard(ActionEvent event) throws IOException {
-        Button b= (Button) event.getSource();
-        if ( b==  Loginbtn) {
-            sceneSwitcher("Dashboard",Loginbtn);
+        Button b = (Button) event.getSource();
+        if (b == Loginbtn) {
+ArrayList<User> users = read_user();
+
+       if (checker()==0) {
+for (int i = 0 ; i< users.size();i++){
+          if (UsernameTextfield.getText().equals(users.get(i).getUserName()) && Pass_passwordField.getText().equals(users.get(i).getPassword())) {
+setUser(users.get(i));
+          sceneSwitcher("Dashboard",Loginbtn);
+           }
+}
+       }
+
         }else if (b == backtodashboardbtn) {
-            sceneSwitcher("Dashboard",backtodashboardbtn);
+            sceneSwitcher("Dashboard", backtodashboardbtn);
         }
-
-
 
 
     }
@@ -166,22 +174,55 @@ sceneSwitcher("Check-out",proceedBtn);
 
     @FXML
     public Button yesBtn;
+    Stage stage;
 
     @FXML
-    boolean NO(ActionEvent event) {
-        return false;
+    void NO(ActionEvent event) {
+
+        stage = (Stage) noBtn.getScene().getWindow();
+        stage.close();
     }
 
     @FXML
-    public  void YES(ActionEvent event) {
+    public  void YES(ActionEvent event) throws IOException {
+
+        Platform.exit();
+    }
+
+    @Override
+    public int checker() {
 
 
-        Stage stage1  = (Stage)  yesBtn.getScene().getWindow();
-        stage1.close();
-    //    stage.close();
+        if (UsernameTextfield.getLength() == 0 || Pass_passwordField.getLength() == 0) {
+   if (UsernameTextfield.getLength() == 0){
+
+
+       UsernameTextfield.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
+   }else {
+       UsernameTextfield.setStyle(null);
+   }
+
+            if (Pass_passwordField.getLength() == 0) {
+
+                Pass_passwordField.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
+            }else {
+
+                Pass_passwordField.setStyle(null);
+
+            }
+            return -1;
+
+        }else {
+            UsernameTextfield.setStyle(null);
+Pass_passwordField.setStyle(null);
+            return 0;
+        }
 
     }
+
 }
+
+
 
 
 

@@ -5,18 +5,17 @@
 <?import javafx.geometry.Rectangle2D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.shape.Circle?>
-<?import javafx.scene.shape.Line?>
 
 <!--suppress XmlPathReference -->
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.DashboardController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.C.CONTROLLER">
     <children>
         <AnchorPane id="top-beauty" layoutY="-1.0" prefHeight="55.0" prefWidth="950.0">
             <styleClass>
@@ -36,14 +35,6 @@
                             </graphic>
                         </Button>
                         <Pane id="img-btn" prefHeight="66.0" prefWidth="796.0" />
-                        <Button id="image-btn" fx:id="menuBtn" mnemonicParsing="false" onAction="#popUP">
-                            <graphic>
-                                <Circle fx:id="Userpfp" fill="WHITE" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
-                            </graphic>
-                            <HBox.margin>
-                                <Insets top="4.0" />
-                            </HBox.margin>
-                        </Button>
                     </children>
                 </HBox>
             </children>
@@ -63,13 +54,13 @@
                                     <children>
                                         <ImageView fitHeight="87.0" fitWidth="117.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                             <viewport>
-                                                <Rectangle2D height="150.0" minX="12.0" width="200.0" />
+                                                <Rectangle2D height="150.0" minX="40.0" minY="20.0" width="200.0" />
                                             </viewport>
                                             <HBox.margin>
                                                 <Insets top="5.0" />
                                             </HBox.margin>
                                  <image>
-                                    <Image url="@../../../Images/Stock%20images/10seatersofa.jpg" />
+                                    <Image url="@../../../Images/Stock%20images/hatchbackcarwash.jpg" />
                                  </image>
                                         </ImageView>
                               <Pane prefHeight="98.0" prefWidth="24.0" />
@@ -78,7 +69,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label prefHeight="32.0" prefWidth="157.0" text="10 SETTER ">
+                                                <Label prefHeight="32.0" prefWidth="175.0" text="HATCHBACK">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -127,12 +118,12 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="4.0" prefHeight="100.0" prefWidth="484.0">
                                     <children>
-                                        <ImageView fitHeight="92.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="92.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/7seatersofa.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/crossovercarwash.jpg" />
                                             </image>
                                             <viewport>
-                                                <Rectangle2D height="200.0" minY="20.0" width="210.0" />
+                                                <Rectangle2D height="200.0" width="210.0" />
                                             </viewport>
                                             <HBox.margin>
                                                 <Insets top="3.0" />
@@ -144,7 +135,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="7 SETTER">
+                                                <Label text="CROSSOVER">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -195,7 +186,7 @@
                                     <children>
                                         <ImageView fitHeight="86.0" fitWidth="211.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/5seatersofa.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/minivancarwash.jpg" />
                                             </image>
                                             <viewport>
                                                 <Rectangle2D height="180.0" minX="20.0" width="250.0" />
@@ -210,7 +201,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="5 SETTER">
+                                                <Label text="MINIVAN">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -259,9 +250,9 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="108.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fitHeight="80.0" fitWidth="128.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
-                                                <Image url="@../../../Images/Stock%20images/3seatersofa.jpg" />
+                                                <Image url="@../../../Images/Stock%20images/sedancarwash.jpg" />
                                             </image>
                                             <viewport>
                                                 <Rectangle2D />
@@ -276,7 +267,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="3 SETTER">
+                                                <Label text="SEDAN">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -332,106 +323,22 @@
                         </ImageView>
                     </graphic>
                 </Button>
-            <AnchorPane fx:id="miniDashboard" layoutX="750.0" prefHeight="267.0" prefWidth="202.0" style="-fx-background-color: #051153;" visible="false">
+            <AnchorPane layoutX="750.0" prefHeight="200.0" prefWidth="200.0" styleClass="glass" visible="false">
                <children>
-                  <VBox prefHeight="267.0" prefWidth="200.0">
-                     <children>
-                        <Pane prefHeight="8.0" prefWidth="200.0" />
-                        <Label id="username-dashboard" fx:id="nameLabel" alignment="CENTER" prefHeight="23.0" prefWidth="209.0" style="-fx-font-size: 19;" styleClass="label-text-end" text="M Bilal Naeem" />
-                        <Pane prefHeight="15.0" prefWidth="200.0" />
-                        <Line endX="-153.70709228515625" endY="-0.0014483928680419922" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
-                           <VBox.margin>
-                              <Insets left="13.0" />
-                           </VBox.margin>
-                        </Line>
-                        <Pane prefHeight="4.0" prefWidth="200.0" />
-                        <HBox prefHeight="36.0" prefWidth="164.0">
-                           <children>
-                              <ImageView fitHeight="18.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../Images/Icons/hambuger.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="15.0" top="12.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <Pane prefHeight="36.0" prefWidth="8.0" />
-                              <Button fx:id="backtoDashboardbtn" mnemonicParsing="false" onAction="#toDashboard" styleClass="dashboard-side-btn" text="Dashboard">
-                                 <HBox.margin>
-                                    <Insets top="7.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <Pane prefHeight="5.0" prefWidth="200.0" />
-                        <HBox prefHeight="36.0" prefWidth="164.0">
-                           <children>
-                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../Images/Icons/Trolley.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="15.0" top="6.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <Pane prefHeight="36.0" prefWidth="8.0" />
-                              <Button fx:id="cartBtn1" mnemonicParsing="false" onAction="#toCart" styleClass="dashboard-side-btn" text="Cart">
-                                 <HBox.margin>
-                                    <Insets top="7.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <Pane prefHeight="7.0" prefWidth="200.0" />
-                        <HBox prefHeight="36.0" prefWidth="124.0">
-                           <children>
-                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../Images/Icons/Vector.png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="18.0" top="5.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <Pane prefHeight="36.0" prefWidth="8.0" />
-                              <Button fx:id="settingBtn" mnemonicParsing="false" onAction="#toSetting" styleClass="dashboard-side-btn" text="Setting">
-                                 <HBox.margin>
-                                    <Insets top="7.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <HBox prefHeight="36.0" prefWidth="124.0">
-                           <children>
-                              <ImageView fitHeight="20.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../../../Images/Icons/Vector%20(1).png" />
-                                 </image>
-                                 <HBox.margin>
-                                    <Insets left="15.0" top="9.0" />
-                                 </HBox.margin>
-                              </ImageView>
-                              <Pane prefHeight="36.0" prefWidth="8.0" />
-                              <Button fx:id="historyBtn" mnemonicParsing="false" onAction="#toHistory" styleClass="dashboard-side-btn" text="History">
-                                 <HBox.margin>
-                                    <Insets top="7.0" />
-                                 </HBox.margin>
-                              </Button>
-                           </children>
-                        </HBox>
-                        <Pane prefHeight="15.0" prefWidth="200.0" />
-                        <Line endX="-153.70709228515625" endY="-0.0014483928680419922" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
-                           <VBox.margin>
-                              <Insets bottom="9.0" left="13.0" />
-                           </VBox.margin>
-                        </Line>
-                        <Button id="dashboard-logout" fx:id="dashboard_Logout_Btn" mnemonicParsing="false" onAction="#toLoginScreen" prefHeight="20.0" prefWidth="109.0" text="LOGOUT">
-                           <VBox.margin>
-                              <Insets left="50.0" />
-                           </VBox.margin>
-                        </Button>
-                     </children>
-                  </VBox>
+                  <Label layoutX="80.0" layoutY="14.0" prefHeight="32.0" prefWidth="41.0" text="hiii">
+                     <styleClass>
+                        <String fx:value="heading-label" />
+                        <String fx:value="Hair-h-text" />
+                     </styleClass>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="76.0" prefHeight="32.0" prefWidth="60.0" text="Bye">
+                     <styleClass>
+                        <String fx:value="heading-label" />
+                        <String fx:value="Hair-h-text" />
+                     </styleClass>
+                  </Label>
+                  <Button layoutX="63.0" layoutY="134.0" mnemonicParsing="false" text="Button" />
+                  <ToggleButton layoutX="14.0" layoutY="100.0" mnemonicParsing="false" text="ToggleButton" underline="true" />
                </children>
             </AnchorPane>
             </children>
