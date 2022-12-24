@@ -162,7 +162,7 @@
                                  </HBox.margin>
                               </ImageView>
                               <Pane prefHeight="36.0" prefWidth="8.0" />
-                              <Button fx:id="backtoDashboardbtn" mnemonicParsing="false" onAction="#toDashboard" styleClass="dashboard-side-btn" text="Dashboard">
+                              <Button fx:id="backtoDashboardbtn2" mnemonicParsing="false" onAction="#toDashboard" styleClass="dashboard-side-btn" text="Dashboard">
                                  <HBox.margin>
                                     <Insets top="7.0" />
                                  </HBox.margin>

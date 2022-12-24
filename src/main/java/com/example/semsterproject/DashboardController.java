@@ -22,8 +22,8 @@ public class DashboardController extends attributeController implements Initiali
     private Circle Userpfp;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
-     Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+      Image img = new Image(getUser().getImg());
+   // Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
      //   Image img =  new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
         Userpfp.setFill(new ImagePattern(img));
@@ -205,7 +205,8 @@ sceneSwitcher("Full-House-Cleaning",fullHouseBtn);
 //beauty & Selfcare
 
 
-
+    @FXML
+    private Button backtoDashboardbtn2;
     @FXML
     private Button backtoDashboardbtn;
 
@@ -219,6 +220,8 @@ sceneSwitcher("Full-House-Cleaning",fullHouseBtn);
             sceneSwitcher("Dashboard",backtoDashboardbtn);
         }else if (b == homeServicesBack) {
             sceneSwitcher("Dashboard",homeServicesBack);
+        } else if (b == backtoDashboardbtn2) {
+            sceneSwitcher("Dashboard",backtoDashboardbtn2);
         }
 
     }

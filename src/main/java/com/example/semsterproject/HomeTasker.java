@@ -16,6 +16,7 @@ public class HomeTasker extends Application {
 
         FXMLLoader fxmlLoader = new FXMLLoader(HomeTasker.class.getResource("Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
+
         stage.setScene(scene);
 stage.centerOnScreen();
         stage.show();

@@ -153,5 +153,10 @@
             </VBox>
          </children>
       </AnchorPane>
+      <Label id="edit-profile-heading" fx:id="nameLabel" alignment="CENTER" layoutX="649.0" layoutY="52.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="214.0" styleClass="heading-label" text="EDIT PROFILE" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Gabriola" size="37.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>
