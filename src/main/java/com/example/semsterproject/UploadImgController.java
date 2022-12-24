@@ -9,8 +9,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
+import javafx.stage.FileChooser;
 
+import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class UploadImgController extends attributeController implements Initializable {
@@ -57,12 +61,16 @@ public class UploadImgController extends attributeController implements Initiali
 
 
 
-    @FXML
-    private ImageView browser;
 
     @FXML
-    void fileChooser(MouseEvent event) {
+    private Button browser;
 
+    @FXML
+    void fileChooser(ActionEvent event) {
+        FileChooser fc = new FileChooser();
+        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("list","*.jpg","*.png"));
+        File f =  fc.showOpenDialog(null);
+   setImg(Userpfp,f.getAbsolutePath());
     }
 
 

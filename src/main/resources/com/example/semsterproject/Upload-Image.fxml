@@ -44,9 +44,9 @@
                </children>
             </HBox>
             <Circle fx:id="Userpfp" fill="WHITE" layoutX="427.0" layoutY="78.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
-            <Button id="image-btn" layoutX="435.0" layoutY="86.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="47.0">
+            <Button id="image-btn" fx:id="browser" layoutX="435.0" layoutY="86.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="39.0" prefWidth="47.0">
                <graphic>
-                  <ImageView fx:id="browser" fitHeight="35.0" fitWidth="34.0" onDragDetected="#fileChooser" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../../Images/Icons/PFP%20EDIT.png" />
                      </image>
