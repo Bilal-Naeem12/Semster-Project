@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
@@ -198,7 +199,7 @@ sceneSwitcher("Full-House-Cleaning",fullHouseBtn);
             sceneSwitcher("Setting",change_backtoSettingbtn);
         }else if (b == settingBtn) {
             sceneSwitcher("Setting",settingBtn);
-        } {
+        } else {
             sceneSwitcher("Setting",confirmbtn);
         }
     }
@@ -306,9 +307,6 @@ sceneSwitcher("Painter",painterBtn);
     void toPlumber(ActionEvent event) {
 sceneSwitcher("Plumber",plumberBtn);
     }
-
-
-
 
 
 

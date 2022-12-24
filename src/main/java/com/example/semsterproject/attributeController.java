@@ -3,6 +3,9 @@ package com.example.semsterproject;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.paint.ImagePattern;
+import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
 import java.io.*;
@@ -12,15 +15,24 @@ interface  validator{
     public int checker();
 
 }
-public class attributeController {
+public class attributeController  {
 
 static ArrayList<User> userArrayList ;
     Stage   stage=null;
 static   User user;
-attributeController(){
+static int userID;
+
+    public static int getUserID() {
+        return userID;
+    }
+
+    public static void setUserID(int userID) {
+        attributeController.userID = userID;
+    }
+
+    attributeController(){
 
     userArrayList = read_user();
-
 }
 
 
@@ -90,6 +102,39 @@ ArrayList<User>  readList = (ArrayList) out.readObject();
 
     }
 
+    public void updateUser(){
+
+
+  userArrayList.remove(getUserID());
+updateUserList(userArrayList);
+
+    }
+
+    public void updateUserList(ArrayList<User> userList){
+
+        FileOutputStream file = null;
+        try {
+            file = new FileOutputStream("UserData");
+            ObjectOutputStream out = new ObjectOutputStream(file);
+
+
+            out.writeObject(userList);
+
+
+            System.out.println("ArrayList Updated");
+            file.close();
+
+
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
+
+
+    }
+
     public static void setUser(User user) {
         attributeController.user = user;
     }
@@ -99,4 +144,11 @@ ArrayList<User>  readList = (ArrayList) out.readObject();
     }
 
 
+   static ImagePattern imgP;
+    public void setImg(Circle circle, String imgPath) {
+        Image img = new Image(imgPath);
+        imgP  = new ImagePattern(img);
+        circle.setFill(imgP);
+
+    }
 }
