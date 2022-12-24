@@ -9,8 +9,12 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
+import javafx.stage.FileChooser;
 
+import java.io.File;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class UploadImgController extends attributeController implements Initializable {
@@ -57,12 +61,16 @@ public class UploadImgController extends attributeController implements Initiali
 
 
 
-    @FXML
-    private ImageView browser;
 
     @FXML
-    void fileChooser(MouseEvent event) {
+    private Button browser;
 
+    @FXML
+    void fileChooser(ActionEvent event) {
+        FileChooser fc = new FileChooser();
+        fc.getExtensionFilters().add(new FileChooser.ExtensionFilter("list","*.jpg","*.png"));
+        File f =  fc.showOpenDialog(null);
+   setImg(Userpfp,f.getAbsolutePath());
     }
 
 
@@ -73,7 +81,7 @@ public class UploadImgController extends attributeController implements Initiali
 user.setImg(imgP.getImage().getUrl());
         write_user(user);
         attributeController.setUser(user);
-sceneSwitcher("Dashboard",Uploadbtn);
+sceneSwitcher("Login",Uploadbtn);
     }
 
     @Override
@@ -123,7 +131,7 @@ setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\
         setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\7.png");
 
     }
-private ImagePattern imgP;
+
 private static  User user;
 
     public static User getUser() {
@@ -134,12 +142,7 @@ private static  User user;
         UploadImgController.user= user;
     }
 
-    private void setImg(Circle circle, String imgPath) {
-        Image img = new Image(imgPath);
-       imgP  = new ImagePattern(img);
-circle.setFill(imgP);
 
-    }
 
 
 
