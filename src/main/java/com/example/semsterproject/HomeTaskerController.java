@@ -114,9 +114,10 @@ ArrayList<User> users = read_user();
        if (checker()==0) {
 for (int i = 0 ; i< users.size();i++){
           if (UsernameTextfield.getText().equals(users.get(i).getUserName()) && Pass_passwordField.getText().equals(users.get(i).getPassword())) {
+              attributeController.imgP = new ImagePattern(new Image(users.get(i).getImg()));
 setUser(users.get(i));
 setUserID(i);
-attributeController.imgP = new ImagePattern(new Image(users.get(i).getImg()));
+
           sceneSwitcher("Dashboard",Loginbtn);
            }
 }

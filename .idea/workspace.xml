@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82a6a228-91ae-4cc1-b2b2-225baafda22d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/EditController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/ChangePasswordController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Upload-Image-edit.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserData" beforeDir="false" afterPath="$PROJECT_DIR$/UserData" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/EditController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/EditController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/UploadImgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/UploadImgController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/attributeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/attributeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Style/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Style/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Change-Password.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Change-Password.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Upload-Image.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Upload-Image.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +125,8 @@
       <workItem from="1671890719140" duration="640000" />
       <workItem from="1671893052253" duration="3649000" />
       <workItem from="1671898507094" duration="6174000" />
+      <workItem from="1671913604382" duration="104000" />
+      <workItem from="1671954064139" duration="12663000" />
     </task>
     <servers />
   </component>
@@ -130,16 +135,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTasker.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

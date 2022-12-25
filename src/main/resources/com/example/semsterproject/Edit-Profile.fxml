@@ -153,5 +153,18 @@
             </VBox>
          </children>
       </AnchorPane>
+      <AnchorPane id="background" fx:id="opaqueAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.52" prefHeight="599.0" prefWidth="965.0" stylesheets="@../../../Style/Style.css" visible="false" />
+      <AnchorPane id="background" fx:id="alertAnchor" layoutX="275.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="227.0" prefWidth="395.0" style="-fx-background-color: #820275;" stylesheets="@../../../Style/Style.css" visible="false">
+         <children>
+            <Label layoutX="70.0" layoutY="24.0" style="-fx-text-fill: white; -fx-font-size: 30;" styleClass="heading-label" text="ARE YOU SURE ?" />
+            <HBox layoutX="55.0" layoutY="161.0">
+               <children>
+                  <Button id="yesBtn" fx:id="yesBtn" mnemonicParsing="false" onAction="#YES" prefHeight="38.0" prefWidth="118.0" text="YES" />
+                  <Pane prefHeight="0.0" prefWidth="49.0" />
+                  <Button fx:id="noBtn" mnemonicParsing="false" onAction="#NO" prefHeight="38.0" prefWidth="118.0" text="NO" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
     </children>
 </AnchorPane>
