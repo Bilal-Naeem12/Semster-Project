@@ -13,7 +13,7 @@
 
 <!--suppress ALL -->
 
-<AnchorPane fx:id="cardPane" prefHeight="103.0" prefWidth="254.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="cardPane" prefHeight="103.0" prefWidth="254.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.CardController">
    <children>
       <HBox layoutX="23.0" layoutY="16.0" prefHeight="88.0" prefWidth="237.0" styleClass="margin-item">
          <children>

@@ -42,14 +42,14 @@ cardArrayList.addAll(getCartCards());
 //        } catch (IOException e) {
 //                throw new RuntimeException(e);
 //            }
-
+//
 
 }
 
 
 
     @FXML
-    private TilePane tilepane;
+    protected TilePane tilepane;
     @FXML
     private Button backtodashboardbtn;
 
@@ -67,14 +67,14 @@ sceneSwitcher("Check-out",proceedBtn);
     }
 
 
-
+  private   Cart_Card card;
     private   ArrayList<Cart_Card> cardArrayList = new ArrayList<>();
 
     public ArrayList<Cart_Card> getCartCards() {
 
 ArrayList<Cart_Card> cardArrayList = new ArrayList<>();
 
-Cart_Card card;
+
 //for (int i=0;i<10;i++){
 //
 //  card = new Cart_Card("Keritan",200,"Images/Stock images/hair-treatments.jpg");
@@ -116,32 +116,28 @@ return cardArrayList;
 
     }
 
+    private  CardController cardController;
 private  int counter = 0;
 
     private  void setCardtoTilepane(ArrayList<Cart_Card> cCards){
         try {
 
+if (counter >= 5){counter = 0;}
 
     FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Cart-Card.fxml"));
 
         AnchorPane anchorPane = fxmlLoader.load();
 
-    CardController cardController = fxmlLoader.getController();
-cardController.setCard(cCards.get(counter));
+            cardController  = fxmlLoader.getController();
+cardController.setCardToCart(cCards.get(counter));
     tilepane.getChildren().add(anchorPane);
 
-            cardController.remove_Card.setOnAction(e->{
-                for (int i = 0 ; i<cCards.size();i++) {
-
-                    if (cCards.get(i).getId() == i) {
+cardController.cardPane.setOnMousePressed(e->{
 
 
-                        tilepane.getChildren().remove(i);
+   cardController.cardPane.setStyle("-fx-border-color: #00f3c6; -fx-border-width: 2px");
 
-                    }
-
-                }
-            });
+});
 
 }catch (Exception e){
 
