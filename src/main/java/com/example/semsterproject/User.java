@@ -1,13 +1,21 @@
 package com.example.semsterproject;
 
+import javafx.scene.image.Image;
+
 import java.io.Serializable;
 
 public class User implements Serializable {
    private String userName,email,address,password;
   private   String gender;
+private String img;
 
+    public String getImg() {
+        return img;
+    }
 
-
+    public void setImg(String img) {
+        this.img = img;
+    }
 
     public User(String userName, String email, String address, String gender, String password) {
         this.userName = userName;
@@ -15,6 +23,7 @@ public class User implements Serializable {
         this.address = address;
         this.gender = gender;
         this.password = password;
+        this.img = img;
     }
 
 

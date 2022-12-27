@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<!--suppress ALL -->
+
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.UploadImgController">
+   <children>
+      <Label id="edit-profile-heading" alignment="CENTER" layoutX="305.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="342.0" styleClass="heading-label" text="UPLOAD YOUR IMAGE" textFill="WHITE">
+         <font>
+            <Font name="Gabriola" size="37.0" />
+         </font>
+      </Label>
+      <Line endX="145.0" fill="WHITE" layoutX="555.0" layoutY="80.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
+      <AnchorPane layoutX="50.0" layoutY="98.0" prefHeight="463.0" prefWidth="853.0" styleClass="glass">
+         <children>
+            <HBox layoutX="94.0" layoutY="193.0" prefHeight="39.0" prefWidth="666.0">
+               <children>
+                  <Line endX="-12.5" fill="WHITE" startX="-305.0" strokeWidth="0.5" styleClass="line">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Line>
+                  <Label id="edit-profile-heading" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="72.0" styleClass="heading-label" text="OR" textFill="WHITE">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-12.5" fill="WHITE" startX="-305.0" strokeWidth="0.5" styleClass="line">
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Line>
+               </children>
+            </HBox>
+            <Circle fx:id="Userpfp" fill="WHITE" layoutX="427.0" layoutY="78.0" radius="53.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
+            <Button id="image-btn" fx:id="browser" layoutX="435.0" layoutY="86.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="39.0" prefWidth="47.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Icons/PFP%20EDIT.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <HBox layoutX="19.0" layoutY="260.0">
+               <children>
+                  <Button id="image-btn" fx:id="btn1" mnemonicParsing="false" onAction="#setProfile" prefHeight="39.0" prefWidth="47.0">
+                     <graphic>
+                        <Circle fx:id="Userpfp1" fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="91.0" prefWidth="29.0" />
+                  <Button id="image-btn" fx:id="btn11" mnemonicParsing="false" onAction="#setProfile1" prefHeight="39.0" prefWidth="47.0">
+                     <graphic>
+                        <Circle fx:id="Userpfp11" fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="91.0" prefWidth="29.0" />
+                  <Button id="image-btn" fx:id="btn12" mnemonicParsing="false" onAction="#setProfile2" prefHeight="39.0" prefWidth="47.0">
+                     <graphic>
+                        <Circle fx:id="Userpfp12" fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="91.0" prefWidth="29.0" />
+                  <Button id="image-btn" fx:id="btn13" mnemonicParsing="false" onAction="#setProfile3" prefHeight="39.0" prefWidth="47.0">
+                     <graphic>
+                        <Circle fx:id="Userpfp13" fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="91.0" prefWidth="29.0" />
+                  <Button id="image-btn" fx:id="btn14" mnemonicParsing="false" onAction="#setProfile4" prefHeight="39.0" prefWidth="47.0">
+                     <graphic>
+                        <Circle fx:id="Userpfp14" fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
+                     </graphic>
+                  </Button>
+                  <Pane prefHeight="91.0" prefWidth="29.0" />
+                  <Button id="image-btn" fx:id="btn15" mnemonicParsing="false" onAction="#setProfile5" prefHeight="39.0" prefWidth="47.0">
+                     <graphic>
+                        <Circle fx:id="Userpfp15" fill="WHITE" radius="46.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <Button id="dashboard-logout" fx:id="Uploadbtn2" layoutX="303.0" layoutY="403.0" mnemonicParsing="false" onAction="#upload" prefHeight="39.0" prefWidth="249.0" text="UPLOAD" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

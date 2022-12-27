@@ -14,7 +14,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.DashboardController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.EditController">
     <children>
         <Label id="edit-profile-heading" alignment="CENTER" layoutX="369.0" layoutY="137.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="214.0" styleClass="heading-label" text="EDIT PROFILE" textFill="WHITE">
          <font>
@@ -33,7 +33,7 @@
       <AnchorPane layoutX="423.0" layoutY="22.0">
          <children>
             <Circle fx:id="Userpfp" fill="WHITE" layoutX="52.0" layoutY="51.0" radius="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
-            <Button id="image-btn" layoutX="62.0" layoutY="63.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="29.0">
+            <Button id="image-btn" fx:id="browser" layoutX="62.0" layoutY="63.0" mnemonicParsing="false" onAction="#fileChooser" prefHeight="24.0" prefWidth="29.0">
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -52,11 +52,11 @@
                      <children>
                         <Label styleClass="label-text" text="USERNAME" />
                         <Pane prefHeight="7.0" prefWidth="296.0" />
-                        <AnchorPane prefHeight="31.0" prefWidth="287.0" styleClass="glass">
+                        <AnchorPane fx:id="pane1" prefHeight="31.0" prefWidth="287.0" styleClass="glass">
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" prefHeight="28.0" prefWidth="200.0" promptText="M Bilal Naeem">
+                                    <TextField id="Edit-text-field" fx:id="ed_username" prefHeight="28.0" prefWidth="200.0" promptText="M Bilal Naeem">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -84,11 +84,11 @@
                      <children>
                         <Label styleClass="label-text" text="EMAIL" />
                         <Pane prefHeight="7.0" prefWidth="296.0" />
-                        <AnchorPane prefHeight="31.0" prefWidth="287.0" styleClass="glass">
+                        <AnchorPane fx:id="pane2" prefHeight="31.0" prefWidth="287.0" styleClass="glass">
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" prefHeight="28.0" prefWidth="200.0" promptText="mbilalnaeem319@gmail.com">
+                                    <TextField id="Edit-text-field" fx:id="ed_email" prefHeight="28.0" prefWidth="200.0" promptText="mbilalnaeem319@gmail.com">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -116,11 +116,11 @@
                      <children>
                         <Label styleClass="label-text" text="ADDRESS" />
                         <Pane prefHeight="7.0" prefWidth="296.0" />
-                        <AnchorPane prefHeight="31.0" prefWidth="287.0" styleClass="glass">
+                        <AnchorPane fx:id="pane3" prefHeight="31.0" prefWidth="287.0" styleClass="glass">
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" prefHeight="28.0" prefWidth="200.0" promptText="185 H2 WAPDA Town Lahore">
+                                    <TextField id="Edit-text-field" fx:id="ed_address" prefHeight="28.0" prefWidth="200.0" promptText="185 H2 WAPDA Town Lahore">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -151,6 +151,19 @@
                   </Button>
                </children>
             </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="background" fx:id="opaqueAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.52" prefHeight="599.0" prefWidth="965.0" stylesheets="@../../../Style/Style.css" visible="false" />
+      <AnchorPane id="background" fx:id="alertAnchor" layoutX="275.0" layoutY="170.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="227.0" prefWidth="395.0" style="-fx-background-color: #820275;" stylesheets="@../../../Style/Style.css" visible="false">
+         <children>
+            <Label layoutX="70.0" layoutY="24.0" style="-fx-text-fill: white; -fx-font-size: 30;" styleClass="heading-label" text="ARE YOU SURE ?" />
+            <HBox layoutX="55.0" layoutY="161.0">
+               <children>
+                  <Button id="yesBtn" fx:id="yesBtn" mnemonicParsing="false" onAction="#YES" prefHeight="38.0" prefWidth="118.0" text="YES" />
+                  <Pane prefHeight="0.0" prefWidth="49.0" />
+                  <Button fx:id="noBtn" mnemonicParsing="false" onAction="#NO" prefHeight="38.0" prefWidth="118.0" text="NO" />
+               </children>
+            </HBox>
          </children>
       </AnchorPane>
     </children>

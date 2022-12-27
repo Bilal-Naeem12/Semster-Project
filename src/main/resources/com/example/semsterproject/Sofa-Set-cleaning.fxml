@@ -12,6 +12,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
 
 <!--suppress XmlPathReference -->
 
@@ -35,7 +36,7 @@
                             </graphic>
                         </Button>
                         <Pane id="img-btn" prefHeight="66.0" prefWidth="796.0" />
-                        <Button id="image-btn" mnemonicParsing="false">
+                        <Button id="image-btn" fx:id="menuBtn" mnemonicParsing="false" onAction="#popUP">
                             <graphic>
                                 <Circle fx:id="Userpfp" fill="WHITE" radius="24.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
                             </graphic>
@@ -331,6 +332,108 @@
                         </ImageView>
                     </graphic>
                 </Button>
+            <AnchorPane fx:id="miniDashboard" layoutX="750.0" prefHeight="267.0" prefWidth="202.0" style="-fx-background-color: #051153;" visible="false">
+               <children>
+                  <VBox prefHeight="267.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="8.0" prefWidth="200.0" />
+                        <Label id="username-dashboard" fx:id="nameLabel" alignment="CENTER" prefHeight="23.0" prefWidth="209.0" style="-fx-font-size: 19;" styleClass="label-text-end" text="M Bilal Naeem" />
+                        <Pane prefHeight="15.0" prefWidth="200.0" />
+                        <Line endX="-153.70709228515625" endY="-0.0014483928680419922" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
+                           <VBox.margin>
+                              <Insets left="13.0" />
+                           </VBox.margin>
+                        </Line>
+                        <Pane prefHeight="4.0" prefWidth="200.0" />
+                        <HBox prefHeight="36.0" prefWidth="164.0">
+                           <children>
+                              <ImageView fitHeight="18.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/Icons/hambuger.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="12.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Pane prefHeight="36.0" prefWidth="8.0" />
+                              <Button fx:id="backtoDashboardbtn" mnemonicParsing="false" onAction="#toDashboard" styleClass="dashboard-side-btn" text="Dashboard">
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="5.0" prefWidth="200.0" />
+                        <HBox prefHeight="36.0" prefWidth="164.0">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/Icons/Trolley.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="6.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Pane prefHeight="36.0" prefWidth="8.0" />
+                              <Button fx:id="cartBtn1" mnemonicParsing="false" onAction="#toCart" styleClass="dashboard-side-btn" text="Cart">
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="7.0" prefWidth="200.0" />
+                        <HBox prefHeight="36.0" prefWidth="124.0">
+                           <children>
+                              <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/Icons/Vector.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="18.0" top="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Pane prefHeight="36.0" prefWidth="8.0" />
+                              <Button fx:id="settingBtn" mnemonicParsing="false" onAction="#toSetting" styleClass="dashboard-side-btn" text="Setting">
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="36.0" prefWidth="124.0">
+                           <children>
+                              <ImageView fitHeight="20.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../Images/Icons/Vector%20(1).png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="9.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Pane prefHeight="36.0" prefWidth="8.0" />
+                              <Button fx:id="historyBtn" mnemonicParsing="false" onAction="#toHistory" styleClass="dashboard-side-btn" text="History">
+                                 <HBox.margin>
+                                    <Insets top="7.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="15.0" prefWidth="200.0" />
+                        <Line endX="-153.70709228515625" endY="-0.0014483928680419922" fill="WHITE" startX="-322.0" strokeWidth="0.5" styleClass="line">
+                           <VBox.margin>
+                              <Insets bottom="9.0" left="13.0" />
+                           </VBox.margin>
+                        </Line>
+                        <Button id="dashboard-logout" fx:id="dashboard_Logout_Btn" mnemonicParsing="false" onAction="#toLoginScreen" prefHeight="20.0" prefWidth="109.0" text="LOGOUT">
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
             </children>
         </AnchorPane>
     </children>

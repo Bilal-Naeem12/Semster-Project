@@ -7,6 +7,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.paint.ImagePattern;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -15,7 +17,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class HomeTaskerController extends attributeController implements Initializable {
+public class HomeTaskerController extends attributeController implements Initializable ,validator{
 
 
 
@@ -112,8 +114,11 @@ ArrayList<User> users = read_user();
        if (checker()==0) {
 for (int i = 0 ; i< users.size();i++){
           if (UsernameTextfield.getText().equals(users.get(i).getUserName()) && Pass_passwordField.getText().equals(users.get(i).getPassword())) {
+              attributeController.imgP = new ImagePattern(new Image(users.get(i).getImg()));
+setUser(users.get(i));
+setUserID(i);
 
-             sceneSwitcher("Dashboard", Loginbtn);
+          sceneSwitcher("Dashboard",Loginbtn);
            }
 }
        }
@@ -189,7 +194,7 @@ sceneSwitcher("Check-out",proceedBtn);
         Platform.exit();
     }
 
-    @Override
+  @Override
     public int checker() {
 
 
