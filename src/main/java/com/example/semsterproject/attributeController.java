@@ -10,11 +10,7 @@ import javafx.stage.Stage;
 
 import java.io.*;
 import java.util.ArrayList;
-interface  validator{
 
-    public int checker();
-
-}
 public class attributeController  {
 
 static ArrayList<User> userArrayList ;
