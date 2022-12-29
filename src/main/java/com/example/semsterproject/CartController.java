@@ -1,15 +1,14 @@
 package com.example.semsterproject;
+import com.example.semsterproject.Classes.CartCardGUI;
+import com.example.semsterproject.Classes.Cart_Card;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.TilePane;
-import javafx.stage.Stage;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -19,30 +18,6 @@ public class CartController extends attributeController implements Initializable
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 cardArrayList.addAll(getCartCards());
-//        try {
-//for (int i = 0; i< cardArrayList.size();i++){
-//
-//    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Cart-Card.fxml"));
-//
-//        AnchorPane anchorPane = fxmlLoader.load();
-//
-//    CardController cardController = fxmlLoader.getController();
-//
-//    cardController.setCard(cardArrayList.get(i));
-//
-//
-//    tilepane.getChildren().add(anchorPane);
-//int x = i;
-//cardController.remove_Card.setOnAction(e->{
-// tilepane.getChildren().remove(x);
-//    System.out.println("removed");
-//});
-//
-//}
-//        } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//
 
 }
 
@@ -67,20 +42,14 @@ sceneSwitcher("Check-out",proceedBtn);
     }
 
 
-  private   Cart_Card card;
+  private Cart_Card card;
     private   ArrayList<Cart_Card> cardArrayList = new ArrayList<>();
+
+    private    ArrayList<CartCardGUI> guiCards = new ArrayList<>();
 
     public ArrayList<Cart_Card> getCartCards() {
 
 ArrayList<Cart_Card> cardArrayList = new ArrayList<>();
-
-
-//for (int i=0;i<10;i++){
-//
-//  card = new Cart_Card("Keritan",200,"Images/Stock images/hair-treatments.jpg");
-//cardArrayList.add(card);
-//}
-
 
         card = new Cart_Card("1",200,"Images/Stock images/hair-treatments.jpg",0);
         cardArrayList.add(card);
@@ -112,7 +81,7 @@ return cardArrayList;
     void setTilepane(ActionEvent event) {
 
         setCardtoTilepane(cardArrayList);
-     counter++;
+        System.out.println("adding");
 
     }
 
@@ -120,36 +89,53 @@ return cardArrayList;
 private  int counter = 0;
 
     private  void setCardtoTilepane(ArrayList<Cart_Card> cCards){
-        try {
-
-if (counter >= 5){counter = 0;}
-
-    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Cart-Card.fxml"));
-
-        AnchorPane anchorPane = fxmlLoader.load();
-
-            cardController  = fxmlLoader.getController();
-cardController.setCardToCart(cCards.get(counter));
-    tilepane.getChildren().add(anchorPane);
-
-cardController.cardPane.setOnMousePressed(e->{
-
-
-   cardController.cardPane.setStyle("-fx-border-color: #00f3c6; -fx-border-width: 2px");
-
-});
-
-}catch (Exception e){
+if (counter>5){
+    counter=0;
+}
+ CartCardGUI cardGUI = new CartCardGUI(cCards.get(counter++));
+        guiCards.add(cardGUI);
+AnchorPane cardPane = cardGUI.makeCardGui();
+            System.out.println("adding");
+ tilepane.getChildren().add(cardPane);
+try {
+    cardGUI.button.setOnAction(e -> {
+        System.out.println("GUI : "+guiCards.size() +"\ttilePane : "+  tilepane.getChildren().size());
+        System.out.println("Specific Card Id"+cardGUI.getId());
 
 
+//        if (tilepane.getChildren().size() == guiCards.size()){
+//            tilepane.getChildren().remove(cardGUI.getId());
+//    }else {
+//            offsetIndex(guiCards);
+//            tilepane.getChildren().remove(cardGUI.getId());
+//            System.out.println("\nSpecific Card Id after "+cardGUI.getId());
+//        }
+        tilepane.getChildren().remove(cardPane);
+    });
+
+
+}catch (Exception e ) {
+}
+    }
+
+
+
+
+
+
+    private void offsetIndex(ArrayList<CartCardGUI> guiCards){
+
+        for (int i=0 ; i < guiCards.size() ; i++){
+
+
+            if (guiCards.get(i).getId() != 0 ){
+
+                guiCards.get(i).setId( guiCards.get(i).getId()-1);
+            }
         }
-
-        }
-
-
-
-
 
 
     }
+
+}
 

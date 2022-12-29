@@ -1,4 +1,4 @@
-package com.example.semsterproject;
+package com.example.semsterproject.Classes;
 
 import java.util.Currency;
 
@@ -7,16 +7,8 @@ public class Cart_Card {
 
     private String labelName, imgsrc;
     private int  rate,id;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public final String currency = "Rs";
+
 
 
     public Cart_Card(String labelName, int rate, String imgsrc,int id) {
@@ -52,6 +44,13 @@ public class Cart_Card {
         this.imgsrc = imgsrc;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
 
 }

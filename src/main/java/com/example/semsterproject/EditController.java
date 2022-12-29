@@ -5,15 +5,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
-import javafx.stage.FileChooser;
 
-import java.io.File;
 import java.net.URL;
-import java.util.Objects;
 import java.util.ResourceBundle;
 
 public class EditController extends attributeController implements Initializable,validator {
