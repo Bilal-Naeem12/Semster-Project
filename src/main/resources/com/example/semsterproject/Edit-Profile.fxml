@@ -166,5 +166,15 @@
             </HBox>
          </children>
       </AnchorPane>
+      <Label fx:id="invalidUsername" layoutX="378.0" layoutY="199.0" text="Username Already Exist!!!" textFill="RED" visible="false">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="invalidUsername1" layoutX="396.0" layoutY="201.0" text="Nothing Changed!!!" textFill="RED">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

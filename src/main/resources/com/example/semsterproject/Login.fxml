@@ -12,11 +12,12 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.HomeTaskerController">
    <children>
       <Label alignment="CENTER" layoutX="231.0" layoutY="21.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="139.0" styleClass="heading-label" text="LOGIN" AnchorPane.bottomAnchor="330.0" AnchorPane.leftAnchor="231.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="21.0" />
-      <AnchorPane layoutX="78.0" layoutY="90.0" prefHeight="269.0" prefWidth="445.0" styleClass="glass" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="90.0">
+      <AnchorPane layoutX="78.0" layoutY="96.0" prefHeight="275.0" prefWidth="445.0" styleClass="glass" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="96.0">
          <children>
             <VBox layoutX="75.0" layoutY="28.0" prefHeight="49.0" prefWidth="296.0">
                <children>
@@ -65,5 +66,10 @@
             </ImageView>
          </graphic>
       </Button>
+      <Label fx:id="invalidUsername" layoutX="160.0" layoutY="70.0" text="Username or Password is Incorrect!!!" textFill="RED" visible="false">
+         <font>
+            <Font name="Arial Italic" size="17.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

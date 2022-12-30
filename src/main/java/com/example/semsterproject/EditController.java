@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.shape.Circle;
@@ -13,7 +14,10 @@ import java.util.ResourceBundle;
 
 public class EditController extends attributeController implements Initializable,validator {
 
-
+    @FXML
+    private Label invalidUsername;
+    @FXML
+    private Label invalidUsername1;
     @FXML
     private Button yesBtn;
 
@@ -68,9 +72,23 @@ if (b.equals(change_backtoSettingbtn)){
 }else if (b.equals(confirmbtn)){
 
 if (checker() == 0) {
+    if (usernameValidation()){
+        invalidUsername1.setVisible(false);
+        invalidUsername.setVisible(true);
+        opaqueAnchor.setVisible(false);
+        alertAnchor.setVisible(false);
+    }else if (ed_username.getText().equals(attributeController.user.getUserName()))
+    {
+invalidUsername.setVisible(false);
+        invalidUsername1.setVisible(true);
+        opaqueAnchor.setVisible(false);
+        alertAnchor.setVisible(false);
 
-opaqueAnchor.setVisible(true);
-alertAnchor.setVisible(true);
+    }else {invalidUsername.setVisible(false);
+        invalidUsername1.setVisible(false);
+        opaqueAnchor.setVisible(true);
+        alertAnchor.setVisible(true);
+    }
 }
 
 }
@@ -126,6 +144,7 @@ alertAnchor.setVisible(true);
 
                 pane1.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
             }else {
+
                 pane1.setStyle(null);
             }
 
@@ -149,6 +168,7 @@ alertAnchor.setVisible(true);
             return -1;
 
         }else {
+
             pane1.setStyle(null);
             pane2.setStyle(null);
             pane3.setStyle(null);
@@ -156,6 +176,18 @@ alertAnchor.setVisible(true);
             return 0;
         }
 
+    }
+
+    @Override
+    public boolean usernameValidation() {
+        boolean userFound = false;
+        for (User user : attributeController.userArrayList) {
+            if (ed_username.getText().equals(user.getUserName() )&& !attributeController.user.getUserName().equals(ed_username.getText())){
+                userFound = true;
+
+            }
+        }
+        return  userFound;
     }
 
 
