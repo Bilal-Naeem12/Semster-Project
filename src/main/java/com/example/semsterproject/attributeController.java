@@ -1,9 +1,12 @@
 package com.example.semsterproject;
 
+import com.example.semsterproject.Classes.CartCardGUI;
+import com.example.semsterproject.Classes.Cart_Card;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
@@ -146,5 +149,30 @@ updateUserList(userArrayList);
         imgP  = new ImagePattern(img);
         circle.setFill(imgP);
 
+    }
+
+
+
+
+    // Cart Handling
+
+    private   static ArrayList<CartCardGUI> guiCards = new ArrayList<>() ;
+
+
+
+public  void  addGUicard(Cart_Card card){
+    CartCardGUI cardGUI = new CartCardGUI(card);
+    System.out.println("Added to arrayList");
+    guiCards.add(cardGUI);
+
+
+}
+
+    public static ArrayList<CartCardGUI> getGuiCards() {
+        return guiCards;
+    }
+
+    public static void setGuiCards(ArrayList<CartCardGUI> guiCards) {
+        attributeController.guiCards = guiCards;
     }
 }

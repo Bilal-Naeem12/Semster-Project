@@ -5,11 +5,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
-public class CardController  {
+public class CardController400444 {
 
     @FXML
     private Label currency;
@@ -32,7 +31,7 @@ public class CardController  {
 
     public void setCardToCart(Cart_Card card){
         currency.setText(card.currency);
-        imageSrc.setImage(new Image(card.getImgsrc()));
+
         rate.setText( Integer.toString(card.getRate()) );
         title.setText(card.getLabelName());
 

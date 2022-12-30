@@ -12,7 +12,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-public class CartCardGUI
+public class CartCardGUI extends Cart_Card
 
 {
     ImageView imageView;
@@ -20,18 +20,34 @@ public class CartCardGUI
     Label currency;
     Label price;
     ImageView btnImg;
-   private int Id;
+
   public   Button button;
+
+
+    public CartCardGUI(String labelName, int rate, ImageView imageView){
+
+super(labelName,rate,imageView);
+
+  //      this.imageView = new ImageView(new Image(getImgsrc()));
+        this.productName = new Label(getLabelName());
+        this.currency = new Label(super.currency);
+        this.price  = new Label(String.valueOf(getRate()));
+
+        btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
+        button  = new Button("",btnImg);
+
+    }
     public CartCardGUI(Cart_Card card){
 
-   this.imageView = new ImageView(new Image(card.getImgsrc()));
+
+     //   this.imageView = new ImageView(new Image(card.getImgsrc()));
   this.productName = new Label(card.getLabelName());
        this.currency = new Label(card.currency);
       this.price  = new Label(String.valueOf(card.getRate()));
 
       btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
         button  = new Button("",btnImg);
-        Id = card.getId();
+this.imageView = card.imageView;
 }
 
 
@@ -58,12 +74,11 @@ anchorPane.setPrefWidth(260);
 anchorPane.setPrefHeight(103);
 mainHbox.setPrefHeight(88);
 mainHbox.setPrefWidth(250);
-imageView.setFitHeight(81);
-imageView.setFitWidth(95);
+
 vBox.setPrefWidth(110);
 vBox.setPrefHeight(88);
 Rectangle2D rect = new Rectangle2D(550,0,1400,1200);
-imageView.setViewport(rect);
+
 HBox.setMargin(imageView,new Insets(4,0,0,0));
 btnImg.setFitWidth(25);
 btnImg.setFitHeight(25);
@@ -82,7 +97,7 @@ VBox.setMargin(rate, new Insets(7,0,0,0));
 
         button.setStyle("-fx-background-color: none;      -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.34), 8, 0.2,5,4);");
 
-        anchorPane.setStyle("    -fx-background-color:rgba(217, 217, 217, 0.22); -fx-background-radius: 10px;");
+        anchorPane.setStyle("    -fx-background-color:rgba(217, 217, 217, 0.22); -fx-background-radius: 10px;-fx-border-insets: 10px; -fx-background-insets: 10px");
 
 
 
@@ -101,11 +116,5 @@ price.setStyle("-fx-text-fill: rgba(255, 0, 200, 1)");
 
     }
 
-    public int getId() {
-        return Id;
-    }
 
-    public void setId(int id) {
-        Id = id;
-    }
 }
