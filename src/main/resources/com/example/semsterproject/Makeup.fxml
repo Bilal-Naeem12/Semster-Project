@@ -104,7 +104,7 @@
                                                                 <String fx:value="rupee-text" />
                                                             </styleClass>
                                                         </Label>
-                                                        <Label fx:id="BridalMakeuprate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="BridalMakeuprate" prefHeight="23.0" prefWidth="57.0" text="20000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -169,7 +169,7 @@
                                                 <String fx:value="rupee-text" />
                                              </styleClass>
                                           </Label>
-                                          <Label fx:id="EyeMakeuprate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="EyeMakeuprate" prefHeight="23.0" prefWidth="57.0" text="4000">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -234,7 +234,7 @@
                                                 <String fx:value="rupee-text" />
                                              </styleClass>
                                           </Label>
-                                          <Label fx:id="PartyMakeuprate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="PartyMakeuprate" prefHeight="23.0" prefWidth="57.0" text="7000">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />

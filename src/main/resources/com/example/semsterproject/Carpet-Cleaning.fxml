@@ -105,7 +105,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="CARPETrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="CARPETrate" prefHeight="23.0" prefWidth="57.0" text="2000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -171,7 +171,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="RUGrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="RUGrate" prefHeight="23.0" prefWidth="57.0" text="1500">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />

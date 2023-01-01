@@ -27,7 +27,7 @@ public class DashboardController extends attributeController implements Initiali
     public void initialize(URL url, ResourceBundle resourceBundle) {
       Image img = new Image(getUser().getImg());
         Userpfp.setFill(new ImagePattern(img));
-setNameLabel();
+ setNameLabel();
 counter.setText(Integer.toString(getGuiCards().size()));
     }
     @FXML
@@ -337,7 +337,7 @@ sceneSwitcher("Plumber",plumberBtn);
     private Label nameLabel;
     public void setNameLabel(){
 
-nameLabel.setText(attributeController.getUser().getUserName());
+nameLabel.setText(attributeController.getUser().getUserName().toUpperCase());
 
     }
 

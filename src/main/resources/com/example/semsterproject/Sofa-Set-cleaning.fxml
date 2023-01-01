@@ -80,7 +80,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label fx:id="TenSetter" prefHeight="32.0" prefWidth="157.0" text="10 SETTER ">
+                                                <Label fx:id="TenSetter" prefHeight="32.0" prefWidth="157.0" text="10 SEATER ">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -146,7 +146,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label fx:id="SevenSetter" text="7 SETTER">
+                                                <Label fx:id="SevenSetter" text="7 SEATER">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -171,7 +171,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="SevenSetterrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="SevenSetterrate" prefHeight="23.0" prefWidth="57.0" text="7000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -212,7 +212,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label fx:id="FiveSetter" text="5 SETTER">
+                                                <Label fx:id="FiveSetter" text="5 SEATER">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -237,7 +237,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="FiveSetterrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="FiveSetterrate" prefHeight="23.0" prefWidth="57.0" text="5000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -278,7 +278,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label fx:id="ThreeSetter" text="3 SETTER">
+                                                <Label fx:id="ThreeSetter" text="3 SEATER">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -303,7 +303,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="ThreeSetterrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="ThreeSetterrate" prefHeight="23.0" prefWidth="57.0" text="3000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />

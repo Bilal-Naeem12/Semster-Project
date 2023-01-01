@@ -28,7 +28,7 @@ public class CartController extends attributeController implements Initializable
                 AnchorPane cardPane = getGuiCards().get(i).makeCardGui();
                 tilepane.getChildren().add(cardPane);
 
-
+                System.out.println(getGuiCards().get(i));
                 int finalI = i;
                 getGuiCards().get(i).button.setOnAction(e -> {
                     tilepane.getChildren().remove(cardPane);

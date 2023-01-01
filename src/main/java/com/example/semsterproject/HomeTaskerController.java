@@ -197,6 +197,9 @@ sceneSwitcher("Check-out",proceedBtn);
         Platform.exit();
     }
 
+
+
+
   @Override
     public int checker() {
 

@@ -15,11 +15,11 @@ import javafx.scene.layout.VBox;
 public class CartCardGUI extends Cart_Card
 
 {
-    ImageView imageView;
-    Label productName;
-    Label currency;
-    Label price;
-    ImageView btnImg;
+public    ImageView imageView;
+public     Label productName;
+ public    Label currency;
+  public   Label price;
+  public   ImageView btnImg;
 
   public   Button button;
 
@@ -72,12 +72,12 @@ anchorPane.getChildren().add(mainHbox);
 
 //Alignment
 
-anchorPane.setPrefWidth(280);
+anchorPane.setPrefWidth(290);
 anchorPane.setPrefHeight(103);
 mainHbox.setPrefHeight(88);
 mainHbox.setPrefWidth(270);
 
-vBox.setPrefWidth(150);
+vBox.setPrefWidth(200);
 vBox.setPrefHeight(88);
 
 
@@ -94,7 +94,7 @@ starting.prefWidth(97);
 VBox.setMargin(productName, new Insets(4,0,7,0));
 VBox.setMargin(rate, new Insets(7,0,0,0));
 
-
+currency.prefWidth(20);
 //CSS
 
         button.setStyle("-fx-background-color: none;      -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.34), 8, 0.2,5,4);");
@@ -118,5 +118,73 @@ price.setStyle("-fx-text-fill: rgba(255, 0, 200, 1)");
 
     }
 
+    public    AnchorPane makeCardGuisimple(){
 
+        AnchorPane anchorPane = new AnchorPane();
+        HBox mainHbox = new HBox();
+
+        VBox vBox = new VBox();
+
+        Label starting =new Label("Starting From");
+
+
+        HBox rate = new HBox(currency,price);
+
+
+        vBox.getChildren().addAll(productName,starting,rate);
+        mainHbox.getChildren().addAll(imageView,vBox);
+        anchorPane.getChildren().add(mainHbox);
+
+//Alignment
+
+        anchorPane.setPrefWidth(210);
+        anchorPane.setPrefHeight(103);
+        mainHbox.setPrefHeight(88);
+        mainHbox.setPrefWidth(270);
+
+        vBox.setPrefWidth(200);
+        vBox.setPrefHeight(88);
+
+
+        HBox.setMargin(imageView,new Insets(4,0,0,0));
+
+        mainHbox.setLayoutX(8);
+        mainHbox.setLayoutY(8);
+        HBox.setMargin(vBox, new Insets(0,0,0,16));
+
+        starting.prefHeight(21);
+        starting.prefWidth(97);
+        VBox.setMargin(productName, new Insets(4,0,7,0));
+        VBox.setMargin(rate, new Insets(7,0,0,0));
+
+        currency.prefWidth(20);
+//CSS
+
+
+
+        anchorPane.setStyle("    -fx-background-color:rgba(217, 217, 217, 0.22); -fx-background-radius: 10px;-fx-border-insets: 5px; -fx-background-insets: 5px");
+
+
+
+        productName.setStyle("-fx-font-size: 20px;-fx-text-fill: white ; -fx-font-family: Arial ;   -fx-font-weight: bolder;");
+
+
+        starting.setStyle(" -fx-font-size: 14px; -fx-font-family: Marlett; -fx-text-fill: white");
+
+
+        rate.setStyle("-fx-font-weight: bolder;-fx-font-size: 20px;-fx-font-family: Arial");
+        currency.setStyle("-fx-text-fill: rgba(255, 0, 200, 1)");
+        price.setStyle("-fx-text-fill: rgba(255, 0, 200, 1)");
+        return  anchorPane;
+
+
+
+    }
+
+    @Override
+    public String toString() {
+        return "CartCardGUI{" +
+                "productName=" + getLabelName()+
+                ", price=" + getRate() + "}\n";
+    }
 }

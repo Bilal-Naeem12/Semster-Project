@@ -105,7 +105,7 @@
                                                                 <String fx:value="rupee-text" />
                                                             </styleClass>
                                                         </Label>
-                                                        <Label fx:id="DOORPOLISHrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="DOORPOLISHrate" prefHeight="23.0" prefWidth="57.0" text="3000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -174,7 +174,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="FURNITUREPOLISHrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="FURNITUREPOLISHrate" prefHeight="23.0" prefWidth="57.0" text="5000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -243,7 +243,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="OUTDOORPAINTrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="OUTDOORPAINTrate" prefHeight="23.0" prefWidth="57.0" text="7500">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -312,7 +312,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="INDOORPAINTrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="INDOORPAINTrate" prefHeight="23.0" prefWidth="57.0" text="7000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />

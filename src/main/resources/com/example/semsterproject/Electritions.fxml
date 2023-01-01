@@ -105,7 +105,7 @@
                                                                 <String fx:value="rupee-text" />
                                                             </styleClass>
                                                         </Label>
-                                                        <Label fx:id="LCDINSTALLATIONrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="LCDINSTALLATIONrate" prefHeight="23.0" prefWidth="57.0" text="1000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -174,7 +174,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="CEILINGFANrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="CEILINGFANrate" prefHeight="23.0" prefWidth="57.0" text="500">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -243,7 +243,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="ELECTRICWIRINGrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="ELECTRICWIRINGrate" prefHeight="23.0" prefWidth="57.0" text="2000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -312,7 +312,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="UPSREPAIRINGrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="UPSREPAIRINGrate" prefHeight="23.0" prefWidth="57.0" text="5000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />

@@ -105,7 +105,7 @@
                                                                 <String fx:value="rupee-text" />
                                                             </styleClass>
                                                         </Label>
-                                                        <Label fx:id="ROOMrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="ROOMrate" prefHeight="23.0" prefWidth="57.0" text="500">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -171,7 +171,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="WASHROOMrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="WASHROOMrate" prefHeight="23.0" prefWidth="57.0" text="350">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -237,7 +237,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="KITCHENrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="KITCHENrate" prefHeight="23.0" prefWidth="57.0" text="450">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />

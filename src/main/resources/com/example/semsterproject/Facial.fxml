@@ -170,7 +170,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="HydraFacialrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="HydraFacialrate" prefHeight="23.0" prefWidth="57.0" text="7000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -235,7 +235,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="SkinPolisherrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="SkinPolisherrate" prefHeight="23.0" prefWidth="57.0" text="5000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -300,7 +300,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label fx:id="DermaFacialrate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="DermaFacialrate" prefHeight="23.0" prefWidth="57.0" text="5000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
