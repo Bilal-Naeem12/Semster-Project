@@ -21,6 +21,8 @@ public class CartController extends attributeController implements Initializable
 
         try {
 
+            System.out.println("initial SIZE : " + getGuiCards().size());
+
 
             for (int i = 0; i < attributeController.getGuiCards().size(); i++) {
                 AnchorPane cardPane = getGuiCards().get(i).makeCardGui();
@@ -29,11 +31,16 @@ public class CartController extends attributeController implements Initializable
 
                 int finalI = i;
                 getGuiCards().get(i).button.setOnAction(e -> {
-
                     tilepane.getChildren().remove(cardPane);
-                    getGuiCards().remove(finalI);
+
+                    System.out.println(finalI);
                     System.out.println("SIZE : " + getGuiCards().size());
+
+                    getGuiCards().remove(getGuiCards().get(finalI));
+                  sceneSwitcher("Cart",backtodashboardbtn);
+
                 });
+
 
 
             }

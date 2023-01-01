@@ -52,10 +52,20 @@ sceneSwitcher("Login",dashboard_Logout_Btn);
 
     @FXML
     private Button cartBtn;
+    @FXML
+    private Button cartBtn1;
 
     @FXML
     void toCart(ActionEvent event) {
-sceneSwitcher("Cart",cartBtn);
+        Button b = (Button) event.getSource();
+        if (cartBtn==b) {
+            sceneSwitcher("Cart", cartBtn);
+        }
+    else {
+            sceneSwitcher("Cart", cartBtn1);
+        }
+
+
     }
     @FXML
     private Button menuBtn;
@@ -366,8 +376,6 @@ nameLabel.setText(attributeController.getUser().getUserName());
 
 
 
-    @FXML
-    private Button cartBtn1;
 
 
 

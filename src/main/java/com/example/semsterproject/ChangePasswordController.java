@@ -102,14 +102,14 @@ if (checker() == 0) {
     public int checker() {
 
 
-        if (passfield1.getLength() == 0 || passfield2.getLength() == 0 ) {
-            if (passfield1.getLength() == 0){
+        if (passfield1.getLength() == 0 || passfield2.getLength() == 0) {
+            if (passfield1.getLength() == 0) {
 
 
                 pane1.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
-            }else {
+            } else {
 
-                    pane1.setStyle(null);
+                pane1.setStyle(null);
 
 
             }
@@ -117,17 +117,16 @@ if (checker() == 0) {
             if (passfield2.getLength() == 0) {
 
                 pane2.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
-            }else {
+            } else {
 
-                    pane2.setStyle(null);
-
+                pane2.setStyle(null);
 
 
             }
 
             return -1;
 
-        }else if (!passfield1.getText().equals(passfield2.getText()) ) {
+        } else if (!passfield1.getText().equals(passfield2.getText())) {
             passfield1.clear();
             passfield2.clear();
             passfield1.setPromptText("Password donot match");
@@ -136,15 +135,27 @@ if (checker() == 0) {
             pane2.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
 
             return -1;
-        }else {
+        } else if (passfield1.getText().equals(passfield2.getText())) {
+
+            if (passfield1.getLength() < 8 || passfield2.getLength() < 8) {
+                passfield1.clear();
+                passfield1.setPromptText("Password is than 8 character");
+                passfield2.clear();
+                passfield2.setPromptText("Password is than 8 character");
+                pane1.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
+                pane2.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
+                return -1;
+            }
             pane1.setStyle(null);
             pane2.setStyle(null);
-
-
             return 0;
         }
+            return 0;
 
-    }
+        }
+
+
+
 
     @Override
     public boolean usernameValidation() {

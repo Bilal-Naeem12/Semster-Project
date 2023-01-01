@@ -77,14 +77,15 @@ if (checker() == 0) {
         invalidUsername.setVisible(true);
         opaqueAnchor.setVisible(false);
         alertAnchor.setVisible(false);
-    }else if (ed_username.getText().equals(attributeController.user.getUserName()))
+    }else if (ed_username.getText().equals(attributeController.user.getUserName())&&attributeController.user.getImg().equals(attributeController.imgP.getImage().getUrl())&&ed_email.getText().equals(getUser().getEmail())&&ed_address.getText().equals(getUser().getAddress()))
     {
 invalidUsername.setVisible(false);
         invalidUsername1.setVisible(true);
         opaqueAnchor.setVisible(false);
         alertAnchor.setVisible(false);
 
-    }else {invalidUsername.setVisible(false);
+    }else {
+        invalidUsername.setVisible(false);
         invalidUsername1.setVisible(false);
         opaqueAnchor.setVisible(true);
         alertAnchor.setVisible(true);
