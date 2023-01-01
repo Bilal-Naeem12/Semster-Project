@@ -10,9 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <!--suppress XmlPathReference -->
 
@@ -61,7 +63,7 @@
                      <children>
                         <HBox layoutX="20.0" layoutY="6.0" prefHeight="169.0" prefWidth="484.0">
                            <children>
-                              <ImageView fitHeight="182.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="FriutWaxingimgveiw" fitHeight="182.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../Images/Stock%20images/WAXING.jpg" />
                                  </image>
@@ -78,7 +80,7 @@
                                     <Insets />
                                  </HBox.margin>
                                  <children>
-                                    <Label prefHeight="33.0" prefWidth="171.0" text="Friut Waxing">
+                                    <Label fx:id="FriutWaxing" prefHeight="33.0" prefWidth="171.0" text="Friut Waxing">
                                        <VBox.margin>
                                           <Insets top="3.0" />
                                        </VBox.margin>
@@ -103,7 +105,7 @@
                                                 <Insets />
                                              </HBox.margin>
                                           </Label>
-                                          <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="FriutWaxingrate" prefHeight="23.0" prefWidth="57.0" text="10000">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -113,7 +115,7 @@
                                     </HBox>
                                  </children>
                               </VBox>
-                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
+                              <Button fx:id="FriutWaxingbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
                                  <HBox.margin>
                                     <Insets left="5.0" top="125.0" />
                                  </HBox.margin>
@@ -127,7 +129,7 @@
                             <children>
                                 <HBox layoutX="20.0" layoutY="6.0" prefHeight="157.0" prefWidth="484.0">
                                     <children>
-                                        <ImageView fitHeight="182.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="HoneyWaxingimgview" fitHeight="182.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../Images/Stock%20images/fruitwax-min.jpg" />
                                             </image>
@@ -144,7 +146,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label prefHeight="33.0" prefWidth="171.0" text="Friut Waxing">
+                                                <Label fx:id="HoneyWaxing" prefHeight="33.0" prefWidth="197.0" text="Honey Waxing">
                                                     <VBox.margin>
                                                         <Insets top="3.0" />
                                                     </VBox.margin>
@@ -169,7 +171,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="HoneyWaxingrate" prefHeight="23.0" prefWidth="57.0" text="10000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -179,7 +181,7 @@
                                                 </HBox>
                                             </children>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
+                                        <Button fx:id="HoneyWaxingbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="5.0" top="125.0" />
                                             </HBox.margin>
@@ -302,6 +304,16 @@
                   </VBox>
                </children>
             </AnchorPane>
+            <StackPane layoutX="900.0" layoutY="455.0" prefHeight="19.0" prefWidth="28.0">
+               <children>
+                  <Circle fill="#ff8700" radius="14.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Label fx:id="counter" layoutY="5.0" prefHeight="12.0" prefWidth="10.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
             </children>
         </AnchorPane>
     </children>

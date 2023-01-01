@@ -72,12 +72,12 @@ anchorPane.getChildren().add(mainHbox);
 
 //Alignment
 
-anchorPane.setPrefWidth(265);
+anchorPane.setPrefWidth(280);
 anchorPane.setPrefHeight(103);
 mainHbox.setPrefHeight(88);
 mainHbox.setPrefWidth(270);
 
-vBox.setPrefWidth(120);
+vBox.setPrefWidth(150);
 vBox.setPrefHeight(88);
 
 

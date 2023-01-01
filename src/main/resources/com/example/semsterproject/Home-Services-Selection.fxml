@@ -141,7 +141,7 @@
                                  </HBox.margin>
                               </ImageView>
                               <Pane prefHeight="36.0" prefWidth="8.0" />
-                              <Button fx:id="cartBtn" mnemonicParsing="false" onAction="#toCart" styleClass="dashboard-side-btn" text="Cart">
+                              <Button fx:id="cartBtn1" mnemonicParsing="false" onAction="#toCart" styleClass="dashboard-side-btn" text="Cart">
                                  <HBox.margin>
                                     <Insets top="7.0" />
                                  </HBox.margin>
@@ -202,5 +202,6 @@
             </AnchorPane>
             </children>
         </AnchorPane>
+      <Label fx:id="counter" layoutX="10.0" layoutY="10.0" text="Label" visible="false" />
     </children>
 </AnchorPane>

@@ -162,5 +162,6 @@
             </Button>
          </children>
       </AnchorPane>
+      <Label fx:id="counter" text="Label" visible="false" />
     </children>
 </AnchorPane>
