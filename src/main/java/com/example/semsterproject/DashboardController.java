@@ -1,12 +1,14 @@
 package com.example.semsterproject;
 
+import com.example.semsterproject.Classes.Cart_Card;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
@@ -24,9 +26,6 @@ public class DashboardController extends attributeController implements Initiali
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
       Image img = new Image(getUser().getImg());
-   // Image img =  new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
-     //   Image img =  new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
-
         Userpfp.setFill(new ImagePattern(img));
 setNameLabel();
     }
@@ -53,10 +52,20 @@ sceneSwitcher("Login",dashboard_Logout_Btn);
 
     @FXML
     private Button cartBtn;
+    @FXML
+    private Button cartBtn1;
 
     @FXML
     void toCart(ActionEvent event) {
-sceneSwitcher("Cart",cartBtn);
+        Button b = (Button) event.getSource();
+        if (cartBtn==b) {
+            sceneSwitcher("Cart", cartBtn);
+        }
+    else {
+            sceneSwitcher("Cart", cartBtn1);
+        }
+
+
     }
     @FXML
     private Button menuBtn;
@@ -331,12 +340,112 @@ nameLabel.setText(attributeController.getUser().getUserName());
 
     }
 
+//Cart-handling
+
+
+    @FXML
+    private Label BlowDry;
+
+    @FXML
+    private Label BlowDryRate;
+
+    @FXML
+    private Label HairCut;
+
+    @FXML
+    private Label HairCutRate;
+
+    @FXML
+    private Label HairDye;
+
+    @FXML
+    private Label HairDyeRate;
+
+    @FXML
+    private Label Keritan;
+
+    @FXML
+    private Label KeritanRate;
+
+
+    @FXML
+    private Button blowDryBtn;
+
+    @FXML
+    private ImageView blowDryImageview;
 
 
 
 
 
 
+    @FXML
+    private Button hairCutBtn;
+
+    @FXML
+    private ImageView hairCutImageview;
+
+    @FXML
+    private ImageView hairDyeImgview;
+
+    @FXML
+    private Button hairDyebtn;
+
+
+
+    @FXML
+    private Button keritanBtn;
+
+    @FXML
+    private ImageView keritanImgview;
+
+
+
+
+
+    @FXML
+    void addtoCart(ActionEvent event) {
+
+        Button button = (Button) event.getSource();
+        Cart_Card card;
+
+        if (button.equals(keritanBtn)){
+
+            card = new Cart_Card(Keritan.getText(),Integer.parseInt(KeritanRate.getText()),keritanImgview );
+
+            addGUicard(card);
+
+        }else
+        if (button.equals(hairDyebtn)){
+
+             card = new Cart_Card(HairDye.getText(),Integer.parseInt(HairDyeRate.getText()),hairDyeImgview );
+
+            addGUicard(card);
+
+        }else
+        if (button.equals(hairCutBtn)){
+
+            card = new Cart_Card(HairCut.getText(),Integer.parseInt(BlowDryRate.getText()),hairCutImageview );
+
+            addGUicard(card);
+
+        }else
+        if (button.equals(blowDryBtn)){
+
+            card = new Cart_Card(BlowDry.getText(),Integer.parseInt(BlowDryRate.getText()),blowDryImageview );
+
+
+            addGUicard(card);
+        }
+
+
+
+
+
+
+
+
+    }
 
 
 

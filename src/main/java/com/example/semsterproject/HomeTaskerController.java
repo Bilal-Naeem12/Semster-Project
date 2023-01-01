@@ -22,6 +22,9 @@ public class HomeTaskerController extends attributeController implements Initial
 
 
 //Login
+
+    @FXML
+    private Label invalidUsername;
     @FXML
     private Button Loginbtn;
 
@@ -204,6 +207,7 @@ sceneSwitcher("Check-out",proceedBtn);
 
        UsernameTextfield.setStyle("-fx-background-color: rgba(255,0,0,0.53)");
    }else {
+
        UsernameTextfield.setStyle(null);
    }
 
@@ -220,9 +224,29 @@ sceneSwitcher("Check-out",proceedBtn);
         }else {
             UsernameTextfield.setStyle(null);
 Pass_passwordField.setStyle(null);
-            return 0;
+            if (usernameValidation()){
+
+                return 0;
+            }else {
+                invalidUsername.setVisible(true);
+                return -1;
+            }
+
         }
 
+    }
+
+
+    public boolean usernameValidation() {
+        boolean userFound = false;
+        for (User user : attributeController.userArrayList) {
+            if (UsernameTextfield.getText().equals(user.getUserName()) && Pass_passwordField.getText().equals(user.getPassword())) {
+
+                userFound = true;
+
+            }
+        }
+        return  userFound;
     }
 
 }

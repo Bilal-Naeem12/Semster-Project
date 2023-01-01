@@ -1,29 +1,25 @@
-package com.example.semsterproject;
+package com.example.semsterproject.Classes;
+
+import javafx.scene.image.ImageView;
 
 import java.util.Currency;
 
 public class Cart_Card {
 
 
-    private String labelName, imgsrc;
+    private String labelName;
     private int  rate,id;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public final String currency = "Rs";
+ImageView imageView;
+    public Cart_Card() {
 
+    }
 
-    public Cart_Card(String labelName, int rate, String imgsrc,int id) {
+    public Cart_Card(String labelName, int rate, ImageView imageView) {
         this.labelName = labelName;
         this.rate = rate;
-        this.imgsrc = imgsrc;
-        this.id = id;
+        this.imageView = imageView;
+
     }
 
     public String getLabelName() {
@@ -44,14 +40,15 @@ public class Cart_Card {
 
 
 
-    public String getImgsrc() {
-        return imgsrc;
+
+
+    public int getId() {
+        return id;
     }
 
-    public void setImgsrc(String imgsrc) {
-        this.imgsrc = imgsrc;
+    public void setId(int id) {
+        this.id = id;
     }
-
 
 
 }
