@@ -15,7 +15,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class attributeController  {
-
+    static ArrayList<Order> orderArrayList = new ArrayList<>();
 static ArrayList<User> userArrayList ;
     Stage   stage=null;
 static   User user;
@@ -30,8 +30,18 @@ static int userID;
     }
 
     attributeController(){
+    try {
+        userArrayList = read_user();
+    }catch (Exception e) {
+        userArrayList = new ArrayList<>();
+     User Admin =   new User("Admin","text233@gmail.com","lahore pakistan","MALE","12345678");
+     Admin.setImg("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
-    userArrayList = read_user();
+        write_user(Admin);
+        userArrayList = read_user();
+    }
+
+        System.out.println(userArrayList);
 }
 
 
@@ -176,4 +186,9 @@ public  void  addGUicard(Cart_Card card){
     public static void setGuiCards(ArrayList<CartCardGUI> guiCards) {
         attributeController.guiCards = guiCards;
     }
+
+
+
+
+
 }

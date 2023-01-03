@@ -137,12 +137,12 @@ price.setStyle("-fx-text-fill: rgba(255, 0, 200, 1)");
 
 //Alignment
 
-        anchorPane.setPrefWidth(210);
+        anchorPane.setPrefWidth(250);
         anchorPane.setPrefHeight(103);
         mainHbox.setPrefHeight(88);
-        mainHbox.setPrefWidth(270);
+        mainHbox.setPrefWidth(250);
 
-        vBox.setPrefWidth(200);
+        vBox.setPrefWidth(250);
         vBox.setPrefHeight(88);
 
 

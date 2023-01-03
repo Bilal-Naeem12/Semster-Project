@@ -50,7 +50,7 @@
                         </Label>
                         <AnchorPane prefHeight="45.0" prefWidth="599.0" style="-fx-background-radius: 10;">
                            <children>
-                              <DatePicker layoutX="19.0" layoutY="11.0" prefHeight="23.0" prefWidth="552.0" />
+                              <DatePicker fx:id="datePicker" layoutX="19.0" layoutY="11.0" prefHeight="23.0" prefWidth="552.0" />
                            </children>
                            <styleClass>
                               <String fx:value="glass" />
@@ -137,7 +137,7 @@
                         <Insets bottom="15.0" left="85.0" top="10.0" />
                      </VBox.margin>
                   </Line>
-                  <Button mnemonicParsing="false" prefHeight="33.0" prefWidth="346.0" text="PLACE ORDER">
+                  <Button fx:id="placeOrder" mnemonicParsing="false" onAction="#addOrder" prefHeight="33.0" prefWidth="346.0" text="PLACE ORDER">
                      <VBox.margin>
                         <Insets left="150.0" right="150.0" />
                      </VBox.margin>

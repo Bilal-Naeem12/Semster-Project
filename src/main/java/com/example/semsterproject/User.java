@@ -9,6 +9,9 @@ public class User implements Serializable {
   private   String gender;
 private String img;
 
+
+    private int orderNo;
+
     public String getImg() {
         return img;
     }
@@ -23,9 +26,13 @@ private String img;
         this.address = address;
         this.gender = gender;
         this.password = password;
-        this.img = img;
+        this.orderNo =1;
+
     }
 
+    public User() {
+
+    }
 
 
 
@@ -71,6 +78,15 @@ private String img;
         this.password = password;
     }
 
+
+    public int getOrderNo() {
+        return orderNo;
+    }
+
+    public void setOrderNo(int orderNo) {
+        this.orderNo = orderNo;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -79,6 +95,7 @@ private String img;
                 ", address='" + address + '\'' +
                 ", password='" + password + '\'' +
                 ", gender='" + gender + '\'' +
-                '}';
+                ", img='" + img + '\'' +
+                "}\n";
     }
 }

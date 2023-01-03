@@ -46,6 +46,11 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);
 
 }
 
+.colorText{
+    -fx-text-fill: #ff00e5;
+
+}
+
 .pfp{
 
     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.34), 8, 0.2,5,4);
@@ -348,3 +353,11 @@ linear-gradient(to right bottom, #051153 36.23%, #820275 83.76%);
 }
 
 
+#receipt-label{
+
+    -fx-text-fill: rgba(255, 255, 255, 0.64);
+-fx-font-family: Verdana;
+
+    -fx-font-size: 15;
+
+}

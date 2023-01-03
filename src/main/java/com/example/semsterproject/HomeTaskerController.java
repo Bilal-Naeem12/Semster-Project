@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.ImagePattern;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -142,7 +143,7 @@ setUserID(i);
 
     @FXML
     void toReceipt(ActionEvent event) {
-        sceneSwitcher("Receipt",forward);
+
     }
 
 //Receipt
