@@ -1,5 +1,7 @@
 package com.example.semsterproject;
 
+import com.example.semsterproject.Classes.HistoryCard;
+import com.example.semsterproject.Classes.HistoryCardGui;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -16,19 +18,28 @@ import java.util.ResourceBundle;
 public class HistoryController extends attributeController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("HistorOrder.fxml"));
-        AnchorPane anchorPane;
-       try {
-          anchorPane = fxmlLoader.load();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+
+        try {
+
+
+
+            for (int i = 0; i < attributeController.historyCardArrayList.size(); i++) {
+              HistoryCardGui hgc = new HistoryCardGui(attributeController.historyCardArrayList.get(i));
+                historyVbox.getChildren().add(hgc.makeGui());
+
+                System.out.println(historyCardArrayList.get(i));
+
+                hgc.btn.setOnAction(e -> {
+
+                    sceneSwitcher("Receipt",backtodashboardbtn);
+                });
+
+
+
+            }
+        }catch (IndexOutOfBoundsException e){
+            System.out.println(e);
         }
-
-        HistoryOrderController hoc = fxmlLoader.getController();
-
-    historyVbox.getChildren().add(anchorPane);
-
-
 
 
 
@@ -50,15 +61,10 @@ public class HistoryController extends attributeController implements Initializa
     @FXML
     private VBox historyVbox;
 
+
+
     @FXML
     void toDashboard(ActionEvent event) {
         sceneSwitcher("Dashboard",backtodashboardbtn);
     }
-
-    @FXML
-    void toReceipt(ActionEvent event) {
-        sceneSwitcher("Receipt",forward);
-    }
-
-
 }

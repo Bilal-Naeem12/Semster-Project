@@ -2,11 +2,11 @@ package com.example.semsterproject;
 
 import com.example.semsterproject.Classes.CartCardGUI;
 import com.example.semsterproject.Classes.Cart_Card;
+import com.example.semsterproject.Classes.HistoryCard;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
@@ -15,7 +15,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class attributeController  {
-    static ArrayList<Order> orderArrayList = new ArrayList<>();
+    static ArrayList<HistoryCard> historyCardArrayList = new ArrayList<>();
 static ArrayList<User> userArrayList ;
     Stage   stage=null;
 static   User user;

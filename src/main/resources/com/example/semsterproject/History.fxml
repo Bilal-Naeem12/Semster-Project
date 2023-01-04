@@ -29,9 +29,9 @@
                 </ImageView>
             </graphic>
         </Button>
-      <ScrollPane layoutX="217.0" layoutY="114.0" prefHeight="456.0" prefWidth="522.0">
+      <ScrollPane layoutX="215.0" layoutY="113.0" prefHeight="454.0" prefWidth="522.0">
          <content>
-            <VBox fx:id="historyVbox" prefHeight="451.0" prefWidth="517.0" />
+            <VBox fx:id="historyVbox" prefHeight="450.0" prefWidth="500.0" />
          </content>
       </ScrollPane>
     </children>

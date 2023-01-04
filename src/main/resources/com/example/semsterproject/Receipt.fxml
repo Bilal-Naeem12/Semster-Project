@@ -16,7 +16,7 @@
 
 <!--suppress ALL -->
 
-<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.HomeTaskerController">
+<AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.ReceiptController">
     <children>
         <Label id="edit-profile-heading" alignment="CENTER" layoutX="290.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="115.0" text="RECEIPT" textFill="WHITE">
             <font>
@@ -32,21 +32,24 @@
                 </ImageView>
             </graphic>
         </Button>
-          <AnchorPane layoutX="693.0" prefHeight="590.0" prefWidth="258.0">
+          <AnchorPane layoutX="658.0" prefHeight="590.0" prefWidth="293.0">
          <styleClass>
             <String fx:value="glass" />
             <String fx:value="reset-radius" />
          </styleClass>
          <children>
-            <Label id="edit-profile-heading" alignment="CENTER" layoutX="41.0" layoutY="37.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="176.0" styleClass="colorText" text="PRODUCTS" textFill="WHITE">
+            <Label id="edit-profile-heading" alignment="CENTER" layoutX="59.0" layoutY="37.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="176.0" styleClass="colorText" text="PRODUCTS" textFill="WHITE">
                <font>
                   <Font name="Gabriola" size="37.0" />
                </font>
             </Label>
-            <ScrollPane layoutY="114.0" prefHeight="475.0" prefWidth="258.0">
+            <ScrollPane layoutY="114.0" prefHeight="475.0" prefWidth="293.0">
                <content>
-                  <VBox prefHeight="473.0" prefWidth="250.0" />
+                  <VBox fx:id="productVbox" layoutX="58.0" prefHeight="473.0" prefWidth="256.0" />
                </content>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
             </ScrollPane>
          </children>
           </AnchorPane>
@@ -63,7 +66,7 @@
                   <Font name="Gabriola" size="37.0" />
                </font>
             </Label>
-            <Label id="edit-profile-heading" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="37.0" prefWidth="70.0" styleClass="colorText" text="2100" textFill="WHITE">
+            <Label id="edit-profile-heading" fx:id="totalbill" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" styleClass="colorText" text="2100" textFill="WHITE">
                <font>
                   <Font name="Gabriola" size="37.0" />
                </font>
@@ -71,51 +74,44 @@
          </children>
       </HBox>
       <Line endX="223.0" fill="WHITE" layoutX="432.0" layoutY="487.0" startX="-370.0" strokeWidth="0.5" styleClass="line" />
-      <VBox layoutX="61.5" layoutY="119.5">
+      <Line endX="226.0" fill="WHITE" layoutX="432.0" layoutY="120.0" startX="-432.0" strokeWidth="0.5" styleClass="line" />
+      <HBox layoutX="61.5" layoutY="130.5" prefHeight="21.0" prefWidth="586.0">
          <children>
-            <Line endX="223.0" fill="WHITE" startX="-370.0" strokeWidth="0.5" styleClass="line" />
-            <HBox prefHeight="21.0" prefWidth="586.0">
-               <children>
-                  <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="56.0" text="Sr No." textFill="WHITE">
-                     <font>
-                        <Font name="Gabriola" size="37.0" />
-                     </font>
-                  </Label>
-                  <Pane prefHeight="21.0" prefWidth="35.0" />
-                  <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="132.0" text="Product Name" textFill="WHITE">
-                     <font>
-                        <Font name="Gabriola" size="37.0" />
-                     </font>
-                  </Label>
-                  <Pane prefHeight="21.0" prefWidth="35.0" />
-                  <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="99.0" text="Unit Price" textFill="WHITE">
-                     <font>
-                        <Font name="Gabriola" size="37.0" />
-                     </font>
-                  </Label>
-                  <Pane prefHeight="21.0" prefWidth="35.0" />
-                  <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="82.0" text="Quantity" textFill="WHITE">
-                     <font>
-                        <Font name="Gabriola" size="37.0" />
-                     </font>
-                  </Label>
-                  <Pane prefHeight="21.0" prefWidth="35.0" />
-                  <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="89.0" text="Sub total" textFill="WHITE">
-                     <font>
-                        <Font name="Gabriola" size="37.0" />
-                     </font>
-                  </Label>
-               </children>
-               <VBox.margin>
-                  <Insets bottom="10.0" top="10.0" />
-               </VBox.margin>
-            </HBox>
-            <Line endX="223.0" fill="WHITE" startX="-370.0" strokeWidth="0.5" styleClass="line" />
+            <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="56.0" text="Sr No." textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="37.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="21.0" prefWidth="35.0" />
+            <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="132.0" text="Product Name" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="37.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="21.0" prefWidth="35.0" />
+            <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="99.0" text="Unit Price" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="37.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="21.0" prefWidth="35.0" />
+            <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="82.0" text="Quantity" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="37.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="21.0" prefWidth="35.0" />
+            <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="89.0" text="Sub total" textFill="WHITE">
+               <font>
+                  <Font name="Gabriola" size="37.0" />
+               </font>
+            </Label>
          </children>
-      </VBox>
+      </HBox>
+      <Line endX="226.0" fill="WHITE" layoutX="432.0" layoutY="162.0" startX="-432.0" strokeWidth="0.5" styleClass="line" />
       <ScrollPane layoutX="58.0" layoutY="186.0" prefHeight="285.0" prefWidth="602.0">
          <content>
-            <VBox prefHeight="281.0" prefWidth="600.0">
+            <VBox fx:id="dataVbox" prefHeight="281.0" prefWidth="600.0">
                <children>
                   <HBox prefHeight="21.0" prefWidth="586.0">
                      <children>
