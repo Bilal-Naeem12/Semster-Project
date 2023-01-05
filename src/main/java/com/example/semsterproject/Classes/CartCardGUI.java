@@ -12,6 +12,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+import java.util.ArrayList;
+
 public class CartCardGUI extends Cart_Card
 
 {
@@ -23,24 +25,27 @@ public     Label productName;
 
   public   Button button;
 
+    private HboxReciept hboxReciept = new HboxReciept();
 
-    public CartCardGUI(String labelName, int rate, ImageView imageView){
-
-super(labelName,rate,imageView);
-
-  //      this.imageView = new ImageView(new Image(getImgsrc()));
-        this.productName = new Label(getLabelName());
-        this.currency = new Label(super.currency);
-        this.price  = new Label(String.valueOf(getRate()));
-
-        btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
-        button  = new Button("",btnImg);
-
-    }
+//    public CartCardGUI(Cart_Card card){
+//
+//super(card);
+//
+//  //      this.imageView = new ImageView(new Image(getImgsrc()));
+//        this.productName = new Label(getLabelName());
+//        this.currency = new Label(super.currency);
+//        this.price  = new Label(String.valueOf(getRate()));
+//
+//        btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
+//        button  = new Button("",btnImg);
+//
+//    }
     public CartCardGUI(Cart_Card card){
 
+        super(card);
 
-     //   this.imageView = new ImageView(new Image(card.getImgsrc()));
+hboxReciept =new HboxReciept(super.getLabelName(),super.getRate());
+
   this.productName = new Label(card.getLabelName());
        this.currency = new Label(card.currency);
       this.price  = new Label(String.valueOf(card.getRate()));
@@ -50,8 +55,17 @@ super(labelName,rate,imageView);
 
         button  = new Button("",btnImg);
 this.imageView = card.imageView;
+
 }
 
+
+    public HboxReciept getHboxReciept() {
+        return hboxReciept;
+    }
+
+    public void setHboxReciept(HboxReciept hboxReciept) {
+        this.hboxReciept = hboxReciept;
+    }
 
     public    AnchorPane makeCardGui(){
 

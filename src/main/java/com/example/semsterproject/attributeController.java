@@ -15,9 +15,11 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class attributeController  {
-    static ArrayList<HistoryCard> historyCardArrayList = new ArrayList<>();
+  static ArrayList<HistoryCard> historyCardArrayList = new ArrayList<>();
 static ArrayList<User> userArrayList ;
     Stage   stage=null;
+    static int HistoryOrderNo;
+
 static   User user;
 static int userID;
 
@@ -154,7 +156,15 @@ updateUserList(userArrayList);
     }
 
 
-   static ImagePattern imgP;
+    public static int getHistoryOrderNo() {
+        return HistoryOrderNo;
+    }
+
+    public static void setHistoryOrderNo(int historyOrderNo) {
+        HistoryOrderNo = historyOrderNo;
+    }
+
+    static ImagePattern imgP;
     public void setImg(Circle circle, String imgPath) {
         Image img = new Image(imgPath);
         imgP  = new ImagePattern(img);

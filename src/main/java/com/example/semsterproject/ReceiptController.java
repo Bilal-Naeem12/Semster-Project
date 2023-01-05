@@ -1,6 +1,8 @@
 package com.example.semsterproject;
 
 import com.example.semsterproject.Classes.CartCardGUI;
+import com.example.semsterproject.Classes.HboxReciept;
+import com.example.semsterproject.Classes.HboxRecieptGui;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -14,21 +16,37 @@ import java.util.ResourceBundle;
 
 
 public class ReceiptController extends attributeController implements Initializable {
-private ArrayList<CartCardGUI> ccg;
+private ArrayList<CartCardGUI> ccg = new ArrayList<>();
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
 
+        System.out.println(getHistoryOrderNo());
 
-ccg = attributeController.historyCardArrayList.get(0).getCardGUIS();
+            ccg.addAll(attributeController.historyCardArrayList.get(getHistoryOrderNo()-1).getCardGUIS());
 
 
-        for (int i = 0; i < ccg.size(); i++) {
-
-            productVbox.getChildren().add(ccg.get(i).makeCardGuisimple());
+        for (CartCardGUI cartCardGUI : ccg) {
+            HboxRecieptGui hboxRecieptGui = new HboxRecieptGui(cartCardGUI.getHboxReciept());
+            productVbox.getChildren().add(cartCardGUI.makeCardGuisimple());
+          dataVbox.getChildren().add(hboxRecieptGui.makeGui());
         }
 
-totalbill.setText(Integer.toString(attributeController.historyCardArrayList.get(0).getTotalbill()));
+
+
+totalbill.setText(Integer.toString(attributeController.historyCardArrayList.get(getHistoryOrderNo()-1).getTotalbill()));
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
         @FXML

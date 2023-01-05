@@ -14,6 +14,16 @@ ImageView imageView;
     public Cart_Card() {
 
     }
+    public Cart_Card(Cart_Card cc) {
+
+
+
+        this.setRate(cc.getRate());
+
+        this.setLabelName(cc.getLabelName());
+
+
+    }
 
     public Cart_Card(String labelName, int rate, ImageView imageView) {
         this.labelName = labelName;
@@ -38,9 +48,13 @@ ImageView imageView;
         this.labelName = labelName;
     }
 
+    public ImageView getImageView() {
+        return imageView;
+    }
 
-
-
+    public void setImageView(ImageView imageView) {
+        this.imageView = imageView;
+    }
 
     public int getId() {
         return id;

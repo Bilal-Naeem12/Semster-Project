@@ -6,7 +6,8 @@ import java.util.ArrayList;
 
 public class HistoryCard {
 
-private  ArrayList<CartCardGUI> cardGUIS ;
+private  ArrayList<CartCardGUI> cardGUIS = new ArrayList<>() ;
+
 private  String datefromCart;
 
 private  String Address;
@@ -29,7 +30,8 @@ private  int orderNo;
         this.Totalbill = totalbill;
         this.orderNo = orderNo;
         this.noOfItems = noOfItems;
-        cardGUIS    = attributeController.getGuiCards();
+        cardGUIS.addAll(attributeController.getGuiCards());
+       // hboxRecieptArrayList.addAll(attributeController.getGuiCards())
     }
 
 

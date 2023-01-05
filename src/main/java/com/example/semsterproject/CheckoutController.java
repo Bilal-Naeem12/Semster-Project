@@ -14,6 +14,7 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
+import java.util.jar.Attributes;
 
 public class CheckoutController extends attributeController implements Initializable {
 
@@ -64,6 +65,7 @@ sceneSwitcher("Cart",cartBtn);
 
     @FXML
     void addOrder(ActionEvent event) {
+
 date = datePicker.getValue();
 String dateFormat = date.format(DateTimeFormatter.ofPattern("MMM/dd/yyyy"));
 
@@ -78,7 +80,7 @@ attributeController.historyCardArrayList.add(historyCard);
         attributeController.getUser().setOrderNo(++orderNo);
         System.out.println(orderNo);
         System.out.println("Oder ADDED");
-//        attributeController.getGuiCards().clear();
+   attributeController.getGuiCards().clear();
         sceneSwitcher("Dashboard",placeOrder);
     }
 

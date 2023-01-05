@@ -109,48 +109,9 @@
          </children>
       </HBox>
       <Line endX="226.0" fill="WHITE" layoutX="432.0" layoutY="162.0" startX="-432.0" strokeWidth="0.5" styleClass="line" />
-      <ScrollPane layoutX="58.0" layoutY="186.0" prefHeight="285.0" prefWidth="602.0">
+      <ScrollPane layoutX="39.0" layoutY="173.0" prefHeight="305.0" prefWidth="618.0">
          <content>
-            <VBox fx:id="dataVbox" prefHeight="281.0" prefWidth="600.0">
-               <children>
-                  <HBox prefHeight="21.0" prefWidth="586.0">
-                     <children>
-                        <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="56.0" text="1" textFill="WHITE">
-                           <font>
-                              <Font name="Gabriola" size="37.0" />
-                           </font>
-                        </Label>
-                        <Pane prefHeight="21.0" prefWidth="35.0" />
-                        <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="132.0" text="Keritan" textFill="WHITE">
-                           <font>
-                              <Font name="Gabriola" size="37.0" />
-                           </font>
-                        </Label>
-                        <Pane prefHeight="21.0" prefWidth="35.0" />
-                        <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="99.0" text="5000" textFill="WHITE">
-                           <font>
-                              <Font name="Gabriola" size="37.0" />
-                           </font>
-                        </Label>
-                        <Pane prefHeight="21.0" prefWidth="35.0" />
-                        <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="82.0" text="2" textFill="WHITE">
-                           <font>
-                              <Font name="Gabriola" size="37.0" />
-                           </font>
-                        </Label>
-                        <Pane prefHeight="21.0" prefWidth="35.0" />
-                        <Label id="receipt-label" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="21.0" prefWidth="89.0" text="2000" textFill="WHITE">
-                           <font>
-                              <Font name="Gabriola" size="37.0" />
-                           </font>
-                        </Label>
-                     </children>
-                     <VBox.margin>
-                        <Insets top="10.0" />
-                     </VBox.margin>
-                  </HBox>
-               </children>
-            </VBox>
+            <VBox fx:id="dataVbox" prefHeight="301.0" prefWidth="603.0" />
          </content>
       </ScrollPane>
     </children>

@@ -120,15 +120,18 @@
                            </font>
                         </Label>
                         <Pane prefHeight="39.0" prefWidth="134.0" />
-                        <Label id="edit-profile-heading" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="47.0" styleClass="heading-label" text="RS" textFill="WHITE">
+                        <Label id="edit-profile-heading" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="47.0" styleClass="heading-label" text="Rs" textFill="WHITE">
                            <font>
                               <Font name="Gabriola" size="37.0" />
                            </font>
                         </Label>
-                        <Label id="edit-profile-heading" fx:id="totalPrice" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="149.0" styleClass="heading-label" text="1000000000" textFill="WHITE" textOverrun="CLIP">
+                        <Label id="edit-profile-heading" fx:id="totalPrice" alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" styleClass="heading-label" text="1000000000" textFill="WHITE" textOverrun="CLIP">
                            <font>
                               <Font name="Gabriola" size="37.0" />
                            </font>
+                           <HBox.margin>
+                              <Insets left="8.0" />
+                           </HBox.margin>
                         </Label>
                      </children>
                   </HBox>

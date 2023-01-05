@@ -25,12 +25,15 @@ public class HistoryController extends attributeController implements Initializa
 
             for (int i = 0; i < attributeController.historyCardArrayList.size(); i++) {
               HistoryCardGui hgc = new HistoryCardGui(attributeController.historyCardArrayList.get(i));
+
                 historyVbox.getChildren().add(hgc.makeGui());
 
                 System.out.println(historyCardArrayList.get(i));
 
+                int finalI = i;
                 hgc.btn.setOnAction(e -> {
-
+attributeController.setHistoryOrderNo(attributeController.historyCardArrayList.get(finalI).getOrderNo());
+                    System.out.println(getHistoryOrderNo());
                     sceneSwitcher("Receipt",backtodashboardbtn);
                 });
 
@@ -55,8 +58,7 @@ public class HistoryController extends attributeController implements Initializa
     @FXML
     private Button backtodashboardbtn;
 
-    @FXML
-    private Button forward;
+
 
     @FXML
     private VBox historyVbox;
