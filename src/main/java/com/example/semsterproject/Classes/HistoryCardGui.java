@@ -61,7 +61,8 @@ this.noOfItems = new Label(Integer.toString(historyCard.getNoOfItems()));
         HBox noOfitems = new HBox(noItems,noOfItems,datelabel,date);
         HBox Price = new HBox(price,Rs,totalBill);
 
-        ImageView btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Forward.png"));
+        //  ImageView btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Forward.png"));
+          ImageView btnImg =       new ImageView(new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Forward.png"));
      btn = new Button("",btnImg);
         VBox mainVbox = new VBox(orderHbox,noOfitems,Price);
         HBox mainHbox = new HBox(mainVbox,btn);

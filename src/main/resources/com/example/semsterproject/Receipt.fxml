@@ -73,7 +73,7 @@
             </Label>
          </children>
       </HBox>
-      <Line endX="223.0" fill="WHITE" layoutX="432.0" layoutY="487.0" startX="-370.0" strokeWidth="0.5" styleClass="line" />
+      <Line endX="226.0" fill="WHITE" layoutX="432.0" layoutY="487.0" startX="-432.0" strokeWidth="0.5" styleClass="line" />
       <Line endX="226.0" fill="WHITE" layoutX="432.0" layoutY="120.0" startX="-432.0" strokeWidth="0.5" styleClass="line" />
       <HBox layoutX="61.5" layoutY="130.5" prefHeight="21.0" prefWidth="586.0">
          <children>
@@ -109,9 +109,9 @@
          </children>
       </HBox>
       <Line endX="226.0" fill="WHITE" layoutX="432.0" layoutY="162.0" startX="-432.0" strokeWidth="0.5" styleClass="line" />
-      <ScrollPane layoutX="39.0" layoutY="173.0" prefHeight="305.0" prefWidth="618.0">
+      <ScrollPane layoutX="39.0" layoutY="176.0" prefHeight="305.0" prefWidth="618.0">
          <content>
-            <VBox fx:id="dataVbox" prefHeight="301.0" prefWidth="603.0" />
+            <VBox fx:id="dataVbox" prefWidth="603.0" />
          </content>
       </ScrollPane>
     </children>

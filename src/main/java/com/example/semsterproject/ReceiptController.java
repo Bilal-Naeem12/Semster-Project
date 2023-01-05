@@ -17,6 +17,7 @@ import java.util.ResourceBundle;
 
 public class ReceiptController extends attributeController implements Initializable {
 private ArrayList<CartCardGUI> ccg = new ArrayList<>();
+    static int srNo;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
@@ -26,9 +27,12 @@ private ArrayList<CartCardGUI> ccg = new ArrayList<>();
             ccg.addAll(attributeController.historyCardArrayList.get(getHistoryOrderNo()-1).getCardGUIS());
 
 
-        for (CartCardGUI cartCardGUI : ccg) {
-            HboxRecieptGui hboxRecieptGui = new HboxRecieptGui(cartCardGUI.getHboxReciept());
-            productVbox.getChildren().add(cartCardGUI.makeCardGuisimple());
+        for (int i =0;i<ccg.size(); i++) {
+            HboxRecieptGui hboxRecieptGui = new HboxRecieptGui(ccg.get(i).getHboxReciept());
+            productVbox.getChildren().add(ccg.get(i).makeCardGuisimple());
+           srNo = i+1;
+            System.out.println(srNo);
+            hboxRecieptGui.setSrNo(srNo);
           dataVbox.getChildren().add(hboxRecieptGui.makeGui());
         }
 

@@ -21,7 +21,7 @@ private Label Srno,Productname,UnitPrice,Quantity,Subtotal;
         Productname = new Label(hboxReciept.getProductName());
         UnitPrice = new Label(Integer.toString(hboxReciept.getPrice()));
 
-        Srno = new Label("1");
+
         Quantity = new Label("5");
         Subtotal = new Label("231322");
 
@@ -41,7 +41,7 @@ private Label Srno,Productname,UnitPrice,Quantity,Subtotal;
 
 
 
-
+        Srno = new Label(Integer.toString(super.getSrNo()));
       HBox mainHbox = new HBox(Srno,Productname,UnitPrice,Quantity,Subtotal);
        // HBox mainHbox = new HBox(Productname,pane1,Price);
 
@@ -93,7 +93,7 @@ return mainHbox;
 
   public String cssLabel(){
 
-return "    -fx-text-fill: rgba(255, 255, 255, 0.64); -fx-font-family: Verdana; -fx-font-size: 12;";
+return "    -fx-text-fill: white; -fx-font-family: Verdana; -fx-font-size: 12;";
   }
 
 
