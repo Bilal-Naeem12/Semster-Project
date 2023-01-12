@@ -5,28 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="82a6a228-91ae-4cc1-b2b2-225baafda22d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/CheckoutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Icons/Cancel black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Icons/QuaintLikelyFlyingfish-mobile.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserData" beforeDir="false" afterPath="$PROJECT_DIR$/UserData" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/CheckoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/CheckoutController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/CartCardGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/CartCardGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/Cart_Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/Cart_Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HboxReciept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HboxReciept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HboxRecieptGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HboxRecieptGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HistoryCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HistoryCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HistoryCardGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HistoryCardGui.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Car-wash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Car-wash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Carpet-Cleaning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Carpet-Cleaning.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/ReceiptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/ReceiptController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/UploadImgController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/UploadImgController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/attributeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/attributeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Style/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Style/Style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Cart.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Cart.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Check-out.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Check-out.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Electritions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Electritions.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Facial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Facial.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Full-House-Cleaning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Full-House-Cleaning.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Hair-Treatment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Hair-Treatment.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Makeup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Makeup.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Painter.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Painter.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Plumber.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Plumber.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Sofa-Set-cleaning.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Sofa-Set-cleaning.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Wax.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Wax.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Receipt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Receipt.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

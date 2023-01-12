@@ -1,6 +1,8 @@
 package com.example.semsterproject.Classes;
 
-public class HboxReciept {
+import java.io.Serializable;
+
+public class HboxReciept implements Serializable {
 
 private  int SrNo, price;
 

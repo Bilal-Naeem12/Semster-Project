@@ -61,7 +61,13 @@ public class CartController extends attributeController implements Initializable
 
     @FXML
     void toCheckout(ActionEvent event) {
-        sceneSwitcher("Check-out", proceedBtn);
+try {
+    cartisEmpty.setVisible(false);
+    sceneSwitcher("Check-out", proceedBtn);
+}catch (Exception e){
+
+    cartisEmpty.setVisible(true);
+}
     }
 
     @FXML
@@ -80,6 +86,8 @@ public class CartController extends attributeController implements Initializable
 
     }
 
+    @FXML
+    private AnchorPane cartisEmpty;
 
 
 }

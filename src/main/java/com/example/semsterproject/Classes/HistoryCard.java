@@ -2,9 +2,10 @@ package com.example.semsterproject.Classes;
 
 import com.example.semsterproject.attributeController;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class HistoryCard {
+public class HistoryCard implements Serializable {
 
 private  ArrayList<CartCardGUI> cardGUIS = new ArrayList<>() ;
 

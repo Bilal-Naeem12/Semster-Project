@@ -10,7 +10,9 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
-public class HboxRecieptGui extends HboxReciept {
+import java.io.Serializable;
+
+public class HboxRecieptGui extends HboxReciept implements Serializable {
 
 private Label Srno,Productname,UnitPrice,Quantity,Subtotal;
 
@@ -22,8 +24,6 @@ private Label Srno,Productname,UnitPrice,Quantity,Subtotal;
         UnitPrice = new Label(Integer.toString(hboxReciept.getPrice()));
 
 
-        Quantity = new Label("5");
-        Subtotal = new Label("231322");
 
 
     }
@@ -42,14 +42,13 @@ private Label Srno,Productname,UnitPrice,Quantity,Subtotal;
 
 
         Srno = new Label(Integer.toString(super.getSrNo()));
-      HBox mainHbox = new HBox(Srno,Productname,UnitPrice,Quantity,Subtotal);
-       // HBox mainHbox = new HBox(Productname,pane1,Price);
+      HBox mainHbox = new HBox(Srno,Productname,UnitPrice);
+
 
 Srno.setPrefWidth(94);
 Productname.setPrefWidth(172);
 UnitPrice.setPrefWidth(79);
-Subtotal.setPrefWidth(72);
-Quantity.setPrefWidth(97);
+
 
 
 
@@ -63,13 +62,12 @@ UnitPrice.alignmentProperty().setValue(Pos.CENTER_LEFT);
 
         Productname.alignmentProperty().setValue(Pos.CENTER);
 
-        Subtotal.alignmentProperty().setValue(Pos.CENTER);
 
-        Quantity.alignmentProperty().setValue(Pos.CENTER);
 
-HBox.setMargin(Productname,new Insets(0,42,0,0));
-        HBox.setMargin(UnitPrice,new Insets(0,25,0,0));
-        HBox.setMargin(Quantity,new Insets(0,28,0,0));
+HBox.setMargin(Productname,new Insets(0,80,0,0));
+        HBox.setMargin(UnitPrice,new Insets(0,0,0,70));
+
+        HBox.setMargin(Srno,new Insets(0,160,0,0));
 //css
         Productname.setStyle(cssLabel());
 UnitPrice.setStyle(cssLabel());
@@ -97,6 +95,21 @@ return "    -fx-text-fill: white; -fx-font-family: Verdana; -fx-font-size: 12;";
   }
 
 
+    @Override
+    public String getQuantity() {
+        return Quantity.getText();
+    }
 
+    public void setQuantity(String quantity) {
+        Quantity = new Label(quantity);
+    }
 
+    @Override
+    public String getSubtotal() {
+        return Subtotal.getText();
+    }
+
+    public void setSubtotal(String subtotal) {
+        Subtotal = new Label(subtotal);
+    }
 }

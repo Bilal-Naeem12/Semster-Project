@@ -8,6 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 
 import java.net.URL;
@@ -51,6 +52,11 @@ private LocalDate date;
     @FXML
     private TextField Address;
 
+    @FXML
+    private AnchorPane placedAnchor;
+
+    @FXML
+    private Button placedBtn;
 
     @FXML
     private Button cartBtn;
@@ -81,7 +87,13 @@ attributeController.historyCardArrayList.add(historyCard);
         System.out.println(orderNo);
         System.out.println("Oder ADDED");
    attributeController.getGuiCards().clear();
-        sceneSwitcher("Dashboard",placeOrder);
+placedAnchor.setVisible(true);
     }
 
+    @FXML
+    void toDashboard(ActionEvent event) {
+sceneSwitcher("Dashboard",placedBtn);
+    }
 }
+
+

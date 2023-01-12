@@ -140,13 +140,41 @@
                         <Insets bottom="15.0" left="85.0" top="10.0" />
                      </VBox.margin>
                   </Line>
-                  <Button fx:id="placeOrder" mnemonicParsing="false" onAction="#addOrder" prefHeight="33.0" prefWidth="346.0" text="PLACE ORDER">
+                  <Button mnemonicParsing="false" onAction="#addOrder" prefHeight="32.0" prefWidth="291.0" text="PLACE ORDER">
                      <VBox.margin>
-                        <Insets left="150.0" right="150.0" />
+                        <Insets left="150.0" />
                      </VBox.margin>
                   </Button>
                </children>
             </VBox>
-         </children></AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="placeOrder" fx:id="placedAnchor" prefHeight="590.0" prefWidth="950.0" visible="false">
+         <children>
+            <AnchorPane id="happy" layoutX="233.0" layoutY="125.0" prefHeight="340.0" prefWidth="478.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="43.0" layoutY="44.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="392.0" text="ORDER HAS BEEN PLACED" textAlignment="JUSTIFY" textFill="#e52c72">
+                     <font>
+                        <Font name="Agency FB Bold" size="45.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="225.0" fitWidth="302.0" layoutX="89.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Icons/QuaintLikelyFlyingfish-mobile.gif" />
+                     </image>
+                  </ImageView>
+                  <Button id="image-btn" fx:id="placedBtn" layoutX="432.0" layoutY="5.0" mnemonicParsing="false" onAction="#toDashboard" prefHeight="33.0" prefWidth="41.0">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Icons/Cancel%20black.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>

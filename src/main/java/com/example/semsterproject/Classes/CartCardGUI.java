@@ -12,34 +12,26 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class CartCardGUI extends Cart_Card
+public class CartCardGUI extends Cart_Card implements Serializable
 
 {
-public    ImageView imageView;
+public transient  ImageView imageView;
 public     Label productName;
  public    Label currency;
   public   Label price;
-  public   ImageView btnImg;
+  public  transient ImageView btnImg;
 
   public   Button button;
 
     private HboxReciept hboxReciept = new HboxReciept();
 
-//    public CartCardGUI(Cart_Card card){
-//
-//super(card);
-//
-//  //      this.imageView = new ImageView(new Image(getImgsrc()));
-//        this.productName = new Label(getLabelName());
-//        this.currency = new Label(super.currency);
-//        this.price  = new Label(String.valueOf(getRate()));
-//
-//        btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
-//        button  = new Button("",btnImg);
-//
-//    }
+
     public CartCardGUI(Cart_Card card){
 
         super(card);
@@ -50,12 +42,12 @@ hboxReciept =new HboxReciept(super.getLabelName(),super.getRate());
        this.currency = new Label(card.currency);
       this.price  = new Label(String.valueOf(card.getRate()));
 
-    //btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
-        btnImg =       new ImageView(new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
+    btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
+     //   btnImg =       new ImageView(new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
 
         button  = new Button("",btnImg);
 this.imageView = card.imageView;
-
+super.imgPath   = card.imageView.getImage().getUrl();
 }
 
 
@@ -194,6 +186,8 @@ price.setStyle("-fx-text-fill: rgba(255, 0, 200, 1)");
 
 
     }
+
+
 
     @Override
     public String toString() {

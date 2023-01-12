@@ -1,13 +1,18 @@
 package com.example.semsterproject;
 
+import com.example.semsterproject.Classes.HistoryCard;
+import com.example.semsterproject.Classes.HistoryCardGui;
 import javafx.scene.image.Image;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class User implements Serializable {
    private String userName,email,address,password;
   private   String gender;
 private String img;
+
+    private ArrayList<HistoryCard> historyCardArrayList ;
 
 
     private int orderNo;
@@ -27,15 +32,12 @@ private String img;
         this.gender = gender;
         this.password = password;
         this.orderNo =1;
-
+historyCardArrayList = new ArrayList<>();
     }
 
     public User() {
 
     }
-
-
-
 
 
     public String getUserName() {
@@ -85,6 +87,14 @@ private String img;
 
     public void setOrderNo(int orderNo) {
         this.orderNo = orderNo;
+    }
+
+    public ArrayList<HistoryCard> getHistoryCardArrayList() {
+        return historyCardArrayList;
+    }
+
+    public void setHistoryCardArrayList(ArrayList<HistoryCard> historyCardArrayList) {
+        this.historyCardArrayList = historyCardArrayList;
     }
 
     @Override

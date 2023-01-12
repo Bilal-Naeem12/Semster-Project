@@ -2,15 +2,18 @@ package com.example.semsterproject.Classes;
 
 import javafx.scene.image.ImageView;
 
+import java.io.Serializable;
 import java.util.Currency;
 
-public class Cart_Card {
+public class Cart_Card  implements Serializable {
 
 
-    private String labelName;
+    public String labelName;
     private int  rate,id;
     public final String currency = "Rs";
-ImageView imageView;
+transient ImageView imageView;
+
+public  String imgPath;
     public Cart_Card() {
 
     }
