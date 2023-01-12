@@ -16,9 +16,10 @@ import java.util.ArrayList;
 
 public class attributeController  {
   static ArrayList<HistoryCard> historyCardArrayList = new ArrayList<>();
+static ArrayList<Cart_Card> cart_cards =  new ArrayList<>();
 static ArrayList<User> userArrayList ;
     Stage   stage=null;
-    static int HistoryOrderNo;
+    static int HistoryOrderNo = 0;
 
 
 
@@ -185,6 +186,7 @@ updateUserList(userArrayList);
 
 
 public  void  addGUicard(Cart_Card card){
+   cart_cards.add(card);
     CartCardGUI cardGUI = new CartCardGUI(card);
     System.out.println("Added to arrayList");
     guiCards.add(cardGUI);

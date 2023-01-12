@@ -13,7 +13,11 @@ public class Cart_Card  implements Serializable {
     public final String currency = "Rs";
 transient ImageView imageView;
 
-public  String imgPath;
+    private  HboxReciept hboxReciept  ;
+
+
+
+    public  String imgPath;
     public Cart_Card() {
 
     }
@@ -24,15 +28,14 @@ public  String imgPath;
         this.setRate(cc.getRate());
 
         this.setLabelName(cc.getLabelName());
-
-
+   hboxReciept = cc.getHboxReciept();
     }
 
     public Cart_Card(String labelName, int rate, ImageView imageView) {
         this.labelName = labelName;
         this.rate = rate;
         this.imageView = imageView;
-
+hboxReciept = new HboxReciept(labelName,rate);
     }
 
     public String getLabelName() {
@@ -67,5 +70,11 @@ public  String imgPath;
         this.id = id;
     }
 
+    public HboxReciept getHboxReciept() {
+        return hboxReciept;
+    }
 
+    public void setHboxReciept(HboxReciept hboxReciept) {
+        this.hboxReciept = hboxReciept;
+    }
 }

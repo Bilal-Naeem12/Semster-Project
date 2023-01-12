@@ -7,8 +7,6 @@ import java.util.ArrayList;
 
 public class HistoryCard implements Serializable {
 
-private  ArrayList<CartCardGUI> cardGUIS = new ArrayList<>() ;
-
 private  String datefromCart;
 
 private  String Address;
@@ -17,7 +15,7 @@ private  int Totalbill;
 private  int orderNo;
 
     private  int noOfItems;
-
+    private ArrayList<Cart_Card> cart_cards = new ArrayList<>();
 
     public HistoryCard() {
 
@@ -31,8 +29,8 @@ private  int orderNo;
         this.Totalbill = totalbill;
         this.orderNo = orderNo;
         this.noOfItems = noOfItems;
-        cardGUIS.addAll(attributeController.getGuiCards());
-       // hboxRecieptArrayList.addAll(attributeController.getGuiCards())
+
+
     }
 
 
@@ -48,13 +46,7 @@ private  int orderNo;
 
 
 
-    public ArrayList<CartCardGUI> getCardGUIS() {
-        return cardGUIS;
-    }
 
-    public void setCardGUIS(ArrayList<CartCardGUI> cardGUIS) {
-        this.cardGUIS = cardGUIS;
-    }
 
     public String getDatefromCart() {
         return datefromCart;
@@ -75,6 +67,14 @@ private  int orderNo;
 
     public int getTotalbill() {
         return Totalbill;
+    }
+
+    public ArrayList<Cart_Card> getCart_cards() {
+        return cart_cards;
+    }
+
+    public void setCart_cards(ArrayList<Cart_Card> cart_cards) {
+        this.cart_cards = cart_cards;
     }
 
     public void setTotalbill(int totalbill) {

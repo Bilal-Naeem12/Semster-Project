@@ -82,11 +82,17 @@ int orderNo = attributeController.getUser().getOrderNo();
 
 attributeController.historyCardArrayList.add(historyCard);
 
-
+        attributeController.getHistoryCardArrayList().get(getHistoryOrderNo()).getCart_cards().addAll(attributeController.cart_cards);
         attributeController.getUser().setOrderNo(++orderNo);
+
         System.out.println(orderNo);
         System.out.println("Oder ADDED");
+attributeController.cart_cards.clear();
    attributeController.getGuiCards().clear();
+
+        updateUser();
+        write_user(user);
+
 placedAnchor.setVisible(true);
     }
 
