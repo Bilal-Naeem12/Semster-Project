@@ -40,8 +40,8 @@ static int userID;
     }catch (Exception e) {
         userArrayList = new ArrayList<>();
      User Admin =   new User("Admin","text233@gmail.com","lahore pakistan","MALE","12345678");
-         Admin.setImg("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
-        //  Admin.setImg("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+        // Admin.setImg("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+         Admin.setImg("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
         write_user(Admin);
         userArrayList = read_user();
