@@ -7,13 +7,10 @@
     <list default="true" id="82a6a228-91ae-4cc1-b2b2-225baafda22d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserData" beforeDir="false" afterPath="$PROJECT_DIR$/UserData" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/CheckoutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/CheckoutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/Cart_Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/Cart_Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HboxRecieptGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HboxRecieptGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HistoryCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/Classes/HistoryCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/ReceiptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/ReceiptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/attributeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/attributeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Receipt.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Receipt.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HistoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Signup.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

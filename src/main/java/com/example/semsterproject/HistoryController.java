@@ -28,7 +28,6 @@ public class HistoryController extends attributeController implements Initializa
 
                 historyVbox.getChildren().add(hgc.makeGui());
 
-                System.out.println(historyCardArrayList.get(i));
 
                 int finalI = i;
                 hgc.btn.setOnAction(e -> {
