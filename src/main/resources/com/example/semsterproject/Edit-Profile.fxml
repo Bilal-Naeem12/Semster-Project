@@ -56,7 +56,7 @@
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" fx:id="ed_username" prefHeight="28.0" prefWidth="200.0" promptText="M Bilal Naeem">
+                                    <TextField id="Edit-text-field" fx:id="ed_username" prefHeight="28.0" prefWidth="200.0" promptText="Enter Username">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -88,7 +88,7 @@
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" fx:id="ed_email" prefHeight="28.0" prefWidth="200.0" promptText="mbilalnaeem319@gmail.com">
+                                    <TextField id="Edit-text-field" fx:id="ed_email" prefHeight="28.0" prefWidth="200.0" promptText="Example234@gmail.com">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -120,7 +120,7 @@
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" fx:id="ed_address" prefHeight="28.0" prefWidth="200.0" promptText="185 H2 WAPDA Town Lahore">
+                                    <TextField id="Edit-text-field" fx:id="ed_address" prefHeight="28.0" prefWidth="200.0" promptText="House No./Street No./Town/City/Country ">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>

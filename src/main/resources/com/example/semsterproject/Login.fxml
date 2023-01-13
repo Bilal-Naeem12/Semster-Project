@@ -23,7 +23,7 @@
                <children>
                   <Label styleClass="label-text" text="USERNAME" />
                   <Pane prefHeight="7.0" prefWidth="296.0" />
-                  <TextField fx:id="UsernameTextfield" prefHeight="28.0" prefWidth="296.0" promptText="M Bilal Naeem">
+                  <TextField fx:id="UsernameTextfield" prefHeight="28.0" prefWidth="296.0" promptText="Enter Username">
                      <padding>
                         <Insets left="15.0" />
                      </padding></TextField>

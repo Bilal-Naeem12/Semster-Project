@@ -23,7 +23,7 @@
                           <children>
                               <Label styleClass="label-text" text="USERNAME" />
                               <Pane prefHeight="7.0" prefWidth="296.0" />
-                              <TextField fx:id="username_signup" prefHeight="28.0" prefWidth="296.0" promptText="M Bilal Naeem">
+                              <TextField fx:id="username_signup" prefHeight="28.0" prefWidth="296.0" promptText="Enter Username">
                            <padding>
                               <Insets left="15.0" />
                            </padding></TextField>
@@ -34,7 +34,7 @@
                      <children>
                         <Label styleClass="label-text" text="EMAIL" />
                         <Pane prefHeight="7.0" prefWidth="296.0" />
-                        <TextField fx:id="email_signup" prefHeight="28.0" prefWidth="296.0" promptText="bilalnaeem319@gmail.com">
+                        <TextField fx:id="email_signup" prefHeight="28.0" prefWidth="296.0" promptText="Example234@gmail.com">
                            <padding>
                               <Insets left="15.0" />
                            </padding></TextField>
@@ -45,7 +45,7 @@
                      <children>
                         <Label styleClass="label-text" text="ADDRESS" />
                         <Pane prefHeight="7.0" prefWidth="296.0" />
-                        <TextField fx:id="address_signup" prefHeight="28.0" prefWidth="296.0" promptText="185 H2 WAPDA Town Lahore">
+                        <TextField fx:id="address_signup" prefHeight="28.0" prefWidth="296.0" promptText="House No./Street No./Town/City/Country ">
                            <padding>
                               <Insets left="15.0" />
                            </padding></TextField>
