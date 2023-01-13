@@ -7,10 +7,7 @@
     <list default="true" id="82a6a228-91ae-4cc1-b2b2-225baafda22d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserData" beforeDir="false" afterPath="$PROJECT_DIR$/UserData" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HistoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HistoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Edit-Profile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Signup.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/semsterproject/Signup.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/semsterproject/HomeTaskerController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +94,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1ccf49d7-7ced-4f5b-8c09-ee5c76c028f1" name="Changes" comment="" />
+      <changelist id="82a6a228-91ae-4cc1-b2b2-225baafda22d" name="Changes" comment="" />
       <created>1670868661798</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -130,6 +127,7 @@
       <workItem from="1672308511628" duration="646000" />
       <workItem from="1672341887620" duration="12524000" />
       <workItem from="1672557729533" duration="6071000" />
+      <workItem from="1673577500710" duration="1236000" />
     </task>
     <servers />
   </component>

@@ -122,7 +122,7 @@ for (int i = 0 ; i< users.size();i++){
         attributeController.setHistoryCardArrayList(users.get(i).getHistoryCardArrayList());
 setUser(users.get(i));
 setUserID(i);
-
+setHistoryOrderNo(0);
           sceneSwitcher("Dashboard",Loginbtn);
            }
 }
