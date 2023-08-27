@@ -43,7 +43,7 @@ hboxReciept =new HboxReciept(super.getLabelName(),super.getRate());
       this.price  = new Label(String.valueOf(card.getRate()));
 
   //  btnImg =       new ImageView(new Image("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
-    btnImg =       new ImageView(new Image("E:\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
+    btnImg =       new ImageView(new Image("F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Icons\\Cancel.png"));
 
         button  = new Button("",btnImg);
 this.imageView = card.imageView;

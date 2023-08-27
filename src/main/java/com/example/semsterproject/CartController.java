@@ -38,7 +38,7 @@ public class CartController extends attributeController implements Initializable
 
                     getGuiCards().remove(getGuiCards().get(finalI));
                   sceneSwitcher("Cart",backtodashboardbtn);
-
+                    System.out.println("hello");
                 });
 
 

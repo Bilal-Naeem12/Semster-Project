@@ -124,40 +124,40 @@ if (b == Uploadbtn) {
 
 
 
-        setImg(Userpfp1,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\1.png");
-        setImg(Userpfp11,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\2.png");
-        setImg(Userpfp12,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\4.png");
-        setImg(Userpfp13,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\6.png");
-        setImg(Userpfp14,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\3.png");
-        setImg(Userpfp15,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\7.png");
-        setImg(Userpfp,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\default.jpg");
+        setImg(Userpfp1,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\1.png");
+        setImg(Userpfp11,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\2.png");
+        setImg(Userpfp12,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\4.png");
+        setImg(Userpfp13,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\6.png");
+        setImg(Userpfp14,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\3.png");
+        setImg(Userpfp15,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\7.png");
+        setImg(Userpfp,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\default.jpg");
     }
 
 
     @FXML
     void setProfile(ActionEvent event) {
 //setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\1.png");
-       setImg(Userpfp,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\1.png");
+       setImg(Userpfp,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\1.png");
     }
 
     @FXML
     void setProfile1(ActionEvent event) {
  //     setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\2.png");
-       setImg(Userpfp,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\2.png");
+       setImg(Userpfp,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\2.png");
 
     }
 
     @FXML
     void setProfile2(ActionEvent event) {
        //setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\4.png");
-       setImg(Userpfp,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\4.png");
+       setImg(Userpfp,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\4.png");
 
     }
 
     @FXML
     void setProfile3(ActionEvent event) {
    //    setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\6.png");
-   setImg(Userpfp,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\6.png");
+   setImg(Userpfp,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\6.png");
 
 
     }
@@ -165,14 +165,14 @@ if (b == Uploadbtn) {
     @FXML
     void setProfile4(ActionEvent event) {
     //   setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\3.png");
-       setImg(Userpfp,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\3.png");
+       setImg(Userpfp,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\3.png");
 
     }
 
     @FXML
     void setProfile5(ActionEvent event) {
     //  setImg(Userpfp,"G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\7.png");
-       setImg(Userpfp,"E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\7.png");
+       setImg(Userpfp,"F:\\repos\\Semster-Project\\src\\main\\resources\\Images\\Profile\\7.png");
 
     }
 
