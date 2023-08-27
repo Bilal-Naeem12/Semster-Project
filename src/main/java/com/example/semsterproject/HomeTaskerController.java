@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
+import javafx.scene.layout.VBox;
 import javafx.scene.paint.ImagePattern;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -118,9 +119,10 @@ ArrayList<User> users = read_user();
 for (int i = 0 ; i< users.size();i++){
           if (UsernameTextfield.getText().equals(users.get(i).getUserName()) && Pass_passwordField.getText().equals(users.get(i).getPassword())) {
               attributeController.imgP = new ImagePattern(new Image(users.get(i).getImg()));
+        attributeController.setHistoryCardArrayList(users.get(i).getHistoryCardArrayList());
 setUser(users.get(i));
 setUserID(i);
-
+setHistoryOrderNo(0);
           sceneSwitcher("Dashboard",Loginbtn);
            }
 }
@@ -142,7 +144,7 @@ setUserID(i);
 
     @FXML
     void toReceipt(ActionEvent event) {
-        sceneSwitcher("Receipt",forward);
+
     }
 
 //Receipt
@@ -196,6 +198,9 @@ sceneSwitcher("Check-out",proceedBtn);
 
         Platform.exit();
     }
+
+
+
 
   @Override
     public int checker() {

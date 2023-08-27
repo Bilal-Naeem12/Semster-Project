@@ -15,21 +15,21 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="950.0" stylesheets="@../../../Style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.semsterproject.EditController">
-    <children>
-        <Label id="edit-profile-heading" alignment="CENTER" layoutX="369.0" layoutY="137.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="214.0" styleClass="heading-label" text="EDIT PROFILE" textFill="WHITE">
+   <children>
+      <Label id="edit-profile-heading" alignment="CENTER" layoutX="369.0" layoutY="137.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="214.0" styleClass="heading-label" text="EDIT PROFILE" textFill="WHITE">
          <font>
             <Font name="Gabriola" size="37.0" />
          </font></Label>
-        <Line endX="145.0" fill="WHITE" layoutX="556.0" layoutY="185.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
-        <Button id="image-btn" fx:id="change_backtoSettingbtn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" onAction="#toSetting" prefHeight="27.0" prefWidth="27.0">
-            <graphic>
-                <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../../../Images/Icons/back%20icon.png" />
-                    </image>
-                </ImageView>
-            </graphic>
-        </Button>
+      <Line endX="145.0" fill="WHITE" layoutX="556.0" layoutY="185.0" startX="-305.0" strokeWidth="0.5" styleClass="line" />
+      <Button id="image-btn" fx:id="change_backtoSettingbtn" layoutX="27.0" layoutY="34.0" mnemonicParsing="false" onAction="#toSetting" prefHeight="27.0" prefWidth="27.0">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Icons/back%20icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
       <AnchorPane layoutX="423.0" layoutY="22.0">
          <children>
             <Circle fx:id="Userpfp" fill="WHITE" layoutX="52.0" layoutY="51.0" radius="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="pfp" />
@@ -56,7 +56,7 @@
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" fx:id="ed_username" prefHeight="28.0" prefWidth="200.0" promptText="M Bilal Naeem">
+                                    <TextField id="Edit-text-field" fx:id="ed_username" prefHeight="28.0" prefWidth="200.0" promptText="Enter Username">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -88,7 +88,7 @@
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" fx:id="ed_email" prefHeight="28.0" prefWidth="200.0" promptText="mbilalnaeem319@gmail.com">
+                                    <TextField id="Edit-text-field" fx:id="ed_email" prefHeight="28.0" prefWidth="200.0" promptText="Example234@gmail.com">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -120,7 +120,7 @@
                            <children>
                               <HBox>
                                  <children>
-                                    <TextField id="Edit-text-field" fx:id="ed_address" prefHeight="28.0" prefWidth="200.0" promptText="185 H2 WAPDA Town Lahore">
+                                    <TextField id="Edit-text-field" fx:id="ed_address" prefHeight="28.0" prefWidth="200.0" promptText="House No./Street No./Town/City/Country ">
                                        <padding>
                                           <Insets left="15.0" />
                                        </padding>
@@ -176,5 +176,5 @@
             <Font name="Arial Italic" size="17.0" />
          </font>
       </Label>
-    </children>
+   </children>
 </AnchorPane>

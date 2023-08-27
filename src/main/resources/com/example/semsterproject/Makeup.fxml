@@ -10,9 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <!--suppress XmlPathReference -->
 
@@ -61,7 +63,7 @@
                             <children>
                                 <HBox layoutX="25.0" layoutY="11.0" prefHeight="108.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="137.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="BridalMakeupimg" fitHeight="137.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../Images/Stock%20images/bridal%20makeup-min.jpg" />
                                             </image>
@@ -77,7 +79,7 @@
                                                 <Insets left="25.0" />
                                             </HBox.margin>
                                             <children>
-                                                <Label text="Bridal Makeup">
+                                                <Label fx:id="BridalMakeup" text="Bridal Makeup">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -102,7 +104,7 @@
                                                                 <String fx:value="rupee-text" />
                                                             </styleClass>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="BridalMakeuprate" prefHeight="23.0" prefWidth="57.0" text="20000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -112,7 +114,7 @@
                                                 </HBox>
                                             </children>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                                        <Button fx:id="BridalMakeupbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="2.0" top="76.0" />
                                             </HBox.margin>
@@ -126,7 +128,7 @@
                      <children>
                         <HBox layoutX="25.0" layoutY="11.0" prefHeight="108.0" prefWidth="497.0">
                            <children>
-                              <ImageView fitHeight="89.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="EyeMakeupimg" fitHeight="89.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../Images/Stock%20images/eyemakeup-min.jpg" />
                                  </image>
@@ -142,7 +144,7 @@
                                     <Insets left="25.0" />
                                  </HBox.margin>
                                  <children>
-                                    <Label text="Eye Makeup">
+                                    <Label fx:id="EyeMakeup" text="Eye Makeup">
                                        <VBox.margin>
                                           <Insets bottom="5.0" top="3.0" />
                                        </VBox.margin>
@@ -167,7 +169,7 @@
                                                 <String fx:value="rupee-text" />
                                              </styleClass>
                                           </Label>
-                                          <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="EyeMakeuprate" prefHeight="23.0" prefWidth="57.0" text="4000">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -177,7 +179,7 @@
                                     </HBox>
                                  </children>
                               </VBox>
-                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                              <Button fx:id="EyeMakeupbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                  <HBox.margin>
                                     <Insets left="2.0" top="76.0" />
                                  </HBox.margin>
@@ -191,7 +193,7 @@
                      <children>
                         <HBox layoutX="25.0" layoutY="11.0" prefHeight="108.0" prefWidth="497.0">
                            <children>
-                              <ImageView fitHeight="110.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fx:id="PartyMakeupimg" fitHeight="110.0" fitWidth="97.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../../../Images/Stock%20images/Party-Makeup.jpg" />
                                  </image>
@@ -207,7 +209,7 @@
                                     <Insets left="25.0" />
                                  </HBox.margin>
                                  <children>
-                                    <Label text="Party Makeup">
+                                    <Label fx:id="PartyMakeup" text="Party Makeup">
                                        <VBox.margin>
                                           <Insets bottom="5.0" top="3.0" />
                                        </VBox.margin>
@@ -232,7 +234,7 @@
                                                 <String fx:value="rupee-text" />
                                              </styleClass>
                                           </Label>
-                                          <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="PartyMakeuprate" prefHeight="23.0" prefWidth="57.0" text="7000">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -242,7 +244,7 @@
                                     </HBox>
                                  </children>
                               </VBox>
-                              <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                              <Button fx:id="PartyMakeupbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                  <HBox.margin>
                                     <Insets left="2.0" top="76.0" />
                                  </HBox.margin>
@@ -364,6 +366,16 @@
                   </VBox>
                </children>
             </AnchorPane>
+            <StackPane layoutX="900.0" layoutY="455.0" prefHeight="19.0" prefWidth="28.0">
+               <children>
+                  <Circle fill="#ff8700" radius="14.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Label fx:id="counter" layoutY="5.0" prefHeight="12.0" prefWidth="10.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
             </children>
         </AnchorPane>
     </children>

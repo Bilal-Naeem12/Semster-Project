@@ -10,9 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <!--suppress XmlPathReference -->
 
@@ -61,7 +63,7 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="87.0" fitWidth="117.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="WASHINGMACHINEimg" fitHeight="87.0" fitWidth="117.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                                             <viewport>
                                                 <Rectangle2D height="150.0" width="200.0" />
                                             </viewport>
@@ -78,7 +80,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label prefHeight="12.0" prefWidth="237.0" style="-fx-font-size: 20;" text="WASHING MACHINE">
+                                                <Label fx:id="WASHINGMACHINE" prefHeight="12.0" prefWidth="237.0" style="-fx-font-size: 20;" text="WASHING MACHINE">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -103,7 +105,7 @@
                                                                 <String fx:value="rupee-text" />
                                                             </styleClass>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="WASHINGMACHINErate" prefHeight="23.0" prefWidth="57.0" text="6000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -116,7 +118,7 @@
                                     <Insets top="5.0" />
                                  </padding>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                                        <Button fx:id="WASHINGMACHINEbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="-3.0" top="61.0" />
                                             </HBox.margin>
@@ -130,7 +132,7 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="4.0" prefHeight="100.0" prefWidth="484.0">
                                     <children>
-                                        <ImageView fitHeight="127.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="GYSERINSTALLATIONimg" fitHeight="127.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../Images/Stock%20images/geyserinstallation.jpg" />
                                             </image>
@@ -147,7 +149,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label style="-fx-font-size: 20;" text="GYSER INSTALLATION">
+                                                <Label fx:id="GYSERINSTALLATION" style="-fx-font-size: 20;" text="GYSER INSTALLATION">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -172,7 +174,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="GYSERINSTALLATIONrate" prefHeight="23.0" prefWidth="57.0" text="4000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -185,7 +187,7 @@
                                     <Insets top="5.0" />
                                  </padding>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                                        <Button fx:id="GYSERINSTALLATIONbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="5.0" top="61.0" />
                                             </HBox.margin>
@@ -199,7 +201,7 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="90.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="WATERMOTORimg" fitHeight="90.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../Images/Stock%20images/watermotor.jpg" />
                                             </image>
@@ -216,7 +218,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label style="-fx-font-size: 20;" text="WATER MOTOR">
+                                                <Label fx:id="WATERMOTOR" style="-fx-font-size: 20;" text="WATER MOTOR">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -241,7 +243,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="WATERMOTORrate" prefHeight="23.0" prefWidth="57.0" text="2000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -254,7 +256,7 @@
                                     <Insets top="5.0" />
                                  </padding>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                                        <Button fx:id="WATERMOTORbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="5.0" top="61.0" />
                                             </HBox.margin>
@@ -268,7 +270,7 @@
                             <children>
                                 <HBox layoutX="22.0" layoutY="5.0" prefHeight="98.0" prefWidth="497.0">
                                     <children>
-                                        <ImageView fitHeight="86.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="COMMODEimg" fitHeight="86.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../Images/Stock%20images/commode.jpg" />
                                             </image>
@@ -285,7 +287,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label style="-fx-font-size: 20;" text="COMMODE">
+                                                <Label fx:id="COMMODE" style="-fx-font-size: 20;" text="COMMODE">
                                                     <VBox.margin>
                                                         <Insets bottom="5.0" top="3.0" />
                                                     </VBox.margin>
@@ -310,7 +312,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="COMMODErate" prefHeight="23.0" prefWidth="57.0" text="5500">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -323,7 +325,7 @@
                                     <Insets top="5.0" />
                                  </padding>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
+                                        <Button fx:id="COMMODEbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="118.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="5.0" top="61.0" />
                                             </HBox.margin>
@@ -446,6 +448,16 @@
                   </VBox>
                </children>
             </AnchorPane>
+            <StackPane layoutX="900.0" layoutY="455.0" prefHeight="19.0" prefWidth="28.0">
+               <children>
+                  <Circle fill="#ff8700" radius="14.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Label fx:id="counter" layoutY="5.0" prefHeight="12.0" prefWidth="10.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
             </children>
         </AnchorPane>
     </children>

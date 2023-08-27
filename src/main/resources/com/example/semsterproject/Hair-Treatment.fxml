@@ -10,9 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <!--suppress XmlPathReference -->
 
@@ -102,7 +104,7 @@
                                                 <String fx:value="rupee-text" />
                                              </styleClass>
                                           </Label>
-                                          <Label fx:id="KeritanRate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="KeritanRate" prefHeight="23.0" prefWidth="57.0" text="7500">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -168,7 +170,7 @@
                                                 <Insets />
                                              </HBox.margin>
                                           </Label>
-                                          <Label fx:id="HairDyeRate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="HairDyeRate" prefHeight="23.0" prefWidth="57.0" text="8000">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -233,7 +235,7 @@
                                                 <Insets />
                                              </HBox.margin>
                                           </Label>
-                                          <Label fx:id="HairCutRate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="HairCutRate" prefHeight="23.0" prefWidth="57.0" text="1000">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -298,7 +300,7 @@
                                                 <Insets />
                                              </HBox.margin>
                                           </Label>
-                                          <Label fx:id="BlowDryRate" prefHeight="23.0" prefWidth="57.0" text="10000">
+                                          <Label fx:id="BlowDryRate" prefHeight="23.0" prefWidth="57.0" text="700">
                                              <styleClass>
                                                 <String fx:value="label-dashboard-side" />
                                                 <String fx:value="rupee-text" />
@@ -431,6 +433,16 @@
                   </VBox>
                </children>
             </AnchorPane>
+            <StackPane layoutX="900.0" layoutY="455.0" prefHeight="19.0" prefWidth="28.0">
+               <children>
+                  <Circle fill="#ff8700" radius="14.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Label fx:id="counter" layoutY="5.0" prefHeight="12.0" prefWidth="10.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
          </children>
         </AnchorPane>
     </children>

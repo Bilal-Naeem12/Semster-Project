@@ -28,7 +28,7 @@ public class CartController extends attributeController implements Initializable
                 AnchorPane cardPane = getGuiCards().get(i).makeCardGui();
                 tilepane.getChildren().add(cardPane);
 
-
+                System.out.println(getGuiCards().get(i));
                 int finalI = i;
                 getGuiCards().get(i).button.setOnAction(e -> {
                     tilepane.getChildren().remove(cardPane);
@@ -38,7 +38,7 @@ public class CartController extends attributeController implements Initializable
 
                     getGuiCards().remove(getGuiCards().get(finalI));
                   sceneSwitcher("Cart",backtodashboardbtn);
-
+                    System.out.println("hello");
                 });
 
 
@@ -61,7 +61,13 @@ public class CartController extends attributeController implements Initializable
 
     @FXML
     void toCheckout(ActionEvent event) {
-        sceneSwitcher("Check-out", proceedBtn);
+try {
+    cartisEmpty.setVisible(false);
+    sceneSwitcher("Check-out", proceedBtn);
+}catch (Exception e){
+
+    cartisEmpty.setVisible(true);
+}
     }
 
     @FXML
@@ -80,6 +86,8 @@ public class CartController extends attributeController implements Initializable
 
     }
 
+    @FXML
+    private AnchorPane cartisEmpty;
 
 
 }

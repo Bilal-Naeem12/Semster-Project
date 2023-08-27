@@ -2,11 +2,11 @@ package com.example.semsterproject;
 
 import com.example.semsterproject.Classes.CartCardGUI;
 import com.example.semsterproject.Classes.Cart_Card;
+import com.example.semsterproject.Classes.HistoryCard;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
@@ -15,10 +15,15 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class attributeController  {
-
+  static ArrayList<HistoryCard> historyCardArrayList = new ArrayList<>();
+static ArrayList<Cart_Card> cart_cards =  new ArrayList<>();
 static ArrayList<User> userArrayList ;
     Stage   stage=null;
-static   User user;
+    static int HistoryOrderNo = 0;
+
+
+
+    static   User user;
 static int userID;
 
     public static int getUserID() {
@@ -30,8 +35,19 @@ static int userID;
     }
 
     attributeController(){
+    try {
+        userArrayList = read_user();
+    }catch (Exception e) {
+        userArrayList = new ArrayList<>();
+     User Admin =   new User("Admin","text233@gmail.com","lahore pakistan","MALE","12345678");
+        // Admin.setImg("G:\\comsat\\semster 3\\OOP\\JAVAFX\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
+         Admin.setImg("E:\\Semster-Project\\src\\main\\resources\\Images\\Profile\\IMG-20200617-WA0011.jpg");
 
-    userArrayList = read_user();
+        write_user(Admin);
+        userArrayList = read_user();
+    }
+
+        System.out.println(userArrayList);
 }
 
 
@@ -49,6 +65,7 @@ static int userID;
 
 
     }
+
 
 
     public   void write_user(User users){
@@ -143,7 +160,15 @@ updateUserList(userArrayList);
     }
 
 
-   static ImagePattern imgP;
+    public static int getHistoryOrderNo() {
+        return HistoryOrderNo;
+    }
+
+    public static void setHistoryOrderNo(int historyOrderNo) {
+        HistoryOrderNo = historyOrderNo;
+    }
+
+    static ImagePattern imgP;
     public void setImg(Circle circle, String imgPath) {
         Image img = new Image(imgPath);
         imgP  = new ImagePattern(img);
@@ -161,6 +186,7 @@ updateUserList(userArrayList);
 
 
 public  void  addGUicard(Cart_Card card){
+   cart_cards.add(card);
     CartCardGUI cardGUI = new CartCardGUI(card);
     System.out.println("Added to arrayList");
     guiCards.add(cardGUI);
@@ -174,5 +200,14 @@ public  void  addGUicard(Cart_Card card){
 
     public static void setGuiCards(ArrayList<CartCardGUI> guiCards) {
         attributeController.guiCards = guiCards;
+    }
+
+
+    public static ArrayList<HistoryCard> getHistoryCardArrayList() {
+        return historyCardArrayList;
+    }
+
+    public static void setHistoryCardArrayList(ArrayList<HistoryCard> historyCardArrayList) {
+        attributeController.historyCardArrayList = historyCardArrayList;
     }
 }

@@ -10,9 +10,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
 
 <!--suppress XmlPathReference -->
 
@@ -61,7 +63,7 @@
                             <children>
                                 <HBox layoutX="20.0" layoutY="6.0" prefHeight="169.0" prefWidth="484.0">
                                     <children>
-                                        <ImageView fitHeight="154.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="CARPETimg" fitHeight="154.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../Images/Stock%20images/carpetcleanig-min.jpg" />
                                             </image>
@@ -78,7 +80,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label prefHeight="33.0" prefWidth="117.0" text="CARPET">
+                                                <Label fx:id="CARPET" prefHeight="33.0" prefWidth="117.0" text="CARPET">
                                                     <VBox.margin>
                                                         <Insets top="3.0" />
                                                     </VBox.margin>
@@ -103,7 +105,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="CARPETrate" prefHeight="23.0" prefWidth="57.0" text="2000">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -113,7 +115,7 @@
                                                 </HBox>
                                             </children>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
+                                        <Button fx:id="CARPETbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="5.0" top="125.0" />
                                             </HBox.margin>
@@ -127,7 +129,7 @@
                             <children>
                                 <HBox layoutX="20.0" layoutY="6.0" prefHeight="157.0" prefWidth="484.0">
                                     <children>
-                                        <ImageView fitHeight="142.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                                        <ImageView fx:id="RUGimg" fitHeight="142.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
                                             <image>
                                                 <Image url="@../../../Images/Stock%20images/rugcccc.jpg" />
                                             </image>
@@ -144,7 +146,7 @@
                                                 <Insets />
                                             </HBox.margin>
                                             <children>
-                                                <Label prefHeight="33.0" prefWidth="62.0" text="RUG">
+                                                <Label fx:id="RUG" prefHeight="33.0" prefWidth="62.0" text="RUG">
                                                     <VBox.margin>
                                                         <Insets top="3.0" />
                                                     </VBox.margin>
@@ -169,7 +171,7 @@
                                                                 <Insets />
                                                             </HBox.margin>
                                                         </Label>
-                                                        <Label prefHeight="23.0" prefWidth="57.0" text="10000">
+                                                        <Label fx:id="RUGrate" prefHeight="23.0" prefWidth="57.0" text="1500">
                                                             <styleClass>
                                                                 <String fx:value="label-dashboard-side" />
                                                                 <String fx:value="rupee-text" />
@@ -182,7 +184,7 @@
                                     <Insets top="10.0" />
                                  </padding>
                                         </VBox>
-                                        <Button mnemonicParsing="false" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
+                                        <Button fx:id="RUGbtn" mnemonicParsing="false" onAction="#addtoCart" prefHeight="27.0" prefWidth="145.0" text="Add To Cart">
                                             <HBox.margin>
                                                 <Insets left="5.0" top="125.0" />
                                             </HBox.margin>
@@ -305,6 +307,16 @@
                   </VBox>
                </children>
             </AnchorPane>
+            <StackPane layoutX="900.0" layoutY="455.0" prefHeight="19.0" prefWidth="28.0">
+               <children>
+                  <Circle fill="#ff8700" radius="14.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+                  <Label fx:id="counter" layoutY="5.0" prefHeight="12.0" prefWidth="10.0" text="10" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
             </children>
         </AnchorPane>
     </children>

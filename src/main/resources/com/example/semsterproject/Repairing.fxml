@@ -227,5 +227,6 @@
             </AnchorPane>
             </children>
         </AnchorPane>
+      <Label fx:id="counter" layoutX="10.0" layoutY="10.0" text="Label" visible="false" />
     </children>
 </AnchorPane>
